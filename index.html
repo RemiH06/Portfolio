@@ -5,91 +5,81 @@
     <meta charset="utf-8">
     <title>Hextraordinary</title>
     <style>
-        img {
-            border: 0
-        }
 
-        div {
-            position: absolute;
-        }
-
-        .dragclass {
-            position: relative;
-        }
-
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            transition: 1s;
-            background-color:#000;
-        }
     </style>
-    <style>img{opacity:0;transition:opacity 2s}</style>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <style></style>
     <meta name="Description" content="">
 </head>
 
 <body>
     <div style="left:42%;top:38%">
-        <img    class=dragclass 
-                onload="this.style.opacity=1;"
-                src="./img/titles/hex.png" 
-                alt="Hex" 
-                style="width:200px; height:auto;">
+        <img id="hex-image" class="dragclass" 
+            onload="this.style.opacity=1;"
+            src="./img/titles/hex.png" 
+            alt="Hex" 
+            style="width:200px; height:auto;">
     </div>
+    
     <div style="right:30%;top:3%">
         <a href="./cv.html"> 
-        <img    class=dragclass 
+            <img id="cv-image" class="dragclass" 
                 onload="this.style.opacity=1;"
                 src="./img/titles/cv.png" 
                 alt="CV" 
                 style="width:200px; height:auto;">
         </a>
     </div>
+    
     <div style="left:18%;top:14%">
         <a href="./scroll.html">
-        <img    class=dragclass 
+            <img id="projects-image" class="dragclass" 
                 onload="this.style.opacity=1;"
                 src="./img/titles/xue.png" 
                 alt="Projects" 
                 style="width:200px; height:auto;">
         </a>
     </div>
+    
     <div style="left:6%;top:50%">
         <a href="."> 
-        <img    class=dragclass 
+            <img id="t100-image" class="dragclass" 
                 onload="this.style.opacity=1;"
                 src="./img/titles/100.png" 
                 alt="100%" 
                 style="width:200px; height:auto;">
         </a>
     </div>
+    
     <div style="left:30%;bottom:3%">
         <a href="."> 
-        <img    class=dragclass 
+            <img id="lambda-image" class="dragclass" 
                 onload="this.style.opacity=1;"
                 src="./img/titles/lambda.png" 
                 alt="More" 
                 style="width:200px; height:auto;">
         </a>
     </div>
+    
     <div style="right:18%;bottom:14%">
         <a href="."> 
-        <img    class=dragclass 
+            <img id="rants-image" class="dragclass" 
                 onload="this.style.opacity=1;"
                 src="./img/titles/rants.png" 
                 alt="Rants" 
                 style="width:200px; height:auto;">
         </a>
     </div>
+    
     <div style="right:6%;bottom:50%">
         <a href="."> 
-        <img    class=dragclass 
+            <img id="gallery-image" class="dragclass" 
                 onload="this.style.opacity=1;"
                 src="./img/titles/gallery.png" 
                 alt="Gallery" 
                 style="width:200px; height:auto;">
         </a>
     </div>
+    
 </body>
 </html>
