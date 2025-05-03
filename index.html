@@ -5,79 +5,118 @@
     <meta charset="utf-8">
     <title>Hextraordinary</title>
     <style>
+        /* Contenedor para las imágenes */
+        .img-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
 
+        /* Pseudo-elemento para hacer el gradiente de color */
+        .img-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Gradiente de colores pastel: empieza con rojo pastel y termina en morado pastel */
+            background: linear-gradient(to top, #ffb3b3, #d1a7f0); /* Rojo pastel a morado pastel */
+            mix-blend-mode: multiply; /* Fusiona los colores de la imagen con el gradiente */
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Hacer que las imágenes tengan opacidad 0 al principio y que aparezcan lentamente */
+        .dragclass {
+            width: 100%;
+            height: auto;
+            opacity: 0;
+            transition: opacity 0.5s ease-in;
+        }
+
+        /* Cuando se carga la imagen, agregamos opacidad */
+        .dragclass.loaded {
+            opacity: 1;
+        }
     </style>
     <link rel="stylesheet" type="text/css" href="index.css">
-    <style></style>
     <meta name="Description" content="">
 </head>
 
 <body>
     <div style="left:42%;top:38%">
-        <img id="hex-image" class="dragclass" 
-            onload="this.style.opacity=1;"
-            src="./img/titles/hex.png" 
-            alt="Hex" 
-            style="width:200px; height:auto;">
+        <div class="img-container">
+            <img id="hex-image" class="dragclass" 
+                onload="this.classList.add('loaded');"
+                src="./img/titles/hex.png" 
+                alt="Hex">
+        </div>
     </div>
     
     <div style="right:30%;top:3%">
         <a href="./cv.html"> 
-            <img id="cv-image" class="dragclass" 
-                onload="this.style.opacity=1;"
-                src="./img/titles/cv.png" 
-                alt="CV" 
-                style="width:200px; height:auto;">
+            <div class="img-container">
+                <img id="cv-image" class="dragclass" 
+                    onload="this.classList.add('loaded');"
+                    src="./img/titles/cv.png" 
+                    alt="CV">
+            </div>
         </a>
     </div>
     
     <div style="left:18%;top:14%">
         <a href="./scroll.html">
-            <img id="projects-image" class="dragclass" 
-                onload="this.style.opacity=1;"
-                src="./img/titles/xue.png" 
-                alt="Projects" 
-                style="width:200px; height:auto;">
+            <div class="img-container">
+                <img id="projects-image" class="dragclass" 
+                    onload="this.classList.add('loaded');"
+                    src="./img/titles/xue.png" 
+                    alt="Projects">
+            </div>
         </a>
     </div>
     
     <div style="left:6%;top:50%">
         <a href="."> 
-            <img id="t100-image" class="dragclass" 
-                onload="this.style.opacity=1;"
-                src="./img/titles/100.png" 
-                alt="100%" 
-                style="width:200px; height:auto;">
+            <div class="img-container">
+                <img id="t100-image" class="dragclass" 
+                    onload="this.classList.add('loaded');"
+                    src="./img/titles/100.png" 
+                    alt="100%">
+            </div>
         </a>
     </div>
     
     <div style="left:30%;bottom:3%">
         <a href="."> 
-            <img id="lambda-image" class="dragclass" 
-                onload="this.style.opacity=1;"
-                src="./img/titles/lambda.png" 
-                alt="More" 
-                style="width:200px; height:auto;">
+            <div class="img-container">
+                <img id="lambda-image" class="dragclass" 
+                    onload="this.classList.add('loaded');"
+                    src="./img/titles/lambda.png" 
+                    alt="More">
+            </div>
         </a>
     </div>
     
     <div style="right:18%;bottom:14%">
         <a href="."> 
-            <img id="rants-image" class="dragclass" 
-                onload="this.style.opacity=1;"
-                src="./img/titles/rants.png" 
-                alt="Rants" 
-                style="width:200px; height:auto;">
+            <div class="img-container">
+                <img id="rants-image" class="dragclass" 
+                    onload="this.classList.add('loaded');"
+                    src="./img/titles/rants.png" 
+                    alt="Rants">
+            </div>
         </a>
     </div>
     
     <div style="right:6%;bottom:50%">
         <a href="."> 
-            <img id="gallery-image" class="dragclass" 
-                onload="this.style.opacity=1;"
-                src="./img/titles/gallery.png" 
-                alt="Gallery" 
-                style="width:200px; height:auto;">
+            <div class="img-container">
+                <img id="gallery-image" class="dragclass" 
+                    onload="this.classList.add('loaded');"
+                    src="./img/titles/gallery.png" 
+                    alt="Gallery">
+            </div>
         </a>
     </div>
     
