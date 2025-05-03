@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Gallery 3×3 con Tabla</title>
+    <link rel="stylesheet" href="neon.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="glow.css">
+    <style>
+        :root {
+            --gap: 1vw;
+            --gallery-size: min(95vw, 90vh);
+        }
+
+        .gallery-wrapper {
+            position: relative;
+            width: var(--gallery-size);
+            aspect-ratio: 3 / 3;
+            margin: 1rem auto;
+        }
+
+        .gallery-table {
+            width: 100%;
+            height: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .gallery-table td {
+            padding: var(--gap);
+        }
+
+        .img-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform .5s ease;
+        }
+
+        .img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            display: flex;
+            z-index: 50;
+        }
+
+        .overlay img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery-wrapper">
+        <table class="gallery-table">
+            <!-- Fila 1 -->
+            <tr>
+                <!-- “big” ocupa cols 1–2 y filas 1–2 -->
+                <td colspan="2" rowspan="2">
+                    <div class="img-container big" data-col="2">
+                        <img src="./img/titles/xue.png" alt="">
+                    </div>
+                </td>
+                <!-- pequeño derecha arriba -->
+                <td>
+                    <div class="img-container r0c3" data-col="3">
+                        <img src="./img/titles/xue.png" alt="">
+                    </div>
+                </td>
+            </tr>
+            <!-- Fila 2 -->
+            <tr>
+                <!-- seguimos omitiendo las dos primeras celdas (rowspan) -->
+                <td>
+                    <div class="img-container r1c3" data-col="3">
+                        <img src="./img/titles/xue.png" alt="">
+                    </div>
+                </td>
+            </tr>
+            <!-- Fila 3 -->
+            <tr>
+                <td>
+                    <div class="img-container r2c1" data-col="1">
+                        <img src="./img/titles/xue.png" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="img-container r2c2" data-col="2">
+                        <img src="./img/titles/xue.png" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="img-container r2c3" data-col="3">
+                        <img src="./img/titles/xue.png" alt="">
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <div class="overlay"></div>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector('.gallery-wrapper');
+        const items = Array.from(wrapper.querySelectorAll('.img-container'));
+        const overlay = wrapper.querySelector('.overlay');
+
+        items.forEach(el => {
+            el.addEventListener('click', () => {
+                // 1) Medimos todos los rects
+                const rects = items.map(c => c.getBoundingClientRect());
+                // 2) Desplazamos según el bottom-left (r2c1)
+                const idxBL = items.findIndex(c => c.classList.contains('r2c1'));
+                const leftShift = -rects[idxBL].left;
+
+                // 3) Aplicamos translateX: col 3 → derecha; resto → izquierda
+                items.forEach((c, i) => {
+                    const r = rects[i];
+                    let dxPx;
+                    if (+c.dataset.col === 3) {
+                        dxPx = window.innerWidth - (r.left + r.width);
+                    } else {
+                        dxPx = leftShift;
+                    }
+                    const dxVw = dxPx / window.innerWidth * 100;
+                    c.style.transform = `translateX(${dxVw}vw)`;
+                });
+
+                // 4) Duplicado en overlay
+                overlay.innerHTML = '';
+                const dup = document.createElement('img');
+                dup.src = el.querySelector('img').src;
+                overlay.appendChild(dup);
+            });
+        });
+    </script>
+</body>
+
+</html>
