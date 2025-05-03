@@ -1,0 +1,71 @@
+.img-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(to top, #ffb3b3, #d1a7f0);
+    mix-blend-mode: multiply;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.dragclass {
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.dragclass.loaded {
+    opacity: 1;
+}
+
+.img-container:hover .dragclass {
+    opacity: 0.8;
+    animation: neonBlink 1s infinite alternate;
+}
+
+@keyframes neonBlink {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1; 
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.9; 
+    }
+    80% {
+        opacity: 0.9; 
+    }
+    90% {
+        opacity: 1; 
+    }
+    100% {
+        opacity: 1;
+    }
+}
