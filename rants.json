@@ -1,0 +1,12 @@
+[
+  {
+    "date": "2025-05-04",
+    "location": "Guadalajara",
+    "description": "Llevaba rato posponiendo la creación de un sitio para hacer mi tiradero de proyectos e ideas, finalmente anoche me puse manos a la obra y hoy escribo en rants por primera vez",
+    "images": [
+      { "src": "./img/rants/index_ss1.png", "caption": "Index con efectos de neón on hover" },
+      { "src": "./img/rants/gallery_ss1.png", "caption": "Galería a medias (ta complicao)" },
+      { "src": "./img/rants/rants_ss1.png", "caption": "Rants, creo que lo voy a dejar así" }
+    ]
+  }
+]
