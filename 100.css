@@ -1,0 +1,191 @@
+/* Reset, full-height, and dark theme setup */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Common for desktop and mobile cells */
+  td {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+  }
+  
+  /* Content wrapper */
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    text-align: center;
+  }
+  .content h3,
+  .content p {
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Desktop: full-screen table */
+  .desktop-table {
+    display: table;
+    height: 100vh;
+  }
+  .desktop-table tr {
+    height: 100%;
+  }
+  .desktop-table td {
+    width: 11.11%;       /* 100% ÷ 9 */
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Glow effect on hover per column */
+  .desktop-table td:nth-child(1):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,255,0,0.6),
+      inset 0 0 40px 10px rgba(255,255,0,0.4),
+      inset 0 0 60px 15px rgba(255,255,0,0.2);
+  }
+  .desktop-table td:nth-child(2):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(0,0,255,0.6),
+      inset 0 0 40px 10px rgba(0,0,255,0.4),
+      inset 0 0 60px 15px rgba(0,0,255,0.2);
+  }
+  .desktop-table td:nth-child(3):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(165,42,42,0.6),
+      inset 0 0 40px 10px rgba(165,42,42,0.4),
+      inset 0 0 60px 15px rgba(165,42,42,0.2);
+  }
+  .desktop-table td:nth-child(4):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,192,203,0.6),
+      inset 0 0 40px 10px rgba(255,192,203,0.4),
+      inset 0 0 60px 15px rgba(255,192,203,0.2);
+  }
+  .desktop-table td:nth-child(5):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,0,0,0.6),
+      inset 0 0 40px 10px rgba(255,0,0,0.4),
+      inset 0 0 60px 15px rgba(255,0,0,0.2);
+  }
+  .desktop-table td:nth-child(6):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(0,128,0,0.6),
+      inset 0 0 40px 10px rgba(0,128,0,0.4),
+      inset 0 0 60px 15px rgba(0,128,0,0.2);
+  }
+  .desktop-table td:nth-child(7):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(128,0,128,0.6),
+      inset 0 0 40px 10px rgba(128,0,128,0.4),
+      inset 0 0 60px 15px rgba(128,0,128,0.2);
+  }
+  .desktop-table td:nth-child(8):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,165,0,0.6),
+      inset 0 0 40px 10px rgba(255,165,0,0.4),
+      inset 0 0 60px 15px rgba(255,165,0,0.2);
+  }
+  .desktop-table td:nth-child(9):hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(0,255,255,0.6),
+      inset 0 0 40px 10px rgba(0,255,255,0.4),
+      inset 0 0 60px 15px rgba(0,255,255,0.2);
+  }
+  
+  /* Mobile: 9 rows */
+  .mobile-table {
+    display: none;
+  }
+  .mobile-table td {
+    padding: 0;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .mobile-text {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Glow effect on hover per row mobile */
+  .mobile-table tr:nth-child(1) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,255,0,0.6),
+      inset 0 0 40px 10px rgba(255,255,0,0.4),
+      inset 0 0 60px 15px rgba(255,255,0,0.2);
+  }
+  .mobile-table tr:nth-child(2) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(0,0,255,0.6),
+      inset 0 0 40px 10px rgba(0,0,255,0.4),
+      inset 0 0 60px 15px rgba(0,0,255,0.2);
+  }
+  .mobile-table tr:nth-child(3) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(165,42,42,0.6),
+      inset 0 0 40px 10px rgba(165,42,42,0.4),
+      inset 0 0 60px 15px rgba(165,42,42,0.2);
+  }
+  .mobile-table tr:nth-child(4) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,192,203,0.6),
+      inset 0 0 40px 10px rgba(255,192,203,0.4),
+      inset 0 0 60px 15px rgba(255,192,203,0.2);
+  }
+  .mobile-table tr:nth-child(5) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,0,0,0.6),
+      inset 0 0 40px 10px rgba(255,0,0,0.4),
+      inset 0 0 60px 15px rgba(255,0,0,0.2);
+  }
+  .mobile-table tr:nth-child(6) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(0,128,0,0.6),
+      inset 0 0 40px 10px rgba(0,128,0,0.4),
+      inset 0 0 60px 15px rgba(0,128,0,0.2);
+  }
+  .mobile-table tr:nth-child(7) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(128,0,128,0.6),
+      inset 0 0 40px 10px rgba(128,0,128,0.4),
+      inset 0 0 60px 15px rgba(128,0,128,0.2);
+  }
+  .mobile-table tr:nth-child(8) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(255,165,0,0.6),
+      inset 0 0 40px 10px rgba(255,165,0,0.4),
+      inset 0 0 60px 15px rgba(255,165,0,0.2);
+  }
+  .mobile-table tr:nth-child(9) td:hover {
+    box-shadow:
+      inset 0 0 20px 5px rgba(0,255,255,0.6),
+      inset 0 0 40px 10px rgba(0,255,255,0.4),
+      inset 0 0 60px 15px rgba(0,255,255,0.2);
+  }
+  
+  /* Responsive switch */
+  @media (max-width: 768px) {
+    .desktop-table { display: none; }
+    .mobile-table { display: table; }
+  }
+  

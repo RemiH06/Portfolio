@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 - Tabla Responsive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .desktop-table td,
+        .mobile-table td {
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+
+        .desktop-table {
+            display: table;
+            height: 100vh;
+        }
+
+        .desktop-table tr {
+            height: 100%;
+        }
+
+        .desktop-table td {
+            width: 11.11%;
+        }
+
+
+        /* Glow */
+        .desktop-table td:nth-child(1):hover {
+            box-shadow: inset 0 0 20px 5px rgba(128, 0, 255, 0.6), inset 0 0 40px 10px rgba(128, 0, 255, 0.4), inset 0 0 60px 15px rgba(128, 0, 255, 0.2);
+        }
+
+        .desktop-table td:nth-child(2):hover {
+            box-shadow: inset 0 0 20px 5px rgba(255, 119, 0, 0.6), inset 0 0 40px 10px rgba(255, 119, 0, 0.4), inset 0 0 60px 15px rgba(255, 119, 0, 0.2);
+        }
+
+        .desktop-table td:nth-child(3):hover {
+            box-shadow: inset 0 0 20px 5px rgba(255, 250, 107, 0.6), inset 0 0 40px 10px rgba(255, 250, 107, 0.4), inset 0 0 60px 15px rgba(255, 250, 107, 0.2);
+        }
+
+        .desktop-table td:nth-child(4):hover {
+            box-shadow: inset 0 0 20px 5px rgba(31, 120, 244, 0.6), inset 0 0 40px 10px rgba(31, 120, 244, 0.4), inset 0 0 60px 15px rgba(31, 120, 244, 0.2);
+        }
+
+        .desktop-table td:nth-child(5):hover {
+            box-shadow: inset 0 0 20px 5px rgba(147, 97, 0, 0.6), inset 0 0 40px 10px rgba(147, 97, 0, 0.4), inset 0 0 60px 15px rgba(147, 97, 0, 0.2);
+        }
+
+        .desktop-table td:nth-child(6):hover {
+            box-shadow: inset 0 0 20px 5px rgba(255, 0, 149, 0.6), inset 0 0 40px 10px rgba(255, 0, 149, 0.4), inset 0 0 60px 15px rgba(255, 0, 149, 0.2);
+        }
+
+        .desktop-table td:nth-child(7):hover {
+            box-shadow: inset 0 0 20px 5px rgba(160, 0, 0, 0.6), inset 0 0 40px 10px rgba(160, 0, 0, 0.4), inset 0 0 60px 15px rgba(160, 0, 0, 0.2);
+        }
+
+        .desktop-table td:nth-child(8):hover {
+            box-shadow: inset 0 0 20px 5px rgba(45, 215, 0, 0.6), inset 0 0 40px 10px rgba(45, 215, 0, 0.4), inset 0 0 60px 15px rgba(45, 215, 0, 0.2);
+        }
+
+        .desktop-table td:nth-child(9):hover {
+            box-shadow: inset 0 0 20px 5px rgba(0, 255, 255, 0.6), inset 0 0 40px 10px rgba(0, 255, 255, 0.4), inset 0 0 60px 15px rgba(0, 255, 255, 0.2);
+        }
+
+
+        /* Mobile version */
+        .mobile-table {
+            display: none;
+        }
+
+        .mobile-table td {
+            border-bottom: 1px solid #444;
+        }
+
+        .mobile-table tr:nth-child(1) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(128, 0, 255, 0.6), inset 0 0 40px 10px rgba(128, 0, 255, 0.4), inset 0 0 60px 15px rgba(128, 0, 255, 0.2);
+        }
+
+        .mobile-table tr:nth-child(2) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(255, 119, 0, 0.6), inset 0 0 40px 10px rgba(255, 119, 0, 0.4), inset 0 0 60px 15px rgba(255, 119, 0, 0.2);
+        }
+
+        .mobile-table tr:nth-child(3) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(255, 250, 107, 0.6), inset 0 0 40px 10px rgba(255, 250, 107, 0.4), inset 0 0 60px 15px rgba(255, 250, 107, 0.2);
+        }
+
+        .mobile-table tr:nth-child(4) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(31, 120, 244, 0.6), inset 0 0 40px 10px rgba(31, 120, 244, 0.4), inset 0 0 60px 15px rgba(31, 120, 244, 0.2);
+        }
+
+        .mobile-table tr:nth-child(5) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(147, 97, 0, 0.6), inset 0 0 40px 10px rgba(147, 97, 0, 0.4), inset 0 0 60px 15px rgba(147, 97, 0, 0.2);
+        }
+
+        .mobile-table tr:nth-child(6) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(255, 0, 149, 0.6), inset 0 0 40px 10px rgba(255, 0, 149, 0.4), inset 0 0 60px 15px rgba(255, 0, 149, 0.2);
+        }
+
+        .mobile-table tr:nth-child(7) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(160, 0, 0, 0.6), inset 0 0 40px 10px rgba(160, 0, 0, 0.4), inset 0 0 60px 15px rgba(160, 0, 0, 0.2);
+        }
+
+        .mobile-table tr:nth-child(8) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(45, 215, 0, 0.6), inset 0 0 40px 10px rgba(45, 215, 0, 0.4), inset 0 0 60px 15px rgba(45, 215, 0, 0.2);
+        }
+
+        .mobile-table tr:nth-child(9) td:hover {
+            box-shadow: inset 0 0 20px 5px rgba(0, 255, 255, 0.6), inset 0 0 40px 10px rgba(0, 255, 255, 0.4), inset 0 0 60px 15px rgba(0, 255, 255, 0.2);
+        }
+
+
+        @media (max-width: 768px) {
+            .desktop-table {
+                display: none;
+            }
+
+            .mobile-table {
+                display: table;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Web -->
+    <table class="desktop-table">
+        <tr>
+            <td onclick="window.location.href='t_extract.html';" style="background-image:url('./img/100/ee/cover_pc_te.png')">
+                <h3>Taro</h3>
+                <p>Genesis, lore and worldbuilding</p>
+            </td>
+            <td onclick="window.location.href='r_extract.html';" style="background-image:url('./img/100/ee/cover_pc_re.png')">
+                <h3>Rhubarb</h3>
+                <p>Stories and even more lore</p>
+            </td>
+            <td onclick="window.location.href='v_extract.html';" style="background-image:url('./img/100/ee/cover_pc_ve.png')">
+                <h3>Vanilla</h3>
+                <p>Kid with cancer gotta kill God of Thunder</p>
+            </td>
+            <td onclick="window.location.href='b_extract.html';" style="background-image:url('./img/100/ee/cover_pc_be.png')">
+                <h3>Blueberry</h3>
+                <p>Old ah time wizard gotta save two towns at once (both places are separated by an ocean)</p>
+            </td>
+            <td onclick="window.location.href='c_extract.html';" style="background-image:url('./img/100/ee/cover_pc_ce.png')">
+                <h3>Cinnamon</h3>
+                <p>Blind girl gotta cross the globe cause her brother wants to revive a dead demon</p>
+            </td>
+            <td onclick="window.location.href='d_extract.html';" style="background-image:url('./img/100/ee/cover_pc_de.png')">
+                <h3>Dragonfruit</h3>
+                <p>Magic prodigy slave gotta use his talents to free a continent</p>
+            </td>
+            <td onclick="window.location.href='h_extract.html';" style="background-image:url('./img/100/ee/cover_pc_he.png')">
+                <h3>Cherry</h3>
+                <p>Autistic girl gotta build a time machine for the Death Goddess</p>
+            </td>
+            <td onclick="window.location.href='m_extract.html';" style="background-image:url('./img/100/ee/cover_pc_me.png')">
+                <h3>Mint</h3>
+                <p>Orphan teen is possessed by a high demon and gotta take it out of his body</p>
+            </td>
+            <td onclick="window.location.href='extracts.html';" style="background-image:url('./img/100/ee/cover_pc_extracts.png')">
+                <h3>More</h3>
+                <p>Yup, there's a lot more</p>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Mobile -->
+    <table class="mobile-table">
+        <tr>
+            <td onclick="window.location.href='t_extract.html';" style="background-image:url('./img/100/ee/cover_pc_te.png')">
+                <h3>Taro</h3>
+                <p>Genesis, lore and worldbuilding</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='r_extract.html';" style="background-image:url('./img/100/ee/cover_pc_re.png')">
+                <h3>Rhubarb</h3>
+                <p>Stories and even more lore</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='v_extract.html';" style="background-image:url('./img/100/ee/cover_pc_ve.png')">
+                <h3>Vanilla</h3>
+                <p>Kid with cancer gotta kill God of Thunder</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='b_extract.html';" style="background-image:url('./img/100/ee/cover_pc_be.png')">
+                <h3>Blueberry</h3>
+                <p>Old ah time wizard gotta save two towns at once (both places are separated by an ocean)</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='c_extract.html';" style="background-image:url('./img/100/ee/cover_pc_ce.png')">
+                <h3>Cinnamon</h3>
+                <p>Blind girl gotta cross the globe cause her brother wants to revive a dead demon</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='d_extract.html';" style="background-image:url('./img/100/ee/cover_pc_de.png')">
+                <h3>Dragonfruit</h3>
+                <p>Magic prodigy slave gotta use his talents to free a continent</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='h_extract.html';" style="background-image:url('./img/100/ee/cover_pc_he.png')">
+                <h3>Cherry</h3>
+                <p>Autistic girl gotta build a time machine for the Death Goddess</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='m_extract.html';" style="background-image:url('./img/100/ee/cover_pc_me.png')">
+                <h3>Mint</h3>
+                <p>Orphan teen is possessed by a high demon and gotta take it out of his body</p>
+            </td>
+        </tr>
+        <tr>
+            <td onclick="window.location.href='extracts.html';" style="background-image:url('./img/100/ee/cover_pc_extracts.png')">
+                <h3>More</h3>
+                <p>Yup, there's a lot more</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
