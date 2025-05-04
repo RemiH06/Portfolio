@@ -1,0 +1,52 @@
+img {
+    border: 0
+}
+
+div {
+    position: absolute;
+}
+
+.dragclass {
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    transition: 1s;
+    background-color:#000;
+}
+
+img {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#weeb-image,
+#vgp-image,
+#mal-image,
+#bg-image,
+#cos-image {
+    transition: all 2s ease;
+}
+
+#weeb-image:hover {
+    content: url('./img/titles/more_hover.png');
+}
+
+#vgp-image:hover {
+    content: url('./img/titles/vgp_hover.png');
+}
+
+#mal-image:hover {
+    content: url('./img/titles/mal_hover.png');
+}
+
+#bg-image:hover {
+    content: url('./img/titles/bg_hover.png');
+}
+
+#cos-image:hover {
+    content: url('./img/titles/cos_hover.png');
+}

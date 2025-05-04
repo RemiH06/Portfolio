@@ -1,0 +1,47 @@
+img {
+    border: 0
+}
+
+div {
+    position: absolute;
+}
+
+.dragclass {
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    transition: 1s;
+    background-color:#000;
+}
+
+img {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#lambda-image, 
+#about-image,
+#contact-image,
+#weeb-image {
+    transition: all 2s ease;
+}
+
+#lambda-image:hover {
+    content: url('./img/titles/hex_hover.png');
+}
+
+#about-image:hover {
+    content: url('./img/titles/about_hover.png');
+}
+
+#contact-image:hover {
+    content: url('./img/titles/contact_hover.png');
+}
+
+#weeb-image:hover {
+    content: url('./img/titles/weeb_hover.png');
+}

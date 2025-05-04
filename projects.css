@@ -1,0 +1,52 @@
+img {
+    border: 0
+}
+
+div {
+    position: absolute;
+}
+
+.dragclass {
+    position: relative;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    transition: 1s;
+    background-color:#000;
+}
+
+img {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+#projects-image,
+#sw-image,
+#hw-image,
+#cbg-image,
+#misc-image {
+    transition: all 2s ease;
+}
+
+#projects-image:hover {
+    content: url('./img/titles/projects_hover.png');
+}
+
+#sw-image:hover {
+    content: url('./img/titles/sw_hover.png');
+}
+
+#hw-image:hover {
+    content: url('./img/titles/hw_hover.png');
+}
+
+#cbg-image:hover {
+    content: url('./img/titles/cbg_hover.png');
+}
+
+#misc-image:hover {
+    content: url('./img/titles/misc_hover.png');
+}

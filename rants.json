@@ -8,5 +8,13 @@
       { "src": "./img/rants/gallery_ss1.png", "caption": "Galería a medias (ta complicao)" },
       { "src": "./img/rants/rants_ss1.png", "caption": "Rants, creo que lo voy a dejar así" }
     ]
+  },
+  {
+    "date": "2025-05-05",
+    "location": "Guadalajara",
+    "description": "Entre ayer y hoy hice 9 artes verticales para la main page de 100%, no me encantaron todos, algunos no supe qué más ponerles pero estoy satisfecho con el resultado",
+    "images": [
+      { "src": "./img/rants/100_ss1.png", "caption": "Cada uno con su propio hover, hice todos con autodesk sketchbook" }
+    ]
   }
 ]
