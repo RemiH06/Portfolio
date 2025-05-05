@@ -16,5 +16,15 @@
     "images": [
       { "src": "./img/rants/100_ss1.png", "caption": "Cada uno con su propio hover, hice todos con autodesk sketchbook" }
     ]
+  },
+  {
+    "date": "2025-05-06",
+    "location": "Guadalajara",
+    "description": "Hice clones del index para los archivos projects.html, more.html y weeb.html (este último es una subpágina de more). Cada página tiene sus propios colores y hovers, creo que cambiaré el fondo de las 3 para que no se vean idénticas al index.",
+    "images": [
+      { "src": "./img/rants/projects_ss1.png", "caption": "projects.html" },
+      { "src": "./img/rants/more_ss1.png", "caption": "more.html" },
+      { "src": "./img/rants/weeb_ss1.png", "caption": "weeb.html" }
+    ]
   }
 ]
