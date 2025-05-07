@@ -1,7 +1,7 @@
 [
   {
     "date": "2025-05-04",
-    "location": "Guadalajara",
+    "location": "Portfolio",
     "description": "Llevaba rato posponiendo la creación de un sitio para hacer mi tiradero de proyectos e ideas, finalmente anoche me puse manos a la obra y hoy escribo en rants por primera vez",
     "images": [
       { "src": "./img/rants/index_ss1.png", "caption": "Index con efectos de neón on hover" },
@@ -11,7 +11,7 @@
   },
   {
     "date": "2025-05-05",
-    "location": "Guadalajara",
+    "location": "Portfolio",
     "description": "Entre ayer y hoy hice 9 artes verticales para la main page de 100%, no me encantaron todos, algunos no supe qué más ponerles pero estoy satisfecho con el resultado",
     "images": [
       { "src": "./img/rants/100_ss1.png", "caption": "Cada uno con su propio hover, hice todos con autodesk sketchbook" }
@@ -19,12 +19,19 @@
   },
   {
     "date": "2025-05-06",
-    "location": "Guadalajara",
+    "location": "Portfolio",
     "description": "Hice clones del index para los archivos projects.html, more.html y weeb.html (este último es una subpágina de more). Cada página tiene sus propios colores y hovers, creo que cambiaré el fondo de las 3 para que no se vean idénticas al index.",
     "images": [
       { "src": "./img/rants/projects_ss1.png", "caption": "projects.html" },
       { "src": "./img/rants/more_ss1.png", "caption": "more.html" },
       { "src": "./img/rants/weeb_ss1.png", "caption": "weeb.html" }
+    ]
+  },
+  {
+    "date": "2025-05-07",
+    "location": "ITESO",
+    "description": "Los días de examen siempre tienen cierto hedor a hierro",
+    "images": [
     ]
   }
 ]

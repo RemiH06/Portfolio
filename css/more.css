@@ -31,17 +31,17 @@ img {
 }
 
 #lambda-image:hover {
-    content: url('./img/titles/hex_hover.png');
+    content: url('../img/titles/hex_hover.png');
 }
 
 #about-image:hover {
-    content: url('./img/titles/about_hover.png');
+    content: url('../img/titles/about_hover.png');
 }
 
 #contact-image:hover {
-    content: url('./img/titles/contact_hover.png');
+    content: url('../img/titles/contact_hover.png');
 }
 
 #weeb-image:hover {
-    content: url('./img/titles/weeb_hover.png');
+    content: url('../img/titles/weeb_hover.png');
 }

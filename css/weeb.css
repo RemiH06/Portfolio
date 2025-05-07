@@ -32,21 +32,21 @@ img {
 }
 
 #weeb-image:hover {
-    content: url('./img/titles/more_hover.png');
+    content: url('../img/titles/more_hover.png');
 }
 
 #vgp-image:hover {
-    content: url('./img/titles/vgp_hover.png');
+    content: url('../img/titles/vgp_hover.png');
 }
 
 #mal-image:hover {
-    content: url('./img/titles/mal_hover.png');
+    content: url('../img/titles/mal_hover.png');
 }
 
 #bg-image:hover {
-    content: url('./img/titles/bg_hover.png');
+    content: url('../img/titles/bg_hover.png');
 }
 
 #cos-image:hover {
-    content: url('./img/titles/cos_hover.png');
+    content: url('../img/titles/cos_hover.png');
 }

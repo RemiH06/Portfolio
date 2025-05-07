@@ -17,7 +17,7 @@ async function renderTable(jsonPath, tableId, isMobile) {
     td.appendChild(h3);
     td.appendChild(p);
 
-    // en móvil, cada <td> va en su propia fila
+    // rows for mobile
     if (isMobile) {
       const newRow = document.createElement("tr");
       newRow.appendChild(td);
@@ -33,6 +33,6 @@ async function renderTable(jsonPath, tableId, isMobile) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderTable("100desktop.json", "desktop-table", false);
-  renderTable("100mobile.json", "mobile-table", true);
+  renderTable("../json/100desktop.json", "desktop-table", false);
+  renderTable("../json/100mobile.json", "mobile-table", true);
 });

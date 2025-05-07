@@ -34,29 +34,29 @@ img {
 }
 
 #hex-image:hover {
-    content: url('./img/titles/hex_hover.png');
+    content: url('../img/titles/hex_hover.png');
 }
 
 #cv-image:hover {
-    content: url('./img/titles/cv_hover.png');
+    content: url('../img/titles/cv_hover.png');
 }
 
 #projects-image:hover {
-    content: url('./img/titles/projects_hover.png');
+    content: url('../img/titles/projects_hover.png');
 }
 
 #t100-image:hover {
-    content: url('./img/titles/100_hover.png');
+    content: url('../img/titles/100_hover.png');
 }
 
 #lambda-image:hover {
-    content: url('./img/titles/more_hover.png');
+    content: url('../img/titles/more_hover.png');
 }
 
 #rants-image:hover {
-    content: url('./img/titles/rants_hover.png');
+    content: url('../img/titles/rants_hover.png');
 }
 
 #gallery-image:hover {
-    content: url('./img/titles/gallery_hover.png');
+    content: url('../img/titles/gallery_hover.png');
 }

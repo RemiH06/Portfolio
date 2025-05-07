@@ -5,145 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>100</title>
+    <link rel="stylesheet" type="text/css" href="./css/100.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-            font-family: 'Montserrat', sans-serif;
-        }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            table-layout: fixed;
-        }
-
-        .desktop-table td,
-        .mobile-table td {
-            position: relative;
-            padding: 20px;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-            transition: box-shadow 0.3s ease;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #fff;
-        }
-
-        .desktop-table {
-            display: table;
-            height: 100vh;
-        }
-
-        .desktop-table tr {
-            height: 100%;
-        }
-
-        .desktop-table td {
-            width: 11.11%;
-        }
-
-
-        /* Glow */
-        .desktop-table td:nth-child(1):hover {
-            box-shadow: inset 0 0 20px 5px rgba(128, 0, 255, 0.6), inset 0 0 40px 10px rgba(128, 0, 255, 0.4), inset 0 0 60px 15px rgba(128, 0, 255, 0.2);
-        }
-
-        .desktop-table td:nth-child(2):hover {
-            box-shadow: inset 0 0 20px 5px rgba(255, 119, 0, 0.6), inset 0 0 40px 10px rgba(255, 119, 0, 0.4), inset 0 0 60px 15px rgba(255, 119, 0, 0.2);
-        }
-
-        .desktop-table td:nth-child(3):hover {
-            box-shadow: inset 0 0 20px 5px rgba(255, 250, 107, 0.6), inset 0 0 40px 10px rgba(255, 250, 107, 0.4), inset 0 0 60px 15px rgba(255, 250, 107, 0.2);
-        }
-
-        .desktop-table td:nth-child(4):hover {
-            box-shadow: inset 0 0 20px 5px rgba(31, 120, 244, 0.6), inset 0 0 40px 10px rgba(31, 120, 244, 0.4), inset 0 0 60px 15px rgba(31, 120, 244, 0.2);
-        }
-
-        .desktop-table td:nth-child(5):hover {
-            box-shadow: inset 0 0 20px 5px rgba(147, 97, 0, 0.6), inset 0 0 40px 10px rgba(147, 97, 0, 0.4), inset 0 0 60px 15px rgba(147, 97, 0, 0.2);
-        }
-
-        .desktop-table td:nth-child(6):hover {
-            box-shadow: inset 0 0 20px 5px rgba(255, 0, 149, 0.6), inset 0 0 40px 10px rgba(255, 0, 149, 0.4), inset 0 0 60px 15px rgba(255, 0, 149, 0.2);
-        }
-
-        .desktop-table td:nth-child(7):hover {
-            box-shadow: inset 0 0 20px 5px rgba(160, 0, 0, 0.6), inset 0 0 40px 10px rgba(160, 0, 0, 0.4), inset 0 0 60px 15px rgba(160, 0, 0, 0.2);
-        }
-
-        .desktop-table td:nth-child(8):hover {
-            box-shadow: inset 0 0 20px 5px rgba(45, 215, 0, 0.6), inset 0 0 40px 10px rgba(45, 215, 0, 0.4), inset 0 0 60px 15px rgba(45, 215, 0, 0.2);
-        }
-
-        .desktop-table td:nth-child(9):hover {
-            box-shadow: inset 0 0 20px 5px rgba(0, 255, 255, 0.6), inset 0 0 40px 10px rgba(0, 255, 255, 0.4), inset 0 0 60px 15px rgba(0, 255, 255, 0.2);
-        }
-
-
-        /* Mobile version */
-        .mobile-table {
-            display: none;
-        }
-
-        .mobile-table td {
-            border-bottom: 1px solid #444;
-        }
-
-        .mobile-table tr:nth-child(1) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(128, 0, 255, 0.6), inset 0 0 40px 10px rgba(128, 0, 255, 0.4), inset 0 0 60px 15px rgba(128, 0, 255, 0.2);
-        }
-
-        .mobile-table tr:nth-child(2) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(255, 119, 0, 0.6), inset 0 0 40px 10px rgba(255, 119, 0, 0.4), inset 0 0 60px 15px rgba(255, 119, 0, 0.2);
-        }
-
-        .mobile-table tr:nth-child(3) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(255, 250, 107, 0.6), inset 0 0 40px 10px rgba(255, 250, 107, 0.4), inset 0 0 60px 15px rgba(255, 250, 107, 0.2);
-        }
-
-        .mobile-table tr:nth-child(4) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(31, 120, 244, 0.6), inset 0 0 40px 10px rgba(31, 120, 244, 0.4), inset 0 0 60px 15px rgba(31, 120, 244, 0.2);
-        }
-
-        .mobile-table tr:nth-child(5) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(147, 97, 0, 0.6), inset 0 0 40px 10px rgba(147, 97, 0, 0.4), inset 0 0 60px 15px rgba(147, 97, 0, 0.2);
-        }
-
-        .mobile-table tr:nth-child(6) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(255, 0, 149, 0.6), inset 0 0 40px 10px rgba(255, 0, 149, 0.4), inset 0 0 60px 15px rgba(255, 0, 149, 0.2);
-        }
-
-        .mobile-table tr:nth-child(7) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(160, 0, 0, 0.6), inset 0 0 40px 10px rgba(160, 0, 0, 0.4), inset 0 0 60px 15px rgba(160, 0, 0, 0.2);
-        }
-
-        .mobile-table tr:nth-child(8) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(45, 215, 0, 0.6), inset 0 0 40px 10px rgba(45, 215, 0, 0.4), inset 0 0 60px 15px rgba(45, 215, 0, 0.2);
-        }
-
-        .mobile-table tr:nth-child(9) td:hover {
-            box-shadow: inset 0 0 20px 5px rgba(0, 255, 255, 0.6), inset 0 0 40px 10px rgba(0, 255, 255, 0.4), inset 0 0 60px 15px rgba(0, 255, 255, 0.2);
-        }
-
-
-        @media (max-width: 768px) {
-            .desktop-table {
-                display: none;
-            }
-
-            .mobile-table {
-                display: table;
-            }
-        }
     </style>
 </head>
 
@@ -154,7 +19,7 @@
     <!-- Mobile -->
     <table id="mobile-table" class="mobile-table"></table>
 
-    <script src="./100.js"></script>
+    <script src="./js/100.js"></script>
 </body>
 
 </html>

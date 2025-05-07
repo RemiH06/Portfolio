@@ -32,21 +32,21 @@ img {
 }
 
 #projects-image:hover {
-    content: url('./img/titles/projects_hover.png');
+    content: url('../img/titles/projects_hover.png');
 }
 
 #sw-image:hover {
-    content: url('./img/titles/sw_hover.png');
+    content: url('../img/titles/sw_hover.png');
 }
 
 #hw-image:hover {
-    content: url('./img/titles/hw_hover.png');
+    content: url('../img/titles/hw_hover.png');
 }
 
 #cbg-image:hover {
-    content: url('./img/titles/cbg_hover.png');
+    content: url('../img/titles/cbg_hover.png');
 }
 
 #misc-image:hover {
-    content: url('./img/titles/misc_hover.png');
+    content: url('../img/titles/misc_hover.png');
 }
