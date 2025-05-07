@@ -3,7 +3,7 @@ const totalPanels = 10;
 let isScrolling = false;
 
 async function loadProjects() {
-    const response = await fetch('../json/sw.json');
+    const response = await fetch('s./json/sw.json');
     const projects = await response.json();
     const container = document.getElementById('scrollContainer');
 

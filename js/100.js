@@ -33,6 +33,6 @@ async function renderTable(jsonPath, tableId, isMobile) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderTable("../json/100desktop.json", "desktop-table", false);
-  renderTable("../json/100mobile.json", "mobile-table", true);
+  renderTable("./json/100desktop.json", "desktop-table", false);
+  renderTable("./json/100mobile.json", "mobile-table", true);
 });

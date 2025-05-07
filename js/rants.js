@@ -1,7 +1,7 @@
 let allEntries = [];
 
 // 1) Carga de json
-fetch('../json/rants.json')
+fetch('./json/rants.json')
     .then(res => res.json())
     .then(data => {
         allEntries = data.map(e => ({
