@@ -20,7 +20,7 @@
   {
     "date": "2025-05-06",
     "location": "Portfolio",
-    "description": "Hice clones del index para los archivos projects.html, more.html y weeb.html (este último es una subpágina de more). Cada página tiene sus propios colores y hovers, creo que cambiaré el fondo de las 3 para que no se vean idénticas al index.",
+    "description": "Hice clones del index para los archivos projects.html, more.html y weeb.html (este último siendo una subpágina de more). Cada página tiene sus propios colores y hovers, creo que cambiaré el fondo de las 3 para que no se vean idénticas al index.",
     "images": [
       { "src": "./img/rants/projects_ss1.png", "caption": "projects.html" },
       { "src": "./img/rants/more_ss1.png", "caption": "more.html" },
@@ -32,6 +32,15 @@
     "location": "ITESO",
     "description": "Los días de examen siempre tienen cierto hedor a hierro",
     "images": [
+    ]
+  },
+  {
+    "date": "2025-05-07",
+    "location": "Portfolio",
+    "description": "Organizé el árbol y creé la sección de proyectos de software",
+    "images": [
+      { "src": "./img/rants/dirs_ss1.png", "caption": "Nuevo treeview (quería hacer la comparativa pero no tomé captura del antes)" },
+      { "src": "./img/rants/sw_ss1.png", "caption": "También esto saca los objetos tipo panel de su propio json" }
     ]
   }
 ]

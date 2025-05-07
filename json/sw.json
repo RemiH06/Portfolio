@@ -1,11 +1,11 @@
 [
     {
-        "nombre": "",
-        "autor": "",
-        "descripcion": "",
-        "utilidad": "",
-        "lenguajes": ["", "", ""],
-        "herramientas": ["", ""],
+        "nombre": "a",
+        "autor": "b",
+        "descripcion": "c",
+        "utilidad": "d",
+        "lenguajes": ["e", "f", "g"],
+        "herramientas": ["h", "i", "j"],
         "imagenes": [
             "",
             "",

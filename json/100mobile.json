@@ -2,55 +2,55 @@
   {
     "title": "Taro",
     "description": "Genesis, lore and worldbuilding",
-    "image": "../img/100/ee/cover_pc_te.png",
-    "link": "../t_extract.html"
+    "image": "./img/100/ee/cover_pc_te.png",
+    "link": "./t_extract.html"
   },
   {
     "title": "Rhubarb",
     "description": "Stories and even more lore",
-    "image": "../img/100/ee/cover_pc_re.png",
-    "link": "../r_extract.html"
+    "image": "./img/100/ee/cover_pc_re.png",
+    "link": "./r_extract.html"
   },
   {
     "title": "Vanilla",
     "description": "Kid with cancer gotta kill God of Thunder",
-    "image": "../img/100/ee/cover_pc_ve.png",
-    "link": "../v_extract.html"
+    "image": "./img/100/ee/cover_pc_ve.png",
+    "link": "./v_extract.html"
   },
   {
     "title": "Blueberry",
     "description": "Old ah time wizard gotta save two towns at once (both places are separated by a frozen ocean)",
-    "image": "../img/100/ee/cover_pc_be.png",
-    "link": "../b_extract.html"
+    "image": "./img/100/ee/cover_pc_be.png",
+    "link": "./b_extract.html"
   },
   {
     "title": "Cinnamon",
     "description": "Blind girl gotta cross the globe cause her brother wants to revive an ancient demon",
-    "image": "../img/100/ee/cover_pc_ce.png",
-    "link": "../c_extract.html"
+    "image": "./img/100/ee/cover_pc_ce.png",
+    "link": "./c_extract.html"
   },
   {
     "title": "Dragonfruit",
     "description": "Magic prodigy slave gotta use his talents to free a continent",
-    "image": "../img/100/ee/cover_pc_de.png",
-    "link": "../d_extract.html"
+    "image": "./img/100/ee/cover_pc_de.png",
+    "link": "./d_extract.html"
   },
   {
     "title": "Cherry",
     "description": "Autistic girl gotta build a time machine for the Death Goddess",
-    "image": "../img/100/ee/cover_pc_he.png",
-    "link": "../h_extract.html"
+    "image": "./img/100/ee/cover_pc_he.png",
+    "link": "./h_extract.html"
   },
   {
     "title": "Mint",
     "description": "Orphan teen is possessed by a high demon and gotta take it out of his body",
-    "image": "../img/100/ee/cover_pc_me.png",
-    "link": "../m_extract.html"
+    "image": "./img/100/ee/cover_pc_me.png",
+    "link": "./m_extract.html"
   },
   {
     "title": "More",
     "description": "Yup, there's a lot more",
-    "image": "../img/100/ee/cover_pc_extracts.png",
-    "link": "../extracts.html"
+    "image": "./img/100/ee/cover_pc_extracts.png",
+    "link": "./extracts.html"
   }
 ]
