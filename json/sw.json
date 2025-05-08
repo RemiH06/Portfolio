@@ -1,16 +1,28 @@
 [
     {
-        "nombre": "a",
-        "autor": "b",
-        "descripcion": "c",
-        "utilidad": "d",
-        "lenguajes": ["e", "f", "g"],
-        "herramientas": ["h", "i", "j"],
+        "nombre": "Cream Based Dialect",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "My own programming language. Runs over C# and it's my approach for a modern version of ASM.",
+        "status": "Concluded",
+        "lenguajes": ["C#", "CBD"],
+        "herramientas": ["VS"],
         "imagenes": [
-            "",
-            "",
-            "",
-            ""
+            { "src": "./img/sw/cbd_ss1.png", "caption": "Interpreter in blank, VS with the code on the background" }
+        ],
+        "github": "https://github.com/HectorH06/Portfolio"
+    },
+    {
+        "nombre": "SaveTrack",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "Financial Organization App with an account system, calendar, event scheduler, incomes and outcomes with custom labels and more!",
+        "status": "Concluded",
+        "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
+        "herramientas": ["Android Studio", "Gradle", "XML"],
+        "imagenes": [
+            { "src": "./img/sw/savetrack_ss1.png", "caption": "Login" },
+            { "src": "./img/sw/savetrack_ss2.png", "caption": "Expenses list example" },
+            { "src": "./img/sw/savetrack_ss3.png", "caption": "Calendar with its label filter" },
+            { "src": "./img/sw/savetrack_ss4.png", "caption": "Finance plots" }
         ],
         "github": "https://github.com/HectorH06/Portfolio"
     }

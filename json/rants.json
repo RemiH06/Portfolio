@@ -42,5 +42,21 @@
       { "src": "./img/rants/dirs_ss1.png", "caption": "Nuevo treeview (quería hacer la comparativa pero no tomé captura del antes)" },
       { "src": "./img/rants/sw_ss1.png", "caption": "También esto saca los objetos tipo panel de su propio json" }
     ]
+  },
+  {
+    "date": "2025-05-08",
+    "location": "ITESO",
+    "description": "Además de haber tenido un día pesado en el trabajo, siento que no he podido estudiar nada de nada",
+    "images": [
+    ]
+  },
+  {
+    "date": "2025-05-09",
+    "location": "Portfolio",
+    "description": "Hice mejoras estéticas al apartado de proyectos de software",
+    "images": [
+      { "src": "./img/rants/sw_ss2.png", "caption": "Primer panel" },
+      { "src": "./img/rants/sw_ss3.png", "caption": "Ejemplo de proyecto" }
+    ]
   }
 ]

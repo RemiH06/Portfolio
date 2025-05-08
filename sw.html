@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Projects</title>
     <link rel="stylesheet" type="text/css" href="./css/scroll.css">
+    <link rel="stylesheet" type="text/css" href="./css/neon.css">
+    <link rel="stylesheet" type="text/css" href="./css/glow.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,21 +17,23 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.25 3.44 9.68 8.19 11.29.6.11.81-.26.81-.58v-2.06c-3.33.72-4.03-1.61-4.03-1.61-.54-1.36-1.33-1.73-1.33-1.73-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.77.42-1.3.76-1.6-2.67-.3-5.46-1.34-5.46-5.97 0-1.32.47-2.4 1.25-3.24-.13-.31-.54-1.56.12-3.25 0 0 1.02-.32 3.34 1.24a11.51 11.51 0 0 1 3.03-.41c1.02 0 2.05.14 3.02.41 2.32-1.56 3.34-1.24 3.34-1.24.67 1.69.25 2.94.12 3.25.78.84 1.25 1.92 1.25 3.24 0 4.64-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.28c0 .32.2.69.81.58 4.76-1.61 8.19-6.03 8.19-11.28 0-6.63-5.37-12-12-12z"></path></svg>
             </a>
             <h1>Software Projects</h1>
-            <p><strong>Author:</strong> Hex (Remi Heredia)</p>
-            <p><strong>Description</strong> Here you will find my projects :D</p>
-            <p><strong>Utility</strong> </p>
-            <p><strong>Langs & Tools:</strong> </p>
-            <div class="imagenes-proyecto">
-                <img src="" alt="Img">
-                <img src="" alt="Img">
-                <img src="" alt="Img">
-                <img src="" alt="Img">
+            <h2>Author(s): Hex (Remi Heredia) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Status: Not Dead &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Langs & Tools: JS, HTML/CSS | Autodesk Sketchbook</h2>
+            <p>Here you will only find software projects, all of them, to go back click on the 学</p>
+            <div>
+                <a href="./projects.html"> 
+                    <div class="img-container">
+                        <img id="sw-image" class="dragclass" 
+                            onload="this.classList.add('loaded');"
+                            src="./img/titles/xue.png"
+                            alt="Projects">
+                    </div>
+                </a>
             </div>
             <button class="down" onclick="scrollToPanel(2)">&#x2193;</button>
         </div>
-        <!-- Los paneles adicionales se generarán dinámicamente -->
     </div>
 
     <script src="./js/scroll.js"></script>
+    <script src="./js/glow.js"></script>
 </body>
 </html>

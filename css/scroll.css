@@ -1,3 +1,11 @@
+:root {
+    --dark-bg: #0d0d0d;
+    --panel-bg: #1a1a1a;
+    --text-color: #ececec;
+    --subtext: #aaaaaa;
+    --accent: #cc0000;
+  }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -60,7 +68,14 @@ button {
 }
 
 .panel p {
-    font-size: 3vh;
+    font-size: 3.5vh;
+    margin: 0.5em 0;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+.panel h2 {
+    font-size: 2vh;
     margin: 0.5em 0;
     line-height: 1.4;
     max-width: 90%;
@@ -78,7 +93,7 @@ button {
     width: 100%;
     height: auto;
     max-width: 90%;
-    max-height: 40vh;
+    max-height: 20vh;
     object-fit: contain;
 }
 
@@ -110,4 +125,19 @@ button {
 
 .github-button span {
     margin-right: 10px;
+}
+
+h3 {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 2px;
+    color: var(--subtext);
+}
+
+#sw-image {
+    transition: all 2s ease;
+}
+
+#sw-image:hover {
+    content: url('../img/titles/sw_hover.png');
 }
