@@ -9,7 +9,7 @@
         "imagenes": [
             { "src": "./img/sw/cbd_ss1.png", "caption": "Interpreter in blank, VS with the code on the background" }
         ],
-        "github": "https://github.com/HectorH06/Portfolio"
+        "github": "https://github.com/HectorH06/CreamBasedDialectV2"
     },
     {
         "nombre": "SaveTrack",
@@ -24,6 +24,136 @@
             { "src": "./img/sw/savetrack_ss3.png", "caption": "Calendar with its label filter" },
             { "src": "./img/sw/savetrack_ss4.png", "caption": "Finance plots" }
         ],
-        "github": "https://github.com/HectorH06/Portfolio"
+        "github": "https://github.com/HectorH06/SaveTrack"
+    },
+    {
+        "nombre": "Persos",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/persos_ss1.png", "caption": "" },
+            { "src": "./img/sw/persos_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Persos"
+    },
+    {
+        "nombre": "Hyperchess",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/hyperchess_ss1.png", "caption": "" },
+            { "src": "./img/sw/hyperchess_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Hyperchess"
+    },
+    {
+        "nombre": "Sulfur",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/sulfur_ss1.png", "caption": "" },
+            { "src": "./img/sw/sulfur_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Sulfur"
+    },
+    {
+        "nombre": "Ryoko",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/ryoko_ss1.png", "caption": "" },
+            { "src": "./img/sw/ryoko_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Ryoko"
+    },
+    {
+        "nombre": "Anime Scraper",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/animescraper_ss1.png", "caption": "" },
+            { "src": "./img/sw/animescraper_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Anime-Scraper"
+    },
+    {
+        "nombre": "Wallpapers",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/wpps_ss1.png", "caption": "" },
+            { "src": "./img/sw/wpps_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Wallpapers"
+    },
+    {
+        "nombre": "QScheduler",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/qsch_ss1.png", "caption": "" },
+            { "src": "./img/sw/qsch_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/QScheduler"
+    },
+    {
+        "nombre": "Image Dataset Factory",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/idf_ss1.png", "caption": "" },
+            { "src": "./img/sw/idf_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Image-Dataset-Factory"
+    },
+    {
+        "nombre": "GitHub Wrapped",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/ghw_ss1.png", "caption": "" },
+            { "src": "./img/sw/ghw_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/GitHub-Wrapped"
+    },
+    {
+        "nombre": "Store Sales Forecasting",
+        "autor": "Hex (Remi Heredia)",
+        "descripcion": "",
+        "status": "Concluded",
+        "lenguajes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/sw/ssf_ss1.png", "caption": "" },
+            { "src": "./img/sw/ssf_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/Store-Sales-Forecasting"
     }
 ]
