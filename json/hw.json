@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "",
+        "autor": "Hex",
+        "descripcion": "",
+        "status": "Concluded",
+        "componentes": [""],
+        "herramientas": [""],
+        "imagenes": [
+            { "src": "./img/hw/_ss1.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/"
+    }
+]

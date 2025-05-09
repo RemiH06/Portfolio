@@ -1,7 +1,7 @@
 [
     {
         "nombre": "Cream Based Dialect",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "My own programming language. Runs over C# and it's my approach for a modern version of ASM.",
         "status": "Concluded",
         "lenguajes": ["C#", "CBD"],
@@ -13,7 +13,7 @@
     },
     {
         "nombre": "SaveTrack",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "Financial Organization App with an account system, calendar, event scheduler, incomes and outcomes with custom labels and more!",
         "status": "Concluded",
         "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
@@ -28,7 +28,7 @@
     },
     {
         "nombre": "Persos",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -41,7 +41,7 @@
     },
     {
         "nombre": "Hyperchess",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -54,7 +54,7 @@
     },
     {
         "nombre": "Sulfur",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -67,7 +67,7 @@
     },
     {
         "nombre": "Ryoko",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -80,7 +80,7 @@
     },
     {
         "nombre": "Anime Scraper",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -93,7 +93,7 @@
     },
     {
         "nombre": "Wallpapers",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -106,7 +106,7 @@
     },
     {
         "nombre": "QScheduler",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -119,7 +119,7 @@
     },
     {
         "nombre": "Image Dataset Factory",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -132,7 +132,7 @@
     },
     {
         "nombre": "GitHub Wrapped",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex & Ethan04Munoz",
         "descripcion": "",
         "status": "",
         "lenguajes": [""],
@@ -145,7 +145,7 @@
     },
     {
         "nombre": "Store Sales Forecasting",
-        "autor": "Hex (Remi Heredia)",
+        "autor": "Hex",
         "descripcion": "",
         "status": "Concluded",
         "lenguajes": [""],

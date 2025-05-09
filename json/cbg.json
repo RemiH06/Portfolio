@@ -1,0 +1,15 @@
+[
+    {
+        "nombre": "",
+        "autor": "Hex",
+        "descripcion": "",
+        "genero": "",
+        "njugadores": "",
+        "status": "",
+        "reglas": [""],
+        "imagenes": [
+            { "src": "./img/cbg/_ss1.png", "caption": "" }
+        ],
+        "github": "https://github.com/HectorH06/"
+    }
+]

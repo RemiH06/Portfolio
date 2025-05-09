@@ -134,10 +134,20 @@ h3 {
     color: var(--subtext);
 }
 
-#sw-image {
+#sw-image,
+#hw-image,
+#cbg-image {
     transition: all 2s ease;
 }
 
 #sw-image:hover {
     content: url('../img/titles/sw_hover.png');
+}
+
+#hw-image:hover {
+    content: url('../img/titles/hw_hover.png');
+}
+
+#cbg-image:hover {
+    content: url('../img/titles/cbg_hover.png');
 }
