@@ -29,10 +29,10 @@
     {
         "nombre": "Persos",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Approach for a matchmaking system, intended for custom games in LoL",
+        "status": "Stand by",
+        "lenguajes": ["Python"],
+        "herramientas": ["Riot Games API"],
         "imagenes": [
             { "src": "./img/sw/persos_ss1.png", "caption": "" },
             { "src": "./img/sw/persos_ss2.png", "caption": "" }
@@ -42,10 +42,10 @@
     {
         "nombre": "Hyperchess",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Chess, except the board is 12x12 and has like 67 switchable pieces with unique abilities",
+        "status": "In progress",
+        "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
+        "herramientas": ["Android Studio", "Gradle", "XML"],
         "imagenes": [
             { "src": "./img/sw/hyperchess_ss1.png", "caption": "" },
             { "src": "./img/sw/hyperchess_ss2.png", "caption": "" }
@@ -55,10 +55,10 @@
     {
         "nombre": "Sulfur",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "A program that turns character strings into colors",
+        "status": "Concluded",
+        "lenguajes": ["Kotlin"],
+        "herramientas": ["Hexadecimal"],
         "imagenes": [
             { "src": "./img/sw/sulfur_ss1.png", "caption": "" },
             { "src": "./img/sw/sulfur_ss2.png", "caption": "" }
@@ -68,10 +68,10 @@
     {
         "nombre": "Ryoko",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Flight data scraper. Uses several prediction and selection models, including genethic algorithms to get the best prices on custom dates and time periods",
+        "status": "In progress",
+        "lenguajes": ["Python", "R"],
+        "herramientas": ["Jupyter", "Quarto", "playwright", "selectolax", "tidyverse"],
         "imagenes": [
             { "src": "./img/sw/ryoko_ss1.png", "caption": "" },
             { "src": "./img/sw/ryoko_ss2.png", "caption": "" }
@@ -81,10 +81,10 @@
     {
         "nombre": "Anime Scraper",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Downloads massively (or not) anime episodes from anitaku",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["Jupyter", "beautifulsoup", "requests", "IDM"],
         "imagenes": [
             { "src": "./img/sw/animescraper_ss1.png", "caption": "" },
             { "src": "./img/sw/animescraper_ss2.png", "caption": "" }
@@ -94,10 +94,10 @@
     {
         "nombre": "Wallpapers",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Background animations, quite simple ones but hypnotizing",
+        "status": "Concluded",
+        "lenguajes": ["JS"],
+        "herramientas": ["HTML/CSS"],
         "imagenes": [
             { "src": "./img/sw/wpps_ss1.png", "caption": "" },
             { "src": "./img/sw/wpps_ss2.png", "caption": "" }
@@ -107,10 +107,10 @@
     {
         "nombre": "QScheduler",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Automatic cubicle scheduler so I always have a place to be at campus",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["playwright"],
         "imagenes": [
             { "src": "./img/sw/qsch_ss1.png", "caption": "" },
             { "src": "./img/sw/qsch_ss2.png", "caption": "" }
@@ -120,10 +120,10 @@
     {
         "nombre": "Image Dataset Factory",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Downloads images massively from google images about customizable topics, can classify them with AlexNet",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["Jupyter", "selenium"],
         "imagenes": [
             { "src": "./img/sw/idf_ss1.png", "caption": "" },
             { "src": "./img/sw/idf_ss2.png", "caption": "" }
@@ -133,10 +133,10 @@
     {
         "nombre": "GitHub Wrapped",
         "autor": "Hex & Ethan04Munoz",
-        "descripcion": "",
-        "status": "",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "descripcion": "Raw css and js experiments hodgepodge, uses octokit to summarize profile info and shows it unwrapped",
+        "status": "In progress",
+        "lenguajes": ["JS"],
+        "herramientas": ["HTML/CSS", "Octokit"],
         "imagenes": [
             { "src": "./img/sw/ghw_ss1.png", "caption": "" },
             { "src": "./img/sw/ghw_ss2.png", "caption": "" }
@@ -146,10 +146,10 @@
     {
         "nombre": "Store Sales Forecasting",
         "autor": "Hex",
-        "descripcion": "",
+        "descripcion": "Store Sales Forecasting for a Kaggle competition: https://www.kaggle.com/competitions/store-sales-time-series-forecasting/overview",
         "status": "Concluded",
-        "lenguajes": [""],
-        "herramientas": [""],
+        "lenguajes": ["R", "Python"],
+        "herramientas": ["Quarto", "Jupyter", "tidyverse", "catboost"],
         "imagenes": [
             { "src": "./img/sw/ssf_ss1.png", "caption": "" },
             { "src": "./img/sw/ssf_ss2.png", "caption": "" }

@@ -28,7 +28,6 @@ async function loadProjects() {
                     </div>
                 `).join('')}
             </div>
-            <button class="down" onclick="scrollToPanel(${index + 3})">&#x2193;</button>
         `;
         container.appendChild(panel);
     });
