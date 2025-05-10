@@ -20,7 +20,7 @@
   {
     "date": "2025-05-06",
     "location": "Portfolio",
-    "description": "Hice clones del index para los archivos projects.html, more.html y weeb.html (este último siendo una subpágina de more). Cada página tiene sus propios colores y hovers, creo que cambiaré el fondo de las 3 para que no se vean idénticas al index.",
+    "description": "Hice clones del index para los archivos projects.html, more.html y weeb.html (este último siendo una subpágina de more). Cada página tiene sus propios colores y hovers, creo que cambiaré el fondo de las 3 para que no se vean idénticas al index",
     "images": [
       { "src": "./img/rants/projects_ss1.png", "caption": "projects.html" },
       { "src": "./img/rants/more_ss1.png", "caption": "more.html" },
@@ -45,7 +45,7 @@
   },
   {
     "date": "2025-05-08",
-    "location": "ITESO",
+    "location": "Perso",
     "description": "Además de haber tenido un día pesado en el trabajo, siento que no he podido estudiar nada de nada",
     "images": [
     ]
@@ -57,6 +57,34 @@
     "images": [
       { "src": "./img/rants/sw_ss2.png", "caption": "Primer panel" },
       { "src": "./img/rants/sw_ss3.png", "caption": "Ejemplo de proyecto" }
+    ]
+  },
+  {
+    "date": "2025-05-10",
+    "location": "Portfolio",
+    "description": "Rellené la info de proyectos en el json pero me da flojera tomar fotos de los proyectos",
+    "images": [
+    ]
+  },
+  {
+    "date": "2025-05-10",
+    "location": "ITESO",
+    "description": "He estado haciendo demasiado en la escuela y en el trabajo, solo 5 días más de clases y podré tomarme un pequeño respiro",
+    "images": [
+    ]
+  },
+  {
+    "date": "2025-05-10",
+    "location": "Perso",
+    "description": "Amo los tacos",
+    "images": [
+    ]
+  },
+  {
+    "date": "2025-05-11",
+    "location": "Perso",
+    "description": "Es en momentos como cuando hago el portafolio que me doy cuenta de por qué le puse iroFactory a mi conjunto de proyectos",
+    "images": [
     ]
   }
 ]

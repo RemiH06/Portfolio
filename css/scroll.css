@@ -151,3 +151,8 @@ h3 {
 #cbg-image:hover {
     content: url('../img/titles/cbg_hover.png');
 }
+
+/* esconde el botón de scroll en el último panel */
+#scrollContainer .panel:last-child .down {
+  display: none;
+}

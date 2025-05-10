@@ -1,11 +1,11 @@
 [
     {
-        "nombre": "",
+        "nombre": "Kit Kat Kut",
         "autor": "Hex",
-        "descripcion": "",
-        "genero": "",
-        "njugadores": "",
-        "status": "",
+        "descripcion": "90 cards deck game, 6 suits with 15 cards each. Spades, hearts, clubs, diamonds, flags and suns. Cards from ace to 10, plus 5 high cards being bishop, knight, rook, queen and king",
+        "genero": "Cards",
+        "njugadores": "2 - 8",
+        "status": "Illustrating",
         "reglas": [""],
         "imagenes": [
             { "src": "./img/cbg/_ss1.png", "caption": "" }

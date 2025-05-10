@@ -1,11 +1,11 @@
 [
     {
-        "nombre": "",
+        "nombre": "SpiderNet",
         "autor": "Hex",
-        "descripcion": "",
-        "status": "Concluded",
-        "componentes": [""],
-        "herramientas": [""],
+        "descripcion": "Bluetooth/WiFi Jammer",
+        "status": "Concept phase",
+        "componentes": ["ESP32", "NRF24"],
+        "herramientas": ["Arduino", "C++"],
         "imagenes": [
             { "src": "./img/hw/_ss1.png", "caption": "" }
         ],
