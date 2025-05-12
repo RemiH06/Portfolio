@@ -7,7 +7,8 @@
         "lenguajes": ["C#", "CBD"],
         "herramientas": ["VS"],
         "imagenes": [
-            { "src": "./img/sw/cbd_ss1.png", "caption": "Interpreter in blank, VS with the code on the background" }
+            { "src": "./img/sw/cbd_ss1.png", "caption": "Interpreter in blank, VS with the code on the background" },
+            { "src": "./img/sw/cbd_ss2.png", "caption": "Fibonacci example" }
         ],
         "github": "https://github.com/HectorH06/CreamBasedDialectV2"
     },
@@ -29,39 +30,35 @@
     {
         "nombre": "Persos",
         "autor": "Hex",
-        "descripcion": "Approach for a matchmaking system, intended for custom games in LoL",
+        "descripcion": "Approach for a matchmaking system, intended for custom games in LoL, couldn't take pics because it seems Riot has discontinued the summoner/by-name search.",
         "status": "Stand by",
         "lenguajes": ["Python"],
         "herramientas": ["Riot Games API"],
         "imagenes": [
-            { "src": "./img/sw/persos_ss1.png", "caption": "" },
-            { "src": "./img/sw/persos_ss2.png", "caption": "" }
         ],
         "github": "https://github.com/HectorH06/Persos"
     },
     {
         "nombre": "Hyperchess",
         "autor": "Hex",
-        "descripcion": "Chess, except the board is 12x12 and has like 67 switchable pieces with unique abilities",
+        "descripcion": "Chess, except the board is 12x12 and has like 67 switchable pieces with unique abilities.",
         "status": "In progress",
         "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
         "herramientas": ["Android Studio", "Gradle", "XML"],
         "imagenes": [
-            { "src": "./img/sw/hyperchess_ss1.png", "caption": "" },
-            { "src": "./img/sw/hyperchess_ss2.png", "caption": "" }
+            { "src": "./img/sw/hyperchess_ss1.png", "caption": "The spider is a piece that acts like a queen but with less range" },
+            { "src": "./img/sw/hyperchess_ss2.png", "caption": "Creating a new piece was a challenge but with one done the rest is just a matter of time" }
         ],
         "github": "https://github.com/HectorH06/Hyperchess"
     },
     {
         "nombre": "Sulfur",
         "autor": "Hex",
-        "descripcion": "A program that turns character strings into colors",
+        "descripcion": "A program that turns character strings into colors.",
         "status": "Concluded",
         "lenguajes": ["Kotlin"],
         "herramientas": ["Hexadecimal"],
         "imagenes": [
-            { "src": "./img/sw/sulfur_ss1.png", "caption": "" },
-            { "src": "./img/sw/sulfur_ss2.png", "caption": "" }
         ],
         "github": "https://github.com/HectorH06/Sulfur"
     },
