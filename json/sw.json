@@ -66,12 +66,12 @@
         "nombre": "Ryoko",
         "autor": "Hex",
         "descripcion": "Flight data scraper. Uses several prediction and selection models, including genethic algorithms to get the best prices on custom dates and time periods",
-        "status": "In progress",
+        "status": "Updating",
         "lenguajes": ["Python", "R"],
         "herramientas": ["Jupyter", "Quarto", "playwright", "selectolax", "tidyverse"],
         "imagenes": [
-            { "src": "./img/sw/ryoko_ss1.png", "caption": "" },
-            { "src": "./img/sw/ryoko_ss2.png", "caption": "" }
+            { "src": "./img/sw/ryoko_ss1.png", "caption": "Best flight for Tokyo and its info (this was last year, did not travel)" },
+            { "src": "./img/sw/ryoko_ss2.png", "caption": "Example of how you can scrape so much info (you can save it as csv, xlsx or sql)" }
         ],
         "github": "https://github.com/HectorH06/Ryoko"
     },
@@ -83,8 +83,8 @@
         "lenguajes": ["Python"],
         "herramientas": ["Jupyter", "beautifulsoup", "requests", "IDM"],
         "imagenes": [
-            { "src": "./img/sw/animescraper_ss1.png", "caption": "" },
-            { "src": "./img/sw/animescraper_ss2.png", "caption": "" }
+            { "src": "./img/sw/animescraper_ss1.png", "caption": "Info input for the unitary download (for multi is necessary to use the python script and a df with links and anime name (csv or xlsx)" },
+            { "src": "./img/sw/animescraper_ss2.png", "caption": "Output example" }
         ],
         "github": "https://github.com/HectorH06/Anime-Scraper"
     },
@@ -96,8 +96,8 @@
         "lenguajes": ["JS"],
         "herramientas": ["HTML/CSS"],
         "imagenes": [
-            { "src": "./img/sw/wpps_ss1.png", "caption": "" },
-            { "src": "./img/sw/wpps_ss2.png", "caption": "" }
+            { "src": "./img/sw/wpps_ss1.png", "caption": "Exploding cubes" },
+            { "src": "./img/sw/wpps_ss2.png", "caption": "Exploding icosahedrons" }
         ],
         "github": "https://github.com/HectorH06/Wallpapers"
     },
@@ -109,8 +109,8 @@
         "lenguajes": ["Python"],
         "herramientas": ["playwright"],
         "imagenes": [
-            { "src": "./img/sw/qsch_ss1.png", "caption": "" },
-            { "src": "./img/sw/qsch_ss2.png", "caption": "" }
+            { "src": "./img/sw/qsch_ss1.png", "caption": "Code structure for reservations" },
+            { "src": "./img/sw/qsch_ss2.png", "caption": "It works, trust me" }
         ],
         "github": "https://github.com/HectorH06/QScheduler"
     },
@@ -122,8 +122,8 @@
         "lenguajes": ["Python"],
         "herramientas": ["Jupyter", "selenium"],
         "imagenes": [
-            { "src": "./img/sw/idf_ss1.png", "caption": "" },
-            { "src": "./img/sw/idf_ss2.png", "caption": "" }
+            { "src": "./img/sw/idf_ss1.png", "caption": "Gathering" },
+            { "src": "./img/sw/idf_ss2.png", "caption": "How is the dataset built and structured" }
         ],
         "github": "https://github.com/HectorH06/Image-Dataset-Factory"
     },
@@ -135,8 +135,8 @@
         "lenguajes": ["JS"],
         "herramientas": ["HTML/CSS", "Octokit"],
         "imagenes": [
-            { "src": "./img/sw/ghw_ss1.png", "caption": "" },
-            { "src": "./img/sw/ghw_ss2.png", "caption": "" }
+            { "src": "./img/sw/ghw_ss1.png", "caption": "First you introduce your username and scroll to find your stats wrapped up in cool slides" },
+            { "src": "./img/sw/ghw_ss2.png", "caption": "At the end a summary of all the previous info (not finished yet)" }
         ],
         "github": "https://github.com/HectorH06/GitHub-Wrapped"
     },
@@ -148,8 +148,8 @@
         "lenguajes": ["R", "Python"],
         "herramientas": ["Quarto", "Jupyter", "tidyverse", "catboost"],
         "imagenes": [
-            { "src": "./img/sw/ssf_ss1.png", "caption": "" },
-            { "src": "./img/sw/ssf_ss2.png", "caption": "" }
+            { "src": "./img/sw/ssf_ss1.png", "caption": "Best score: 0.39817" },
+            { "src": "./img/sw/ssf_ss2.png", "caption": "13 submissions" }
         ],
         "github": "https://github.com/HectorH06/Store-Sales-Forecasting"
     }
