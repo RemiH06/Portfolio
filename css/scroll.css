@@ -1,158 +1,211 @@
 :root {
-    --dark-bg: #0d0d0d;
-    --panel-bg: #1a1a1a;
-    --text-color: #ececec;
-    --subtext: #aaaaaa;
-    --accent: #cc0000;
-  }
+  --dark-bg: #0d0d0d;
+  --panel-bg: #1a1a1a;
+  --text-color: #ececec;
+  --subtext: #aaaaaa;
+  --accent: #cc0000;
+}
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-y: hidden;
-    font-family: 'Hubot Sans', sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: hidden;
+  font-family: "Hubot Sans", sans-serif;
 }
 .container {
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 button {
-    position: absolute;
-    font-size: 1.5rem;
-    padding: 10px;
-    cursor: pointer;
-    font-family: 'Hubot Sans', sans-serif;
+  position: absolute;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Hubot Sans", sans-serif;
 }
-.up { top: 10px; }
-.down { bottom: 10px; }
+.up {
+  top: 10px;
+}
+.down {
+  bottom: 10px;
+}
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .panel {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 2rem;
-    color: aliceblue;
-    background: black;
-    scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  color: aliceblue;
+  background: black;
+  scroll-snap-align: start;
 
-    height: 100vh;
-    padding: 10px;
-    overflow-y: auto;
-    text-align: center;
-    box-sizing: border-box;
-    flex: none;
-    position: relative;
+  height: 100vh;
+  padding: 10px;
+  overflow-y: auto;
+  text-align: center;
+  box-sizing: border-box;
+  flex: none;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .panel h1 {
-    font-size: 6vw;
-    margin: 0.5em 0;
+  font-size: 6vw;
+  margin: 0.5em 0;
 }
 
 .panel p {
-    font-size: 3.5vh;
-    margin: 0.5em 0;
-    line-height: 1.4;
-    max-width: 90%;
+  font-size: 3.5vh;
+  margin: 0.5em 0;
+  line-height: 1.4;
+  max-width: 90%;
 }
 
 .panel h2 {
-    font-size: 2vh;
-    margin: 0.5em 0;
-    line-height: 1.4;
-    max-width: 90%;
+  font-size: 2vh;
+  margin: 0.5em 0;
+  line-height: 1.4;
+  max-width: 90%;
 }
 
 .panel .imagenes-proyecto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    margin-top: 1em;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 1em;
+  width: 100%;
 }
 
 .panel .imagenes-proyecto img {
-    width: 100%;
-    height: auto;
-    max-width: 90%;
-    max-height: 20vh;
-    object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-width: 90%;
+  max-height: 20vh;
+  object-fit: contain;
 }
 
-
 .github-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #24292f;
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px 15px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    transition: all 0.3s ease;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #24292f;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .github-button:hover {
-    background-color: #444d56;
+  background-color: #444d56;
 }
 
 .github-button svg {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .github-button span {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 h3 {
-    font-size: 0.7rem;
-    text-align: center;
-    margin-top: 2px;
-    color: var(--subtext);
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 2px;
+  color: var(--subtext);
 }
 
 #sw-image,
 #hw-image,
 #cbg-image {
-    transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 #sw-image:hover {
-    content: url('../img/titles/sw_hover.png');
+  content: url("../img/titles/sw_hover.png");
 }
 
 #hw-image:hover {
-    content: url('../img/titles/hw_hover.png');
+  content: url("../img/titles/hw_hover.png");
 }
 
 #cbg-image:hover {
-    content: url('../img/titles/cbg_hover.png');
+  content: url("../img/titles/cbg_hover.png");
 }
 
 /* esconde el botón de scroll en el último panel */
 #scrollContainer .panel:last-child .down {
   display: none;
+}
+
+#hamburger {
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
+  color: aliceblue;
+}
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  color: aliceblue;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+#sidebar.open {
+  left: 0;
+}
+#sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.sidebar-name {
+  flex: 1;
+  font-size: 14px;
+}
+.sidebar-icons i {
+  font-size: 18px;
+  margin-left: 8px;
 }

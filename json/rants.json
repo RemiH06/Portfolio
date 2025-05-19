@@ -100,5 +100,19 @@
     "description": "Estoy muy cansado",
     "images": [
     ]
+  },
+  {
+    "date": "2025-05-16",
+    "location": "Portfolio",
+    "description": "Terminé de subir todas las imágenes de mis proyectos de software (concluyendo así el principal propósito de mi portafolio), no obstante, aún me queda mucho trabajo para realmente terminar este sitio",
+    "images": [
+    ]
+  },
+  {
+    "date": "2025-05-18",
+    "location": "ITESO",
+    "description": "Salí de vacaciones antier, tomaré minería de grafos en verano",
+    "images": [
+    ]
   }
 ]
