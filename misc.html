@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,24 @@
     <link rel="stylesheet" type="text/css" href="./css/glow.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="catalog-container" id="catalog"></div>
 
+<body>
+    <main>
+        <h1>Miscelaneous</h1>
+        <p>Here you will find stuff that is not necessarily related to tech. Ideas, concepts, inventions, systems,
+            methods and affitionate level investigations. To go back click on the 学</p>
+        <div>
+            <a href="./projects.html">
+                <div class="img-container">
+                    <img id="misc-image" class="dragclass" onload="this.classList.add('loaded');"
+                        src="./img/titles/xue.png" alt="Misc">
+                </div>
+            </a>
+        </div>
+    
+        <div class="catalog-container" id="catalog"></div>
+    </main>
     <script src="./js/misc.js"></script>
 </body>
+
 </html>

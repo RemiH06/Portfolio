@@ -1,11 +1,5 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
-  --dark-bg: #0d0d0d;
+  --dark-bg: #000000;
   --panel-bg: #1a1a1a;
   --text-color: #ececec;
   --subtext: #aaaaaa;
@@ -17,19 +11,68 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow-y: hidden;
   font-family: "Hubot Sans", sans-serif;
   background-color: var(--dark-bg);
+  color: aliceblue;
 }
 
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 6vw;
+  margin: 0.5em 0;
+}
+
+p {
+  font-size: 3.5vh;
+  margin: 0.5em 0;
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+h2 {
+  font-size: 2vh;
+  margin: 0.5em 0;
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+.imagenes-proyecto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.imagenes-proyecto img {
+  width: 100%;
+  height: auto;
+  max-width: 90%;
+  max-height: 20vh;
+  object-fit: contain;
+}
 
 .catalog-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/* Mantengo el resto del CSS del catalog-container igual */
 .catalog-item {
   display: flex;
   flex-direction: column;
@@ -77,4 +120,17 @@ body {
   .catalog-container {
     grid-template-columns: 1fr;
   }
+}
+
+#misc-image {
+  transition: all 2s ease;
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#misc-image:hover {
+  content: url("../img/titles/misc_hover.png");
 }
