@@ -1,0 +1,39 @@
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
+.google {
+    color: #EEB211;
+  }
+.github {
+  color: #747272;
+}
+.linkedin {
+  color: #0a66c2;
+}
+.discord {
+  color: #5865f2;
+}
+.instagram {
+  color: #e1306c;
+}
+.youtube {
+  color: #ff0000;
+}
+.twitch {
+  color: #9146ff;
+}
+.spotify {
+  color: #1db954;
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}

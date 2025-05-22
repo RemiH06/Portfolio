@@ -121,5 +121,13 @@
     "description": "Empecé a hacer el misc.html y la verdad se ve bastante bien, quizá incluso reemplace la galería (al menos parcialmente) con un diseño similar al que lleva misc",
     "images": [
     ]
+  },
+  {
+    "date": "2025-05-18",
+    "location": "Portfolio",
+    "description": "La verdad es que es una lata tomar capturas, conforme más progreso en esto más costumbre se vuelve solo trabajar sin documentar",
+    "images": [
+      { "src": "./img/rants/contact_ss1.png", "caption": "Página de contacto (aún no tiene links de todo)" }
+    ]
   }
 ]
