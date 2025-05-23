@@ -1,0 +1,21 @@
+.rules-container {
+  margin-top: 1em;
+  padding: 1em;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.rules-content {
+  font-size: 0.85rem; /* fuente más pequeña */
+  line-height: 1.5;
+  white-space: pre-wrap;
+  color: #e0e0e0;
+}
+
+.rules-container h3 {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+  color: #f0f0f0;
+}

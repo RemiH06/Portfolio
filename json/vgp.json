@@ -1,0 +1,20 @@
+[
+    {
+        "game": "SSBU",
+        "nick": "EnginE",
+        "imagen": "./img/weeb/ssbu.png",
+        "link": ""
+    },
+    {
+        "game": "Clash Royale",
+        "nick": "Khronos HH",
+        "imagen": "./img/weeb/clashR.png",
+        "link": ""
+    },
+    {
+        "game": "LoL",
+        "nick": "Hex",
+        "imagen": "./img/weeb/lol.png",
+        "link": ""
+    }
+]

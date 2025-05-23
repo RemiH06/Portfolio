@@ -6,9 +6,10 @@
         "genero": "Cards",
         "njugadores": "2 - 8",
         "status": "Illustrating",
-        "reglas": [""],
+        "reglas": "Preparation:\n1. Each player places one card in the center.\n2. Each player is dealt another card, and everyone faces it.\n3. The player with the lowest card chooses a card from the hexagon and places it in their deck, continuing down to the player with the highest card.\n4. A 3x3 card tableau is laid out face down.\n5. Play begins with the player with the highest card, and turns proceed clockwise.\n\nTurns: (Betting is allowed on all turns)\n1. Each person is dealt one card (each person should have 3 cards in their deck). All cards in the center are face down.\n2. The center card of the square is revealed, and each player, depending on their turn, may choose to exchange a card from their deck for the one in the center.\n3. When all players have passed, the corner cards are revealed, and each player may exchange one card each time.\n4. The remaining cards are revealed; no more cards may be exchanged. Each player chooses a row, column, or diagonal (such as a jack) of cards to use to complete their deck (6 total).",
         "imagenes": [
-            { "src": "./img/cbg/_ss1.png", "caption": "" }
+            { "src": "./img/cbg/kitkatkut.png", "caption": "10 cards"},
+            { "src": "./img/cbg/kitkatkut2.png", "caption": "High card example"}
         ],
         "github": "https://github.com/HectorH06/"
     }

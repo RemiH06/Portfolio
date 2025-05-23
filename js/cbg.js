@@ -24,10 +24,6 @@ async function loadProjects() {
     panel.classList.add('panel');
     panel.id = `panel${panelNumber}`;
     panel.innerHTML = `
-      <a href="${project.github}" class="github-button" target="_blank">
-        <span>Go to</span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path …/></svg>
-      </a>
       <h1>${project.nombre}</h1>
       <h2>
         Author(s): ${project.autor}
@@ -36,7 +32,10 @@ async function loadProjects() {
         &nbsp;|&nbsp; Players: ${project.njugadores}
       </h2>
       <p><strong>Description:</strong> ${project.descripcion}</p>
-      <p><strong>Rules:</strong> ${project.reglas}</p>
+      <div class="rules-container">
+        <h3>Rules:</h3>
+        <div class="rules-content">${project.reglas.replace(/\n/g, '<br>')}</div>
+      </div>
       <div class="imagenes-proyecto">
         ${project.imagenes.map(img => `
           <div class="image-item">
@@ -46,8 +45,9 @@ async function loadProjects() {
         `).join('')}
       </div>
       <button class="down" onclick="scrollToPanel(${panelNumber + 1})">&#x2193;</button>
-    `;
+      `;
     container.appendChild(panel);
+
 
     const li = document.createElement('li');
     li.classList.add('sidebar-item');
