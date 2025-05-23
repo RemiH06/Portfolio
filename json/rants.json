@@ -116,18 +116,26 @@
     ]
   },
   {
-    "date": "2025-05-18",
+    "date": "2025-05-19",
     "location": "Portfolio",
     "description": "Empecé a hacer el misc.html y la verdad se ve bastante bien, quizá incluso reemplace la galería (al menos parcialmente) con un diseño similar al que lleva misc",
     "images": [
     ]
   },
   {
-    "date": "2025-05-18",
+    "date": "2025-05-21",
     "location": "Portfolio",
     "description": "La verdad es que es una lata tomar capturas, conforme más progreso en esto más costumbre se vuelve solo trabajar sin documentar",
     "images": [
       { "src": "./img/rants/contact_ss1.png", "caption": "Página de contacto (aún no tiene links de todo)" }
+    ]
+  },
+  {
+    "date": "2025-05-23",
+    "location": "Portfolio",
+    "description": "Hice una recopilación de todos los juegos de mesa que me gustan y la vdd se ve bastante bien",
+    "images": [
+      { "src": "./img/rants/bg_ss1.png", "caption": "Es cierto que en la mayoría soy bastante malo xd" }
     ]
   }
 ]
