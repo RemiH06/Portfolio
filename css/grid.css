@@ -122,6 +122,7 @@ h2 {
   }
 }
 
+#weeb-image,
 #misc-image {
   transition: all 2s ease;
   display: block;
@@ -133,4 +134,8 @@ h2 {
 
 #misc-image:hover {
   content: url("../img/titles/misc_hover.png");
+}
+
+#weeb-image:hover {
+    content: url('../img/titles/weeb_hover.png');
 }

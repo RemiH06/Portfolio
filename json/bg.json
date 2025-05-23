@@ -1,0 +1,92 @@
+[
+    {
+        "game": "Catan",
+        "imagen": "./img/weeb/catan.png",
+        "link": ""
+    },
+    {
+        "game": "Chess",
+        "imagen": "./img/weeb/chess.png",
+        "link": ""
+    },
+    {
+        "game": "Azul",
+        "imagen": "./img/weeb/azul.png",
+        "link": ""
+    },
+    {
+        "game": "Splendor",
+        "imagen": "./img/weeb/splendor.png",
+        "link": ""
+    },
+    {
+        "game": "Hanabi",
+        "imagen": "./img/weeb/hanabi.png",
+        "link": ""
+    },
+    {
+        "game": "7 Wonders",
+        "imagen": "./img/weeb/sevenwonders.png",
+        "link": ""
+    },
+    {
+        "game": "Backgammon",
+        "imagen": "./img/weeb/backgammon.png",
+        "link": ""
+    },
+    {
+        "game": "Next Station",
+        "imagen": "./img/weeb/nextstation.png",
+        "link": ""
+    },
+    {
+        "game": "Uno",
+        "imagen": "./img/weeb/uno.png",
+        "link": ""
+    },
+    {
+        "game": "River of Gold",
+        "imagen": "./img/weeb/riverofgold.png",
+        "link": ""
+    },
+    {
+        "game": "Exploding Kittens",
+        "imagen": "./img/weeb/explodingkittens.png",
+        "link": ""
+    },
+    {
+        "game": "The Werewolves of Millers Hollow",
+        "imagen": "./img/weeb/castronegro.png",
+        "link": ""
+    },
+    {
+        "game": "Onitama",
+        "imagen": "./img/weeb/onitama.png",
+        "link": ""
+    },
+    {
+        "game": "Tiwanaku",
+        "imagen": "./img/weeb/tiwanaku.png",
+        "link": ""
+    },
+    {
+        "game": "Illustori",
+        "imagen": "./img/weeb/illustori.png",
+        "link": ""
+    },
+    {
+        "game": "Iwari",
+        "imagen": "./img/weeb/iwari.png",
+        "link": ""
+    },
+    {
+        "game": "Qawale",
+        "imagen": "./img/weeb/qawale.png",
+        "link": ""
+    },
+    {
+        "game": "Zener",
+        "imagen": "./img/weeb/zener.png",
+        "link": ""
+    }
+]
