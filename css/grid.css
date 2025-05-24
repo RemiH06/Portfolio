@@ -123,7 +123,8 @@ h2 {
 }
 
 #weeb-image,
-#misc-image {
+#misc-image,
+#gallery-image {
   transition: all 2s ease;
   display: block;
   max-width: 300px;
@@ -138,4 +139,8 @@ h2 {
 
 #weeb-image:hover {
     content: url('../img/titles/weeb_hover.png');
+}
+
+#gallery-image:hover {
+    content: url('../img/titles/gallery_hover.png');
 }
