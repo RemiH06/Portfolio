@@ -137,5 +137,12 @@
     "images": [
       { "src": "./img/rants/bg_ss1.png", "caption": "Es cierto que en la mayoría soy bastante malo xd" }
     ]
+  },
+  {
+    "date": "2025-05-24",
+    "location": "Portfolio",
+    "description": "Ya prácticamente está concluida la página, las cosas que faltan realmente todavía no las tengo así que seguiré subiendo cosas conforme pase el tiempo.",
+    "images": [
+    ]
   }
 ]
