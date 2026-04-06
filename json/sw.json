@@ -10,7 +10,7 @@
             { "src": "./img/sw/cbd_ss1.png", "caption": "Interpreter in blank, VS with the code on the background" },
             { "src": "./img/sw/cbd_ss2.png", "caption": "Fibonacci example" }
         ],
-        "github": "https://github.com/HectorH06/CreamBasedDialectV2"
+        "github": "https://github.com/RemiH06/CreamBasedDialectV2"
     },
     {
         "nombre": "SaveTrack",
@@ -25,7 +25,7 @@
             { "src": "./img/sw/savetrack_ss3.png", "caption": "Calendar with its label filter" },
             { "src": "./img/sw/savetrack_ss4.png", "caption": "Finance plots" }
         ],
-        "github": "https://github.com/HectorH06/SaveTrack"
+        "github": "https://github.com/RemiH06/SaveTrack"
     },
     {
         "nombre": "Persos",
@@ -36,7 +36,7 @@
         "herramientas": ["Riot Games API"],
         "imagenes": [
         ],
-        "github": "https://github.com/HectorH06/Persos"
+        "github": "https://github.com/RemiH06/Persos"
     },
     {
         "nombre": "Hyperchess",
@@ -49,7 +49,7 @@
             { "src": "./img/sw/hyperchess_ss1.png", "caption": "The spider is a piece that acts like a queen but with less range" },
             { "src": "./img/sw/hyperchess_ss2.png", "caption": "Creating a new piece was a challenge but with one done the rest is just a matter of time" }
         ],
-        "github": "https://github.com/HectorH06/Hyperchess"
+        "github": "https://github.com/RemiH06/Hyperchess"
     },
     {
         "nombre": "Sulfur",
@@ -60,7 +60,7 @@
         "herramientas": ["Hexadecimal"],
         "imagenes": [
         ],
-        "github": "https://github.com/HectorH06/Sulfur"
+        "github": "https://github.com/RemiH06/Sulfur"
     },
     {
         "nombre": "Ryoko",
@@ -73,7 +73,7 @@
             { "src": "./img/sw/ryoko_ss1.png", "caption": "Best flight for Tokyo and its info (this was last year, did not travel)" },
             { "src": "./img/sw/ryoko_ss2.png", "caption": "Example of how you can scrape so much info (you can save it as csv, xlsx or sql)" }
         ],
-        "github": "https://github.com/HectorH06/Ryoko"
+        "github": "https://github.com/RemiH06/Ryoko"
     },
     {
         "nombre": "Anime Scraper",
@@ -86,7 +86,7 @@
             { "src": "./img/sw/animescraper_ss1.png", "caption": "Info input for the unitary download (for multi is necessary to use the python script and a df with links and anime name (csv or xlsx)" },
             { "src": "./img/sw/animescraper_ss2.png", "caption": "Output example" }
         ],
-        "github": "https://github.com/HectorH06/Anime-Scraper"
+        "github": "https://github.com/RemiH06/Anime-Scraper"
     },
     {
         "nombre": "Wallpapers",
@@ -99,7 +99,7 @@
             { "src": "./img/sw/wpps_ss1.png", "caption": "Exploding cubes" },
             { "src": "./img/sw/wpps_ss2.png", "caption": "Exploding icosahedrons" }
         ],
-        "github": "https://github.com/HectorH06/Wallpapers"
+        "github": "https://github.com/RemiH06/Wallpapers"
     },
     {
         "nombre": "QScheduler",
@@ -112,7 +112,7 @@
             { "src": "./img/sw/qsch_ss1.png", "caption": "Code structure for reservations" },
             { "src": "./img/sw/qsch_ss2.png", "caption": "It works, trust me" }
         ],
-        "github": "https://github.com/HectorH06/QScheduler"
+        "github": "https://github.com/RemiH06/QScheduler"
     },
     {
         "nombre": "Image Dataset Factory",
@@ -125,7 +125,7 @@
             { "src": "./img/sw/idf_ss1.png", "caption": "Gathering" },
             { "src": "./img/sw/idf_ss2.png", "caption": "How is the dataset built and structured" }
         ],
-        "github": "https://github.com/HectorH06/Image-Dataset-Factory"
+        "github": "https://github.com/RemiH06/Image-Dataset-Factory"
     },
     {
         "nombre": "GitHub Wrapped",
@@ -138,7 +138,7 @@
             { "src": "./img/sw/ghw_ss1.png", "caption": "First you introduce your username and scroll to find your stats wrapped up in cool slides" },
             { "src": "./img/sw/ghw_ss2.png", "caption": "At the end a summary of all the previous info (not finished yet)" }
         ],
-        "github": "https://github.com/HectorH06/GitHub-Wrapped"
+        "github": "https://github.com/RemiH06/GitHub-Wrapped"
     },
     {
         "nombre": "Store Sales Forecasting",
@@ -151,6 +151,6 @@
             { "src": "./img/sw/ssf_ss1.png", "caption": "Best score: 0.39817" },
             { "src": "./img/sw/ssf_ss2.png", "caption": "13 submissions" }
         ],
-        "github": "https://github.com/HectorH06/Store-Sales-Forecasting"
+        "github": "https://github.com/RemiH06/Store-Sales-Forecasting"
     }
 ]

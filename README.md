@@ -8,7 +8,7 @@
 ██║     ╚██████╔╝██║  ██║   ██║   ██║     ╚██████╔╝███████╗██║╚██████╔╝
 ╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝      ╚═════╝ ╚══════╝╚═╝ ╚═════╝ 
 
-       by HectorH06 (@HectorH06)          version 1.0
+       by RemiH06 (@RemiH06)          version 1.0
 ```
 
 ## :cook:
@@ -19,8 +19,6 @@ Here you will find the projects I'm currently working on as well as the ones I'v
 ## Currently working on:
 
 - This very repo!
-- [GitHub Wrapped](https://github.com/HectorH06/GitHub-Wrapped)
-- [Ryoko](https://github.com/HectorH06/Ryoko)
 - Tacology (coming soon)
 - Mapo (coming soon)
 - Javis (coming soon)

@@ -7,6 +7,8 @@
       <h3>🔭 What I'm working on:</h3>
       <ul>
         <li>Currently working as BI Analyst at<strong>IntouchCX</strong></li>
+        <li>Developing <strong>Bakery: Frambuesa-yi</strong></li>
+        <li>Developing <strong>SpiderNet</strong></li>
         <li>Developing <strong>Ryoko</strong></li>
         <li>Developing <strong>Mapo</strong></li>
         <li>Developing <strong>Tacology</strong></li>
@@ -19,6 +21,7 @@
         <li>Machine Learning</li>
         <li>Forecasting Methods</li>
         <li>UX/UI Design</li>
+        <li>Chinese</li>
       </ul>
     </td>
     <!-- Widgets -->
@@ -31,8 +34,8 @@
       <p>🧮 Recent projects:</p>
       <a href="https://github.com/RemiH06/Mapo" target="_blank">
         <img src="https://github-readme-stats.vercel.app/api/pin?username=RemiH06&repo=mapo&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515" alt="Repo"/>
-      <a href="https://github.com/RemiH06/QScheduler" target="_blank">
-        <img src="https://github-readme-stats.vercel.app/api/pin?username=RemiH06&repo=qscheduler&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515" alt="Repo"/>
+      <a href="https://github.com/RemiH06/SpiderNet" target="_blank">
+        <img src="https://github-readme-stats.vercel.app/api/pin?username=RemiH06&repo=spidernet&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515" alt="Repo"/>
         <a href="https://github.com/RemiH06/Ryoko" target="_blank">
         <img src="https://github-readme-stats.vercel.app/api/pin?username=RemiH06&repo=Ryoko&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515" alt="Repo"/>
       </a>
@@ -44,8 +47,8 @@
     <td valign="top">
       <h3>⛓️ Looking to collaborate on:</h3>
       <ul>
-        <li>Frontend Development</li>
-        <li>UX/UI Design</li>
+        <li>Frontend</li>
+        <li>NoSQL</li>
       </ul>
       <h3>💬 Ask me about:</h3>
       <ul>
@@ -71,7 +74,7 @@
       </p>
       <h3>😄 Pronouns:</h3>
       <ul>
-        <li>He/She/They</li>
+        <li>They/She/He</li>
       </ul>
     </td>
   </tr>
