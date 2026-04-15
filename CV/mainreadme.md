@@ -63,7 +63,7 @@
     <td valign="top">
       <h3>📫 How to reach me:</h3>
       <p>
-        <a href="https://www.linkedin.com/in/héctor-alonso-heredia-pérez-aa04ab240" target="_blank">
+        <a href="https://www.linkedin.com/in/lambda-remiel-heredia-pérez-aa04ab240" target="_blank">
           <img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
         </a>
       </p>
