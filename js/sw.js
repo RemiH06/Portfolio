@@ -1,5 +1,4 @@
 let currentPanel = 1;
-let isScrolling = false;
 
 // icons by devicon
 const iconMap = {
@@ -18,8 +17,8 @@ const iconMap = {
   "Android Studio": "devicon-androidstudio-plain",
   Gradle: "devicon-gradle-plain",
   XML: "devicon-xml5-plain",
-  "Riot Games API": "devicon-json-plain",
-  Hexadecimal: "devicon-hexadecimal-plain",
+  "Riot Games API": null,
+  Hexadecimal: null,
   Jupyter: "devicon-jupyter-plain",
   Quarto: "devicon-rstudio-plain",
   playwright: "devicon-playwright-plain",
@@ -31,8 +30,44 @@ const iconMap = {
   "HTML/CSS": "devicon-html5-plain",
   Octokit: "devicon-github-plain",
   selenium: "devicon-selenium-plain",
-  catboost: "devicon-kaggle-plain",
+  catboost: null,
+  "C++": "devicon-cplusplus-plain",
+  FastAPI: "devicon-fastapi-plain",
+  Scikit: "devicon-scikitlearn-plain",
+  Dart: "devicon-dart-plain",
+  Flutter: "devicon-flutter-plain",
+  React: "devicon-react-original",
+  "Node.js": "devicon-nodejs-plain",
+  Airflow: "devicon-apacheairflow-plain",
+  Kafka: "devicon-apachekafka-original",
+  Docker: "devicon-docker-plain",
+  PyTorch: "devicon-pytorch-original",
+  TensorFlow: "devicon-tensorflow-original",
+  NumPy: "devicon-numpy-plain",
+  "Nothing SDK": null,
+  "YouTube API": null,
+  "Spotify API": null,
+  "Discord API": null,
+  "OpenAI API": null,
+  "Overpass": null,
+  "Open-Meteo API": null,
+  "TomTom": null,
+  NetworkX: "devicon-networkx-plain",
+  "Ray RLib": null,
+  Gymnasium: null,
+  YOLO: null,
+  Streamlit: "devicon-streamlit-plain",
 };
+
+// junta los devicon (sin duplicados) de todos los lenguajes y herramientas de un proyecto
+function getProjectIcons(project) {
+  const seen = new Set();
+  return [...project.lenguajes, ...project.herramientas]
+    .map((name) => iconMap[name])
+    .filter((cls) => cls && !seen.has(cls) && seen.add(cls))
+    .map((cls) => `<i class="${cls} colored"></i>`)
+    .join("");
+}
 
 async function loadProjects() {
   const response = await fetch("./json/sw.json");
@@ -62,6 +97,7 @@ async function loadProjects() {
           ", "
         )} | ${project.herramientas.join(", ")}
       </h2>
+      <div class="tech-icons-band">${getProjectIcons(project)}</div>
       <p><strong>Description:</strong> ${project.descripcion}</p>
       <div class="imagenes-proyecto">
         ${project.imagenes
@@ -136,17 +172,20 @@ function scrollToPanel(panelNumber) {
   }
 }
 
-document.addEventListener("wheel", (event) => {
-  if (isScrolling) return;
-  isScrolling = true;
-  setTimeout(() => {
-    isScrolling = false;
-  }, 500);
+// deja scrollear dentro del piso; bloquea el wheel solo cuando ya no hay más
+// contenido para scrollear en esa dirección, para que no salte al siguiente piso
+document.getElementById("scrollContainer").addEventListener(
+  "wheel",
+  (event) => {
+    const panel = event.target.closest(".panel");
+    if (!panel) return;
 
-  if (event.deltaY > 0 && currentPanel < Infinity) {
-    currentPanel++;
-  } else if (event.deltaY < 0 && currentPanel > 1) {
-    currentPanel--;
-  }
-  scrollToPanel(currentPanel);
-});
+    const scrollingDown =
+      event.deltaY > 0 &&
+      panel.scrollTop + panel.clientHeight < panel.scrollHeight;
+    const scrollingUp = event.deltaY < 0 && panel.scrollTop > 0;
+
+    if (!scrollingDown && !scrollingUp) event.preventDefault();
+  },
+  { passive: false }
+);
