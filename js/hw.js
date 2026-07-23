@@ -1,6 +1,5 @@
 let currentPanel = 1;
-let isScrolling = false;
-let totalPanels; 
+let totalPanels;
 
 // icons by devicon
 const iconMap = {
@@ -11,11 +10,21 @@ const iconMap = {
   'Multimeter':        'devicon-amazonwebservices-original',
   'VS Code':           'devicon-vscode-plain',
   'KiCad':             'devicon-kicad-plain',
-  'Eagle':             null,
-  'PCB':               null,
+  'Eagle':             "",
+  'PCB':               "",
   'ESP32':             'devicon-esp32-plain',
   'NRF24':             'devicon-esp32-plain'
 };
+
+// junta los devicon (sin duplicados) de todos los componentes y herramientas de un proyecto
+function getProjectIcons(project) {
+  const seen = new Set();
+  return [...project.componentes, ...project.herramientas]
+    .map((name) => iconMap[name])
+    .filter((cls) => cls && !seen.has(cls) && seen.add(cls))
+    .map((cls) => `<i class="${cls} colored"></i>`)
+    .join('');
+}
 
 async function loadProjects() {
   const response    = await fetch('./json/hw.json');
@@ -40,6 +49,7 @@ async function loadProjects() {
         &nbsp;|&nbsp; Status: ${project.status}
         &nbsp;|&nbsp; Comps & Tools: ${project.componentes.join(', ')} | ${project.herramientas.join(', ')}
       </h2>
+      <div class="tech-icons-band">${getProjectIcons(project)}</div>
       <p><strong>Description:</strong> ${project.descripcion}</p>
       <div class="imagenes-proyecto">
         ${project.imagenes.map(img => `
@@ -108,15 +118,20 @@ function scrollToPanel(panelNumber) {
   }
 }
 
-document.addEventListener('wheel', event => {
-  if (isScrolling) return;
-  isScrolling = true;
-  setTimeout(() => { isScrolling = false; }, 500);
+// deja scrollear dentro del piso; bloquea el wheel solo cuando ya no hay más
+// contenido para scrollear en esa dirección, para que no salte al siguiente piso
+document.getElementById('scrollContainer').addEventListener(
+  'wheel',
+  (event) => {
+    const panel = event.target.closest('.panel');
+    if (!panel) return;
 
-  if (event.deltaY > 0 && currentPanel < totalPanels) {
-    currentPanel++;
-  } else if (event.deltaY < 0 && currentPanel > 1) {
-    currentPanel--;
-  }
-  scrollToPanel(currentPanel);
-});
+    const scrollingDown =
+      event.deltaY > 0 &&
+      panel.scrollTop + panel.clientHeight < panel.scrollHeight;
+    const scrollingUp = event.deltaY < 0 && panel.scrollTop > 0;
+
+    if (!scrollingDown && !scrollingUp) event.preventDefault();
+  },
+  { passive: false }
+);

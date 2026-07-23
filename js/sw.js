@@ -4,6 +4,7 @@ let currentPanel = 1;
 const iconMap = {
   // Lenguajes
   "C#": "devicon-csharp-plain",
+  "C++": "devicon-cplusplus-plain",
   CBD: "devicon-cbd-plain", // crearé la solicitud de íconos eventualmente para todos menos para este tipo
   Kotlin: "devicon-kotlin-plain",
   PHP: "devicon-php-plain",
@@ -12,51 +13,52 @@ const iconMap = {
   Python: "devicon-python-plain",
   R: "devicon-r-plain",
   JS: "devicon-javascript-plain",
+  Dart: "devicon-dart-plain",
   // Herramientas
+  "HTML/CSS": "devicon-html5-plain",
   VS: "devicon-visualstudio-plain",
   "Android Studio": "devicon-androidstudio-plain",
   Gradle: "devicon-gradle-plain",
   XML: "devicon-xml5-plain",
-  "Riot Games API": null,
-  Hexadecimal: null,
+  Hexadecimal: "",
   Jupyter: "devicon-jupyter-plain",
   Quarto: "devicon-rstudio-plain",
   playwright: "devicon-playwright-plain",
-  selectolax: null,
-  tidyverse: null,
-  beautifulsoup: null,
-  requests: null,
-  IDM: null,
-  "HTML/CSS": "devicon-html5-plain",
-  Octokit: "devicon-github-plain",
-  selenium: "devicon-selenium-plain",
-  catboost: null,
-  "C++": "devicon-cplusplus-plain",
+  selectolax: "",
+  tidyverse: "",
+  beautifulsoup: "",
+  requests: "",
+  IDM: "",
   FastAPI: "devicon-fastapi-plain",
-  Scikit: "devicon-scikitlearn-plain",
-  Dart: "devicon-dart-plain",
+  selenium: "devicon-selenium-plain",
   Flutter: "devicon-flutter-plain",
   React: "devicon-react-original",
   "Node.js": "devicon-nodejs-plain",
   Airflow: "devicon-apacheairflow-plain",
   Kafka: "devicon-apachekafka-original",
   Docker: "devicon-docker-plain",
+  NetworkX: "devicon-networkx-plain",
+  Streamlit: "devicon-streamlit-plain",
+  // API
+  "Riot Games API": "",
+  Octokit: "devicon-github-plain",
+  "YouTube API": "",
+  "Spotify API": "",
+  "Discord API": "",
+  "OpenAI API": "",
+  "Overpass": "",
+  "Open-Meteo API": "",
+  "TomTom": "",
+  "Nothing SDK": "",
+  // Modelado
+  catboost: "",
+  Scikit: "devicon-scikitlearn-plain",
   PyTorch: "devicon-pytorch-original",
   TensorFlow: "devicon-tensorflow-original",
   NumPy: "devicon-numpy-plain",
-  "Nothing SDK": null,
-  "YouTube API": null,
-  "Spotify API": null,
-  "Discord API": null,
-  "OpenAI API": null,
-  "Overpass": null,
-  "Open-Meteo API": null,
-  "TomTom": null,
-  NetworkX: "devicon-networkx-plain",
-  "Ray RLib": null,
-  Gymnasium: null,
-  YOLO: null,
-  Streamlit: "devicon-streamlit-plain",
+  "Ray RLib": "",
+  Gymnasium: "",
+  YOLO: "",
 };
 
 // junta los devicon (sin duplicados) de todos los lenguajes y herramientas de un proyecto
@@ -112,7 +114,7 @@ async function loadProjects() {
           .join("")}
       </div>
       <button class="down" onclick="scrollToPanel(${
-        panelNumber + 2
+        panelNumber + 1
       })">&#x2193;</button>
     `;
     container.appendChild(panel);
