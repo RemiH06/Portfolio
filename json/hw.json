@@ -7,7 +7,19 @@
         "componentes": ["ESP32", "NRF24"],
         "herramientas": ["Arduino", "C++"],
         "imagenes": [
-            { "src": "./img/hw/_ss1.png", "caption": "" }
+            { "src": "./img/hw/sn_ss1.png", "caption": "" }
+        ],
+        "github": "https://github.com/RemiH06/"
+    },
+    {
+        "nombre": "Bakery",
+        "autor": "Hex",
+        "descripcion": "",
+        "status": "",
+        "componentes": ["Raspbery Pi 5 8GB", ""],
+        "herramientas": ["C++", "Python"],
+        "imagenes": [
+            { "src": "./img/hw/bk_ss1.png", "caption": "" }
         ],
         "github": "https://github.com/RemiH06/"
     }

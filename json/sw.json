@@ -131,7 +131,7 @@
         "nombre": "GitHub Wrapped",
         "autor": "Hex & Ethan04Munoz",
         "descripcion": "Raw css and js experiments hodgepodge, uses octokit to summarize profile info and shows it unwrapped",
-        "status": "In progress",
+        "status": "Discontinued",
         "lenguajes": ["JS"],
         "herramientas": ["HTML/CSS", "Octokit"],
         "imagenes": [
@@ -152,5 +152,179 @@
             { "src": "./img/sw/ssf_ss2.png", "caption": "13 submissions" }
         ],
         "github": "https://github.com/RemiH06/Store-Sales-Forecasting"
+    },
+    {
+        "nombre": "Mapo",
+        "autor": "Hex",
+        "descripcion": "Geodata bank. Clusterizes zones through different params according to user needs. ",
+        "status": "In progress (waiting for something, just do not know what)",
+        "lenguajes": ["Python", "R"],
+        "herramientas": ["", "", "", ""],
+        "imagenes": [
+            { "src": "./img/sw/mapo_ss1.png", "caption": "" },
+            { "src": "./img/sw/mapo_ss2.png", "caption": "" }
+        ],
+        "github": "https://github.com/RemiH06/Mapo"
+    },
+    {
+        "nombre": "Lithomancer",
+        "autor": "Hex",
+        "descripcion": "My approach for earthquake prediction using ML models (Random Forest, SVM, CNN 1D) trained on Mexico's historical seismic data from the SSN/UNAM catalog. Includes geospatial clustering, feature engineering, and forward projections.",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["Jupyter", "Scikit"],
+        "imagenes": [
+            { "src": "./img/sw/litho_ss1.png", "caption": "Earthquakes by intensity" },
+            { "src": "./img/sw/litho_ss2.png", "caption": "Clusterized everything" }
+        ],
+        "github": "https://github.com/RemiH06/Lithomancer"
+    },
+    {
+        "nombre": "Yutubify",
+        "autor": "Hex",
+        "descripcion": "Turns Spotify playlists into YouTube playlists.",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["YouTube API", "Spotify API"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Yutubify"
+    },
+    {
+        "nombre": "Senku",
+        "autor": "Hex",
+        "descripcion": "Discord AI chatbot.",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["Discord API", "OpenAI API"],
+        "imagenes": [
+            { "src": "./img/sw/senku_ss1.png", "caption": "Crap" }
+        ],
+        "github": "https://github.com/RemiH06/Senku"
+    },
+    {
+        "nombre": "Tamauijetto",
+        "autor": "Hex",
+        "descripcion": "Tamauijetto is a small digital 'Tamagotchi' that evolves based on a GitHub user's activity. It uses ASCII art contained in a json file, and then uses it to generate a PNG image that can be embedded in a README, webpage, or widget.",
+        "status": "Concluded",
+        "lenguajes": ["JS"],
+        "herramientas": ["Node.js", "ASCII"],
+        "imagenes": [
+            { "src": "./img/sw/tmui_ss1.png", "caption": "Dark mode" },
+            { "src": "./img/sw/tmui_ss2.png", "caption": "Light mode" }
+        ],
+        "github": "https://github.com/RemiH06/Tamauijetto"
+    },
+    {
+        "nombre": "Meteoroglyph",
+        "autor": "Hex",
+        "descripcion": "Meteoroglyph is a personal weather + outfit assistant for the Nothing Phone 3a. It reads your calendar and current weather to recommend what to wear each day, when to take an umbrella, and whether to use public transit or call an Uber.",
+        "status": "Concluded",
+        "lenguajes": ["Kotlin", "Python"],
+        "herramientas": ["Android Studio", "Nothing SDK", "Open-Meteo API"],
+        "imagenes": [
+            { "src": "./img/sw/mg_ss1.png", "caption": "Fluid simulation main page" },
+            { "src": "./img/sw/mg_ss2.png", "caption": "Config vid" },
+            { "src": "./img/sw/mg_ss3.png", "caption": "Info widget" },
+            { "src": "./img/sw/mg_ss4.png", "caption": "Single icon widget" }
+        ],
+        "github": "https://github.com/RemiH06/Meteoroglyph"
+    },
+    {
+        "nombre": "GlyphFactory",
+        "autor": "Hex",
+        "descripcion": "GlyphFactory is a standalone browser-based dot matrix editor for designing pixel-art style glyphs (numbers, letters, outfit icons, weather symbols, and UI elements) following the Nothing Phone Glyph Matrix aesthetic. Built as a support tool for my Meteoroglyph Android app project.",
+        "status": "Concluded",
+        "lenguajes": ["JS"],
+        "herramientas": ["HTML/CSS"],
+        "imagenes": [
+            { "src": "./img/sw/gf_ss1.png", "caption": "Glyph example with previews" },
+            { "src": "./img/sw/gf_ss2.png", "caption": "Glyph example with library" }
+        ],
+        "github": "https://github.com/RemiH06/GlyphFactory"
+    },
+    {
+        "nombre": "FLOPs Information Criterion",
+        "autor": "Hex",
+        "descripcion": "",
+        "status": "Concluded",
+        "lenguajes": ["Python", "C++"],
+        "herramientas": ["Jupyter", "PyTorch", "TensorFlow", "NumPy", "Scikit"],
+        "imagenes": [
+            { "src": "./img/sw/fic_ss1.png", "caption": "My very own formula" },
+            { "src": "./img/sw/fic_ss2.png", "caption": "MNIST optimization example table" }
+        ],
+        "github": "https://github.com/RemiH06/FLOPs-Information-Criterion"
+    },
+    {
+        "nombre": "Metropoly",
+        "autor": "Hex",
+        "descripcion": "Monopoly-like board generator. It also generates cards for fortune, properties and even an instructive.",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["HTML/CSS"],
+        "imagenes": [
+            { "src": "./img/sw/metropoly_ss1.png", "caption": "Half a board (it's for printing so it's too big for the screen even zoomed out)" },
+            { "src": "./img/sw/metropoly_ss2.png", "caption": "El Colli property card" },
+            { "src": "./img/sw/metropoly_ss3.png", "caption": "Fortune card example (type 3)" },
+            { "src": "./img/sw/metropoly_ss4.png", "caption": "Instructive main page" }
+        ],
+        "github": "https://github.com/RemiH06/Metropoly"
+    },
+    {
+        "nombre": "CommonStatsMaxxing",
+        "autor": "Hex",
+        "descripcion": "Not actually a project yet",
+        "status": "Stand by",
+        "lenguajes": ["Dart"],
+        "herramientas": ["Flutter"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/CommonStatsMaxxing"
+    },
+    {
+        "nombre": "LinNeo",
+        "autor": "Hex",
+        "descripcion": "LinNeo is a biodiversity knowledge graph with ~2.5 million species from the GBIF taxonomic backbone, each with its full hierarchy (Biota → Domain → Kingdom → Phylum → Class → Order → Family → Genus → Species), geographic distribution, conservation status, and, when available, description, common names, images, and sound.",
+        "status": "Concluded",
+        "lenguajes": ["Python", "JS", "CQL"],
+        "herramientas": ["React", "Neo4j", "FastAPI + Uvicorn", "Jupyter", "Docker"],
+        "imagenes": [
+            { "src": "./img/sw/ln_ss1.png", "caption": "Living graph, navigable to find any species" },
+            { "src": "./img/sw/ln_ss5.png", "caption": "Taxonomy and distribution for Lactarius Indigo" },
+            { "src": "./img/sw/ln_ss7.png", "caption": "Taxonomy and distribution for Olea Europaea L." },
+            { "src": "./img/sw/ln_ss8.png", "caption": "Moasic view for Nectariniidae family" }
+        ],
+        "github": "https://github.com/RemiH06/LinNeo"
+    },
+    {
+        "nombre": "tanGo",
+        "autor": "Hex",
+        "descripcion": "tanGo is an intelligent traffic light coordination system that combines an algorithm inspired by SCOOT (Split Cycle Offset Optimisation Technique) with Reinforcement Learning (PPO) to minimize stopping time at intersections in downtown Guadalajara.",
+        "status": "Concluded",
+        "lenguajes": ["Python"],
+        "herramientas": ["FastAPI + Uvicorn", "Airflow", "Leaflet.js", "NetworkX", "Ray RLib", "Gymnasium", "PyTorch", "YOLO", "Kafka", "Overpass", "Open-Meteo API", "TomTom", "Streamlit", "Docker"],
+        "imagenes": [
+            { "src": "./img/sw/tango_ss1.png", "caption": "sim0 simulation for actual traffic and work over it" },
+            { "src": "./img/sw/tango_ss2.png", "caption": "sim3 (optimized as much as possible traffic in GDL downtown (93%))" },
+            { "src": "./img/sw/tango_ss3.png", "caption": "simulations evolution" },
+            { "src": "./img/sw/tango_ss4.png", "caption": "Airflow DAG" }
+        ],
+        "github": "https://github.com/RemiH06/tanGo"
+    },
+    {
+        "nombre": "iroFactory",
+        "autor": "Hex",
+        "descripcion": "A personal collection of 12 self-contained HTML design themes for project documentation. Each theme ships as a single file with its own animated background, color system, typography, and semantic tokens. Intended as documentation skins for personal projects spanning algorithms, data science, creative writing, travel, music, embedded systems, and more.",
+        "status": "Concluded",
+        "lenguajes": ["JS"],
+        "herramientas": ["HTML/CSS"],
+        "imagenes": [
+            { "src": "./img/sw/irofactory_ss1.png", "caption": "Disco theme" },
+            { "src": "./img/sw/irofactory_ss2.png", "caption": "Lambda theme" },
+            { "src": "./img/sw/irofactory_ss3.png", "caption": "Tarot theme" },
+            { "src": "./img/sw/irofactory_ss4.png", "caption": "Apolo theme" }
+        ],
+        "github": "https://github.com/RemiH06/iroFactory"
     }
 ]
