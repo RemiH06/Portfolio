@@ -16,12 +16,16 @@ const iconMap = {
   'NRF24':             'devicon-esp32-plain'
 };
 
-// junta los devicon (sin duplicados) de todos los componentes y herramientas de un proyecto
-function getProjectIcons(project) {
+// devuelve las clases de devicon (sin duplicados) de todos los componentes y herramientas de un proyecto
+function getProjectIconClasses(project) {
   const seen = new Set();
   return [...project.componentes, ...project.herramientas]
     .map((name) => iconMap[name])
-    .filter((cls) => cls && !seen.has(cls) && seen.add(cls))
+    .filter((cls) => cls && !seen.has(cls) && seen.add(cls));
+}
+
+function getProjectIcons(project) {
+  return getProjectIconClasses(project)
     .map((cls) => `<i class="${cls} colored"></i>`)
     .join('');
 }
@@ -68,15 +72,10 @@ async function loadProjects() {
     li.classList.add('sidebar-item');
     li.dataset.panel = panelNumber;
 
-    // íconos de hasta CUATRO componentes/herramientas combinados
-    const sidebarIcons = [...project.componentes, ...project.herramientas]
+    // hasta CUATRO devicon (sin duplicados); si algo no tiene ícono, se salta
+    const sidebarIcons = getProjectIconClasses(project)
       .slice(0, 4)
-      .map(name => {
-        const cls = iconMap[name];
-        return cls
-          ? `<i class="${cls} colored"></i>`
-          : `<span>${name}</span>`;
-      })
+      .map(cls => `<i class="${cls} colored"></i>`)
       .join('');
 
     li.innerHTML = `
