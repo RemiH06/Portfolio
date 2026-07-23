@@ -16,7 +16,7 @@
         "autor": "Hex",
         "descripcion": "",
         "status": "",
-        "componentes": ["Raspbery Pi 5 8GB", ""],
+        "componentes": ["Raspbery Pi", ""],
         "herramientas": ["C++", "Python"],
         "imagenes": [
             { "src": "./img/hw/bk_ss1.png", "caption": "" }

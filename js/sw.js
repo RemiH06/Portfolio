@@ -19,8 +19,10 @@ const iconMap = {
   VS: "devicon-visualstudio-plain",
   "Android Studio": "devicon-androidstudio-plain",
   Gradle: "devicon-gradle-plain",
-  XML: "devicon-xml5-plain",
-  Hexadecimal: "",
+  XML: "devicon-xml-plain",
+  YAML: "devicon-yaml-plain",
+  Hexadecimal: "devicon-hex-plain",
+  PyCharm: "devicon-pycharm-plain",
   Jupyter: "devicon-jupyter-plain",
   Quarto: "devicon-rstudio-plain",
   playwright: "devicon-playwright-plain",
@@ -39,22 +41,32 @@ const iconMap = {
   Docker: "devicon-docker-plain",
   NetworkX: "devicon-networkx-plain",
   Streamlit: "devicon-streamlit-plain",
+  "Jetpack Compose": "devicon-jetpackcompose-plain-wordmark",
+  Jira: "devicon-jira-plain",
+  LaTeX: "devicon-latex-original",
+  MatplotLib: "devicon-latex-original",
+  Neo4j: "devicon-neo4j-plain",
+  pandas: "devicon-pandas-plain",
+  plotly: "devicon-plotly-plain",
+  postman: "devicon-postman-plain",
+  postgreSQL: "devicon-postgresql-plain",
   // API
-  "Riot Games API": "",
+  "Riot Games API": "devicon-openapi-plain",
   Octokit: "devicon-github-plain",
-  "YouTube API": "",
-  "Spotify API": "",
-  "Discord API": "",
-  "OpenAI API": "",
-  "Overpass": "",
-  "Open-Meteo API": "",
-  "TomTom": "",
+  "YouTube API": "devicon-openapi-plain",
+  "Spotify API": "devicon-openapi-plain",
+  "Discord API": "devicon-openapi-plain",
+  "OpenAI API": "devicon-openapi-plain",
+  "Overpass": "devicon-openapi-plain",
+  "Open-Meteo API": "devicon-openapi-plain",
+  "TomTom": "devicon-openapi-plain",
   "Nothing SDK": "",
   // Modelado
   catboost: "",
   Scikit: "devicon-scikitlearn-plain",
   PyTorch: "devicon-pytorch-original",
   TensorFlow: "devicon-tensorflow-original",
+  Keras: "devicon-keras-plain",
   NumPy: "devicon-numpy-plain",
   "Ray RLib": "",
   Gymnasium: "",
@@ -124,26 +136,19 @@ async function loadProjects() {
     li.classList.add("sidebar-item");
     li.dataset.panel = panelNumber;
 
-    // íconos de hasta DOS lenguajes
-    const langIcons = project.lenguajes
-      .slice(0, 2)
-      .map((lang) => {
-        const cls = iconMap[lang];
-        return cls ? `<i class="${cls} colored"></i>` : `<span>${lang}</span>`;
+    // íconos de hasta CUATRO lenguajes/herramientas combinados
+    const sidebarIcons = [...project.lenguajes, ...project.herramientas]
+      .slice(0, 4)
+      .map((name) => {
+        const cls = iconMap[name];
+        return cls ? `<i class="${cls} colored"></i>` : `<span>${name}</span>`;
       })
       .join("");
-
-    // icono de la PRIMERA herramienta
-    const firstTool = project.herramientas[0] || "";
-    const toolHtml = iconMap[firstTool]
-      ? `<i class="${iconMap[firstTool]} colored"></i>`
-      : `<span class="tool-name">${firstTool}</span>`;
 
     li.innerHTML = `
     <span class="sidebar-name">${project.nombre}</span>
     <div class="sidebar-icons">
-      ${langIcons}
-      ${toolHtml}
+      ${sidebarIcons}
     </div>
   `;
     sidebarList.appendChild(li);
@@ -173,6 +178,16 @@ function scrollToPanel(panelNumber) {
     currentPanel = panelNumber;
   }
 }
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowDown") {
+    event.preventDefault();
+    scrollToPanel(currentPanel + 1);
+  } else if (event.key === "ArrowUp") {
+    event.preventDefault();
+    scrollToPanel(currentPanel - 1);
+  }
+});
 
 // deja scrollear dentro del piso; bloquea el wheel solo cuando ya no hay más
 // contenido para scrollear en esa dirección, para que no salte al siguiente piso

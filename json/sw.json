@@ -57,7 +57,7 @@
         "descripcion": "A program that turns character strings into colors.",
         "status": "Concluded",
         "lenguajes": ["Kotlin"],
-        "herramientas": ["Hexadecimal"],
+        "herramientas": ["PyCharm", "Hexadecimal"],
         "imagenes": [
         ],
         "github": "https://github.com/RemiH06/Sulfur"
@@ -221,7 +221,7 @@
         "descripcion": "Meteoroglyph is a personal weather + outfit assistant for the Nothing Phone 3a. It reads your calendar and current weather to recommend what to wear each day, when to take an umbrella, and whether to use public transit or call an Uber.",
         "status": "Concluded",
         "lenguajes": ["Kotlin", "Python"],
-        "herramientas": ["Android Studio", "Nothing SDK", "Open-Meteo API"],
+        "herramientas": ["Android Studio", "Jetpack Compose", "Nothing SDK", "Open-Meteo API"],
         "imagenes": [
             { "src": "./img/sw/mg_ss1.png", "caption": "Fluid simulation main page" },
             { "src": "./img/sw/mg_ss2.png", "caption": "Config vid" },
@@ -249,7 +249,7 @@
         "descripcion": "",
         "status": "Concluded",
         "lenguajes": ["Python", "C++"],
-        "herramientas": ["Jupyter", "PyTorch", "TensorFlow", "NumPy", "Scikit"],
+        "herramientas": ["Jupyter", "PyTorch", "TensorFlow", "NumPy", "Scikit", "LaTeX"],
         "imagenes": [
             { "src": "./img/sw/fic_ss1.png", "caption": "My very own formula" },
             { "src": "./img/sw/fic_ss2.png", "caption": "MNIST optimization example table" }
@@ -303,7 +303,7 @@
         "descripcion": "tanGo is an intelligent traffic light coordination system that combines an algorithm inspired by SCOOT (Split Cycle Offset Optimisation Technique) with Reinforcement Learning (PPO) to minimize stopping time at intersections in downtown Guadalajara.",
         "status": "Concluded",
         "lenguajes": ["Python"],
-        "herramientas": ["FastAPI", "Airflow", "Leaflet.js", "NetworkX", "Ray RLib", "Gymnasium", "PyTorch", "YOLO", "Kafka", "Overpass", "Open-Meteo API", "TomTom", "Streamlit", "Docker"],
+        "herramientas": ["FastAPI", "Airflow", "Leaflet.js", "NetworkX", "Ray RLib", "Gymnasium", "PyTorch", "YOLO", "Kafka", "Overpass", "Open-Meteo API", "TomTom", "Streamlit", "Docker", "Jira"],
         "imagenes": [
             { "src": "./img/sw/tango_ss1.png", "caption": "sim0 simulation for actual traffic and work over it" },
             { "src": "./img/sw/tango_ss2.png", "caption": "sim3 (optimized as much as possible traffic in GDL downtown (93%))" },

@@ -10,8 +10,8 @@ const iconMap = {
   'Multimeter':        'devicon-amazonwebservices-original',
   'VS Code':           'devicon-vscode-plain',
   'KiCad':             'devicon-kicad-plain',
-  'Eagle':             "",
-  'PCB':               "",
+  'Eagle':             null,
+  'PCB':               null,
   'ESP32':             'devicon-esp32-plain',
   'NRF24':             'devicon-esp32-plain'
 };
@@ -68,25 +68,21 @@ async function loadProjects() {
     li.classList.add('sidebar-item');
     li.dataset.panel = panelNumber;
 
-    // íconos de hasta DOS herramientas
-    const compIcons = project.herramientas.slice(0, 2).map(comp => {
-      const cls = iconMap[comp];
-      return cls
-        ? `<i class="${cls} colored"></i>`
-        : `<span>${comp}</span>`;
-    }).join('');
-
-    // icono del PRIMER componente
-    const firstTool = project.componentes[0] || '';
-    const toolHtml = iconMap[firstTool]
-      ? `<i class="${iconMap[firstTool]} colored"></i>`
-      : `<span class="tool-name">${firstTool}</span>`;
+    // íconos de hasta CUATRO componentes/herramientas combinados
+    const sidebarIcons = [...project.componentes, ...project.herramientas]
+      .slice(0, 4)
+      .map(name => {
+        const cls = iconMap[name];
+        return cls
+          ? `<i class="${cls} colored"></i>`
+          : `<span>${name}</span>`;
+      })
+      .join('');
 
     li.innerHTML = `
       <span class="sidebar-name">${project.nombre}</span>
       <div class="sidebar-icons">
-        ${compIcons}
-        ${toolHtml}
+        ${sidebarIcons}
       </div>
     `;
     sidebarList.appendChild(li);
@@ -117,6 +113,16 @@ function scrollToPanel(panelNumber) {
     currentPanel = panelNumber;
   }
 }
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'ArrowDown') {
+    event.preventDefault();
+    scrollToPanel(currentPanel + 1);
+  } else if (event.key === 'ArrowUp') {
+    event.preventDefault();
+    scrollToPanel(currentPanel - 1);
+  }
+});
 
 // deja scrollear dentro del piso; bloquea el wheel solo cuando ya no hay más
 // contenido para scrollear en esa dirección, para que no salte al siguiente piso
