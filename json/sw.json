@@ -246,7 +246,7 @@
     {
         "nombre": "FLOPs Information Criterion",
         "autor": "Hex",
-        "descripcion": "",
+        "descripcion": "FIC (FLOPs Information Criterion) is a novel model selection criterion that extends traditional information criteria (AIC, BIC) by incorporating computational efficiency into the decision process.",
         "status": "Concluded",
         "lenguajes": ["Python", "C++"],
         "herramientas": ["Jupyter", "PyTorch", "TensorFlow", "NumPy", "Scikit", "LaTeX"],
