@@ -1,2 +1,6 @@
-img/titles_original
-steps.md
+# Personal (bóveda de Obsidian, contexto de vida, handoffs): nunca se publica
+vault/
+CLAUDE.local.md
+
+# Originales pesados de títulos (se regeneran a docs/img/titles con tools/resize.py)
+assets-src/img/titles_original/

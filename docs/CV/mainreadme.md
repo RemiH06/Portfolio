@@ -30,7 +30,7 @@
       <!-- img -->
       <br>
       <br>
-      <!-- <img src="https://github-readme-stats.vercel.app/api?username=HectorH06&rank_icon=percentile&theme=radical" alt="Hector's GitHub stats"/> -->
+      <!-- <img src="https://github-readme-stats.vercel.app/api?username=RemiH06&rank_icon=percentile&theme=radical" alt="Hector's GitHub stats"/> -->
       <p>🧮 Recent projects:</p>
       <a href="https://github.com/RemiH06/Mapo" target="_blank">
         <img src="https://github-readme-stats.vercel.app/api/pin?username=RemiH06&repo=mapo&title_color=fff&icon_color=f9f9f9&text_color=9f9f9f&bg_color=151515" alt="Repo"/>

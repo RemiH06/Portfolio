@@ -1,8 +1,9 @@
 import os
 from PIL import Image
 
-input_dir = "./img/titles_original"
-output_dir = "./img/titles"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+input_dir = os.path.join(ROOT, "assets-src", "img", "titles_original")
+output_dir = os.path.join(ROOT, "docs", "img", "titles")
 
 os.makedirs(output_dir, exist_ok=True)
 
