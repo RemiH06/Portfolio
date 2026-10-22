@@ -1,6 +1,6 @@
 # Procedencia de los íconos
 
-Las marcas son de sus dueños; aquí solo indican con qué está hecho cada proyecto. Los íconos que no están en esta carpeta salen de [devicon](https://devicon.dev) (MIT) vía CDN.
+Las marcas son de sus dueños; aquí solo indican con qué está hecho cada proyecto. Los íconos que no están en esta carpeta son los SVG `original` de [devicon](https://devicon.dev) (MIT) vía CDN; los que se pierden en el negro se invierten o aclaran por CSS (`iconTone` en `js/catalog.js`).
 
 | Archivo | Fuente | Licencia | Cambios |
 |---|---|---|---|
@@ -17,4 +17,5 @@ Las marcas son de sus dueños; aquí solo indican con qué está hecho cada proy
 | xgboost.png | dmlc.github.io | Marca del proyecto | 64 px de alto |
 | postgis.png | Repo de PostGIS | Marca del proyecto | 64 px de alto |
 | tidymodels, fable, pydicom, clap, requests, gymnasium, librosa, skopt (`.png`) | Logos oficiales en sus repos | Marcas de sus proyectos | 64 px de alto; clap, requests y skopt aclarados para fondo negro; librosa sin texto |
-| star, repo-forked (en línea en `js/catalog.js`) | [Octicons](https://primer.style/octicons) de GitHub, 16 px | MIT | Color del texto |
+| star, repo-forked, book (en línea en `js/catalog.js`) | [Octicons](https://primer.style/octicons) de GitHub | MIT | Color del texto |
+| neo4j.svg | Simple Icons 16.35.0 | CC0 1.0 | Color de la marca (#4581C3) horneado; reemplaza al SVG de devicon, que trae el logo diminuto |

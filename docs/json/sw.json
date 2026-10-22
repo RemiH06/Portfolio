@@ -70,7 +70,9 @@
         "imagenes": [],
         "github": "https://github.com/RemiH06/Sulfur",
         "metricas": { "lineas": 1148, "dias": 3, "ultimo": "2026-10-04" },
-        "estrellas": 1
+        "estrellas": 1,
+        "logo": "./img/logos/sulfur.svg",
+        "docs": "https://remih06.github.io/Sulfur/"
     },
     {
         "nombre": "Ryoko",
@@ -164,7 +166,8 @@
         ],
         "github": "https://github.com/RemiH06/GitHub-Wrapped",
         "metricas": { "lineas": 1310, "dias": 26, "ultimo": "2025-04-19" },
-        "estrellas": 1
+        "estrellas": 1,
+        "docs": "https://remih06.github.io/GitHub-Wrapped/"
     },
     {
         "nombre": "Store Sales Forecasting",
@@ -269,7 +272,8 @@
             { "src": "./img/sw/mg_ss4.png", "caption": "Single icon widget" }
         ],
         "github": "https://github.com/RemiH06/Meteoroglyph",
-        "metricas": { "lineas": 2690, "dias": 6, "ultimo": "2026-09-29" }
+        "metricas": { "lineas": 2690, "dias": 6, "ultimo": "2026-09-29" },
+        "docs": "https://remih06.github.io/Meteoroglyph/"
     },
     {
         "nombre": "GlyphFactory",
@@ -284,7 +288,8 @@
             { "src": "./img/sw/gf_ss2.png", "caption": "Glyph example with library" }
         ],
         "github": "https://github.com/RemiH06/GlyphFactory",
-        "metricas": { "lineas": 728, "dias": 1, "ultimo": "2026-05-18", "historiaParcial": true }
+        "metricas": { "lineas": 728, "dias": 1, "ultimo": "2026-05-18", "historiaParcial": true },
+        "docs": "https://remih06.github.io/GlyphFactory/"
     },
     {
         "nombre": "FLOPs Information Criterion",
@@ -317,7 +322,8 @@
             { "src": "./img/sw/metropoly_ss4.png", "caption": "Instructive main page" }
         ],
         "github": "https://github.com/RemiH06/Metropoly",
-        "metricas": { "lineas": 2863, "dias": 10, "ultimo": "2026-05-27" }
+        "metricas": { "lineas": 2863, "dias": 10, "ultimo": "2026-05-27" },
+        "docs": "https://remih06.github.io/Metropoly/"
     },
     {
         "nombre": "CommonStatsMaxxing",
@@ -347,7 +353,8 @@
         ],
         "github": "https://github.com/RemiH06/LinNeo",
         "metricas": { "lineas": 8041, "dias": 19, "ultimo": "2026-07-22" },
-        "estrellas": 1
+        "estrellas": 1,
+        "docs": "https://remih06.github.io/LinNeo/"
     },
     {
         "nombre": "tanGo",
@@ -366,7 +373,8 @@
         "github": "https://github.com/RemiH06/tanGo",
         "metricas": { "lineas": 10815, "dias": 23, "ultimo": "2026-05-12" },
         "estrellas": 1,
-        "forks": 1
+        "forks": 1,
+        "docs": "https://remih06.github.io/tanGo/"
     },
     {
         "nombre": "iroFactory",
@@ -384,7 +392,9 @@
         ],
         "github": "https://github.com/RemiH06/iroFactory",
         "metricas": { "lineas": 25392, "dias": 17, "ultimo": "2026-10-14" },
-        "estrellas": 1
+        "estrellas": 1,
+        "logo": "./img/logos/irofactory.svg",
+        "docs": "https://remih06.github.io/iroFactory/"
     },
     {
         "nombre": "Skystones",
@@ -409,7 +419,9 @@
         "imagenes": [],
         "github": "https://github.com/RemiH06/Proun",
         "metricas": { "lineas": 9095, "dias": 13, "ultimo": "2026-09-29" },
-        "estrellas": 1
+        "estrellas": 1,
+        "logo": "./img/logos/proun.svg",
+        "docs": "https://remih06.github.io/Proun/"
     },
     {
         "nombre": "Ariadne",
@@ -422,7 +434,9 @@
         "imagenes": [],
         "github": "https://github.com/RemiH06/Ariadne",
         "metricas": { "lineas": 4901, "dias": 4, "ultimo": "2026-09-11" },
-        "estrellas": 1
+        "estrellas": 1,
+        "logo": "./img/logos/ariadne.svg",
+        "docs": "https://remih06.github.io/Ariadne/"
     },
     {
         "nombre": "Rem's Glyph Toys",
@@ -435,7 +449,9 @@
         "imagenes": [],
         "github": "https://github.com/RemiH06/RemsGlyphToys",
         "metricas": { "lineas": 4055, "dias": 9, "ultimo": "2026-10-21" },
-        "estrellas": 1
+        "estrellas": 1,
+        "logo": "./img/logos/remsglyphtoys.svg",
+        "docs": "https://remih06.github.io/RemsGlyphToys/"
     },
     {
         "nombre": "Fontificar",
@@ -447,7 +463,9 @@
         "herramientas": ["fontTools"],
         "imagenes": [],
         "github": "https://github.com/RemiH06/Fontificar",
-        "metricas": { "lineas": 2049, "dias": 1, "ultimo": "2026-10-20" }
+        "metricas": { "lineas": 2049, "dias": 1, "ultimo": "2026-10-20" },
+        "logo": "./img/logos/fontificar.svg",
+        "docs": "https://remih06.github.io/Fontificar/"
     },
     {
         "nombre": "Knee Abnormality Detection",
@@ -471,7 +489,8 @@
         "herramientas": ["FastAPI", "React", "Vite", "D3"],
         "imagenes": [],
         "github": "https://github.com/RemiH06/Grapheme",
-        "metricas": { "lineas": 3701, "dias": 6, "ultimo": "2026-09-20" }
+        "metricas": { "lineas": 3701, "dias": 6, "ultimo": "2026-09-20" },
+        "logo": "./img/logos/grapheme.svg"
     },
     {
         "nombre": "Crisantemo",
@@ -484,7 +503,8 @@
         "imagenes": [],
         "github": "https://github.com/RemiH06/Crisantemo",
         "metricas": { "lineas": 2789, "dias": 8, "ultimo": "2026-09-14" },
-        "estrellas": 1
+        "estrellas": 1,
+        "logo": "./img/logos/crisantemo.svg"
     },
     {
         "nombre": "Gaiarda",
@@ -496,6 +516,8 @@
         "herramientas": ["SQLite", "Shapely", "React", "Vite", "Leaflet", "OSRM"],
         "imagenes": [],
         "github": "https://github.com/RemiH06/Gaiarda",
-        "metricas": { "lineas": 6661, "dias": 8, "ultimo": "2026-08-03" }
+        "metricas": { "lineas": 6661, "dias": 8, "ultimo": "2026-08-03" },
+        "logo": "./img/logos/gaiarda.svg",
+        "docs": "https://remih06.github.io/Gaiarda/"
     }
 ]

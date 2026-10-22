@@ -6,43 +6,44 @@
 const GITHUB_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.25 3.44 9.68 8.19 11.29.6.11.81-.26.81-.58v-2.06c-3.33.72-4.03-1.61-4.03-1.61-.54-1.36-1.33-1.73-1.33-1.73-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.77.42-1.3.76-1.6-2.67-.3-5.46-1.34-5.46-5.97 0-1.32.47-2.4 1.25-3.24-.13-.31-.54-1.56.12-3.25 0 0 1.02-.32 3.34 1.24a11.51 11.51 0 0 1 3.03-.41c1.02 0 2.05.14 3.02.41 2.32-1.56 3.34-1.24 3.34-1.24.67 1.69.25 2.94.12 3.25.78.84 1.25 1.92 1.25 3.24 0 4.64-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.28c0 .32.2.69.81.58 4.76-1.61 8.19-6.03 8.19-11.28 0-6.63-5.37-12-12-12z"></path></svg>';
 
-// Octicons (MIT): star-16 y repo-forked-16
+// Octicons (MIT): star-16, repo-forked-16 y book-24
+const BOOK_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 3.75A.75.75 0 0 1 .75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.495 4.495 0 0 1 15.75 3h7.5a.75.75 0 0 1 .75.75v15.063a.752.752 0 0 1-.755.75l-7.682-.052a3 3 0 0 0-2.142.878l-.89.891a.75.75 0 0 1-1.061 0l-.902-.901a2.996 2.996 0 0 0-2.121-.879H.75a.75.75 0 0 1-.75-.75Zm12.75 15.232a4.503 4.503 0 0 1 2.823-.971l6.927.047V4.5h-6.75a3 3 0 0 0-3 3ZM11.247 7.497a3 3 0 0 0-3-2.997H1.5V18h6.947c1.018 0 2.006.346 2.803.98Z"></path></svg>';
 const STAR_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path></svg>';
 const FORK_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>';
 
-// solo clases verificadas en devicon v2.16.0; lo que no está aquí sale como etiqueta de texto
+// SVG `original` de devicon: la fuente de devicon pinta un solo color por glifo,
+// el SVG trae los colores reales de cada logo. Verificar con tools/check_icons.js
+const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons";
 const iconMap = {
-  "C#": "devicon-csharp-plain", ".NET": "devicon-dotnetcore-plain",
-  Kotlin: "devicon-kotlin-plain", PHP: "devicon-php-plain",
-  MySQL: "devicon-mysql-plain", SQLite: "devicon-sqlite-plain",
-  Python: "devicon-python-plain", R: "devicon-r-plain",
-  JS: "devicon-javascript-plain", TypeScript: "devicon-typescript-plain",
-  Rust: "devicon-rust-original", Haskell: "devicon-haskell-plain",
-  Elixir: "devicon-elixir-plain", Dart: "devicon-dart-plain",
-  "HTML/CSS": "devicon-html5-plain", "Visual Studio": "devicon-visualstudio-plain",
-  "Android Studio": "devicon-androidstudio-plain", Gradle: "devicon-gradle-plain",
-  "Jetpack Compose": "devicon-jetpackcompose-plain",
-  "Compose Multiplatform": "devicon-jetpackcompose-plain",
-  Jupyter: "devicon-jupyter-plain", Playwright: "devicon-playwright-plain",
-  Selenium: "devicon-selenium-original", FastAPI: "devicon-fastapi-plain",
-  Flutter: "devicon-flutter-plain", React: "devicon-react-original",
-  Vite: "devicon-vitejs-plain", D3: "devicon-d3js-plain",
-  "Three.js": "devicon-threejs-original", Tailwind: "devicon-tailwindcss-plain",
-  "Phoenix LiveView": "devicon-phoenix-plain", PostgreSQL: "devicon-postgresql-plain",
-  "Node.js": "devicon-nodejs-plain", "GitHub Actions": "devicon-githubactions-plain",
-  Airflow: "devicon-apacheairflow-plain", Kafka: "devicon-apachekafka-original",
-  Docker: "devicon-docker-plain", NetworkX: "devicon-networkx-plain",
-  Neo4j: "devicon-neo4j-plain", pandas: "devicon-pandas-plain",
-  Plotly: "devicon-plotly-plain", Octokit: "devicon-github-plain",
-  "scikit-learn": "devicon-scikitlearn-plain", PyTorch: "devicon-pytorch-original",
-  TensorFlow: "devicon-tensorflow-original", OpenCV: "devicon-opencv-plain",
-  Kaggle: "devicon-kaggle-plain", pytest: "devicon-pytest-plain",
+  "C#": "csharp", ".NET": "dotnetcore", Kotlin: "kotlin", PHP: "php",
+  MySQL: "mysql", SQLite: "sqlite", Python: "python", R: "r",
+  JS: "javascript", TypeScript: "typescript", Rust: "rust", Haskell: "haskell",
+  Elixir: "elixir", Dart: "dart", "HTML/CSS": "html5", "Visual Studio": "visualstudio",
+  "Android Studio": "androidstudio", Gradle: "gradle",
+  "Jetpack Compose": "jetpackcompose", "Compose Multiplatform": "jetpackcompose",
+  Jupyter: "jupyter", Playwright: "playwright", Selenium: "selenium", FastAPI: "fastapi",
+  Flutter: "flutter", React: "react", Vite: "vitejs", D3: "d3js",
+  "Three.js": "threejs", Tailwind: "tailwindcss", "Phoenix LiveView": "phoenix",
+  PostgreSQL: "postgresql", "Node.js": "nodejs", "GitHub Actions": "githubactions",
+  Airflow: "apacheairflow", Kafka: "apachekafka", Docker: "docker", NetworkX: "networkx",
+  pandas: "pandas", Plotly: "plotly", Octokit: "github", "scikit-learn": "scikitlearn",
+  PyTorch: "pytorch", TensorFlow: "tensorflow", OpenCV: "opencv", Kaggle: "kaggle",
+  pytest: "pytest",
+};
+const iconUrl = (name) => `${DEVICON}/${name}/${name}-original.svg`;
+
+// logos que se pierden en el negro: los negros se invierten, los oscuros se aclaran sin perder su color
+const iconTone = {
+  Rust: "invert", "Three.js": "invert", Kafka: "invert", Octokit: "invert",
+  MySQL: "lift", Gradle: "lift", Haskell: "lift", pandas: "lift-max",
 };
 
 // lo que devicon no tiene: archivos en img/icons (Simple Icons, Iconify, logos oficiales)
 const localIcons = {
+  Neo4j: "neo4j.svg", // el SVG de devicon trae el logo diminuto dentro de un lienzo enorme
   Leaflet: "leaflet.svg", Quarto: "quarto.svg", "Ray RLlib": "ray.svg",
   "Spotify API": "spotify.svg", "YouTube API": "youtube.svg", "Riot Games API": "riotgames.svg",
   WebGL: "webgl.svg", esbuild: "esbuild.svg", YOLO: "ultralytics.svg", timm: "huggingface.svg",
@@ -229,14 +230,11 @@ function techHtml(p) {
     .filter((t) => !(parentOf[t] && all.includes(parentOf[t])))
     .map((t) => {
       const label = escapeHtml(extra[t] ? `${t} · ${extra[t].join(", ")}` : t);
-      const cls = iconMap[t];
-      const file = localIcons[t];
-      const key = cls || file;
-      if (!key || seen.has(key)) return key ? "" : `<span class="tag">${escapeHtml(t)}</span>`;
-      seen.add(key);
-      return cls
-        ? `<i class="${cls} colored" role="img" aria-label="${label}" title="${label}"></i>`
-        : `<img class="ti" src="./img/icons/${file}" alt="${label}" title="${label}" loading="lazy">`;
+      const src = localIcons[t] ? `./img/icons/${localIcons[t]}` : iconMap[t] && iconUrl(iconMap[t]);
+      if (!src || seen.has(src)) return src ? "" : `<span class="tag">${escapeHtml(t)}</span>`;
+      seen.add(src);
+      const tone = iconTone[t] ? ` ${iconTone[t]}` : "";
+      return `<img class="ti${tone}" src="${src}" alt="${label}" title="${label}" loading="lazy">`;
     })
     .join("");
 }
@@ -282,13 +280,19 @@ function lastChange(p) {
   return `<time class="last" datetime="${d}" title="Último cambio en el código">${MONTHS[+mo - 1]} ${y}</time>`;
 }
 
-// estrellas y forks junto al ícono; en cero no aparecen
-function repoHtml(p) {
+// documentación (si tiene página) y repo con estrellas y forks; en cero no aparecen
+function linksHtml(p, hasRepo) {
+  const docs = p.docs
+    ? `<a class="link" href="${escapeHtml(p.docs)}" target="_blank" rel="noopener" aria-label="Documentación" title="Documentación">${BOOK_SVG}</a>`
+    : "";
   const counts = [[p.estrellas, STAR_SVG, "estrella", "estrellas"], [p.forks, FORK_SVG, "fork", "forks"]]
     .filter(([n]) => n > 0)
     .map(([n, svg, one, many]) => `<span class="count" title="${n} ${n === 1 ? one : many}">${svg}${n}</span>`)
     .join("");
-  return `<a class="repo" href="${escapeHtml(p.github)}" target="_blank" rel="noopener" aria-label="Repositorio en GitHub" title="Repositorio en GitHub">${counts}${GITHUB_SVG}</a>`;
+  const repo = hasRepo
+    ? `<a class="link" href="${escapeHtml(p.github)}" target="_blank" rel="noopener" aria-label="Repositorio en GitHub" title="Repositorio en GitHub">${counts}${GITHUB_SVG}</a>`
+    : "";
+  return docs || repo ? `<div class="links">${docs}${repo}</div>` : "";
 }
 
 function renderCard(list, idx) {
@@ -310,8 +314,8 @@ function renderCard(list, idx) {
   cardEl.style.setProperty("--g", statusRgb(p.status));
   cardEl.innerHTML = `
     <header class="title">
-      <h1>${escapeHtml(p.nombre)}</h1>
-      ${hasRepo ? repoHtml(p) : ""}
+      <h1>${p.logo ? `<img class="logo" src="${escapeHtml(p.logo)}" alt="" aria-hidden="true">` : ""}${escapeHtml(p.nombre)}</h1>
+      ${linksHtml(p, hasRepo)}
     </header>
     <div class="meta">
       <span class="status"><span class="dot" aria-hidden="true"></span>${escapeHtml(STATUS_LABEL[p.status] || p.status || "")}</span>

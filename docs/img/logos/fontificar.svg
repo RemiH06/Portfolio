@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="titulo">
+  <title id="titulo">Fontificar</title>
+  <style>
+    .tinta { fill: #1F2430; }
+    .acento { fill: #D9480F; }
+    @media (prefers-color-scheme: dark) { .tinta { fill: #F2F2F2; } }
+  </style>
+  <g class="acento">
+    <circle cx="98" cy="21" r="9"/>
+    <circle cx="164" cy="21" r="9"/>
+    <circle cx="76" cy="43" r="9"/>
+    <circle cx="120" cy="43" r="9"/>
+    <circle cx="142" cy="43" r="9"/>
+  </g>
+  <g class="tinta">
+    <circle cx="76" cy="87" r="9"/>
+    <circle cx="120" cy="87" r="9"/>
+    <circle cx="142" cy="87" r="9"/>
+    <circle cx="76" cy="109" r="9"/>
+    <circle cx="98" cy="109" r="9"/>
+    <circle cx="164" cy="109" r="9"/>
+    <circle cx="76" cy="131" r="9"/>
+    <circle cx="164" cy="131" r="9"/>
+    <circle cx="76" cy="153" r="9"/>
+    <circle cx="164" cy="153" r="9"/>
+    <circle cx="76" cy="175" r="9"/>
+    <circle cx="164" cy="175" r="9"/>
+    <circle cx="76" cy="197" r="9"/>
+    <circle cx="164" cy="197" r="9"/>
+    <circle cx="76" cy="219" r="9"/>
+    <circle cx="164" cy="219" r="9"/>
+  </g>
+</svg>

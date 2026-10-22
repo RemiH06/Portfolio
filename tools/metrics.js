@@ -1,6 +1,6 @@
 // Mide cada proyecto de docs/json/sw.json desde su historia de git y escribe
-// `metricas` (líneas únicas, días con commits, último cambio) más estrellas y
-// forks de GitHub. Uso: node tools/metrics.js [--dry]
+// `metricas` (líneas únicas, días con commits, último cambio) más estrellas,
+// forks y página de documentación de GitHub. Uso: node tools/metrics.js [--dry]
 //
 // De dónde sale cada repo: un clon de GitHub en el temporal del sistema, que se
 // reutiliza entre corridas. Si el clon falla (repo enorme o borrado de GitHub),
@@ -148,6 +148,9 @@ async function githubCounts() {
       for (const [k, v] of [["estrellas", r?.stargazers_count], ["forks", r?.forks_count]]) {
         if (v) p[k] = v; else delete p[k];
       }
+      // documentación: la página de inicio del repo, o su GitHub Pages si no declara una
+      const docs = r?.homepage || (r?.has_pages && `https://remih06.github.io/${r.name}/`);
+      if (docs) p.docs = docs; else delete p.docs;
     }
     const { lineas, dias, ultimo, historiaParcial } = p.metricas || {};
     console.log(`${p.nombre.padEnd(30)} ${String(lineas).padStart(6)} líneas ${String(dias).padStart(4)} días  ${ultimo}${historiaParcial ? "  (historia parcial)" : ""}`);

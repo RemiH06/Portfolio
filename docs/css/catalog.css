@@ -176,6 +176,13 @@ a {
   min-width: 0;
   overflow-wrap: anywhere;
 }
+/* logo del proyecto a la altura de las mayúsculas del título */
+.project h1 .logo {
+  height: 0.9em;
+  width: auto;
+  margin-right: 0.3em;
+  vertical-align: -0.06em;
+}
 .meta {
   display: flex;
   flex-wrap: wrap;
@@ -195,21 +202,23 @@ a {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
-  font-size: 1.3rem;
 }
-/* marcas cuyo color oficial es negro: se pierden sobre el fondo */
-.techs .devicon-rust-original.colored,
-.techs .devicon-threejs-original.colored,
-.techs .devicon-apachekafka-original.colored,
-.techs .devicon-github-plain.colored {
-  color: var(--text);
-}
-/* íconos locales a la misma altura que los de devicon; los logotipos anchos crecen a lo ancho */
+/* todos a la misma altura; los logotipos anchos crecen a lo ancho */
 .techs .ti {
   height: 1.3rem;
   width: auto;
   max-width: 4.6rem;
   display: block;
+}
+/* logos que se pierden en el negro (iconTone en catalog.js) */
+.techs .ti.invert {
+  filter: invert(1);
+}
+.techs .ti.lift {
+  filter: brightness(1.9);
+}
+.techs .ti.lift-max {
+  filter: brightness(3.2) saturate(0.8);
 }
 .techs .tag {
   font-size: 0.78rem;
@@ -218,13 +227,18 @@ a {
 .last {
   font-variant-numeric: tabular-nums;
 }
-/* repo: esquina superior derecha, con estrellas y forks antes del ícono */
-.repo {
+/* enlaces: esquina superior derecha; documentación y repo (con estrellas y forks antes del ícono) */
+.links {
   flex: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+.link {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-top: 6px;
   padding: 4px;
   color: var(--dim);
   text-decoration: none;
@@ -232,20 +246,20 @@ a {
   font-variant-numeric: tabular-nums;
   transition: color 0.2s ease;
 }
-.repo:hover {
+.link:hover {
   color: var(--text);
 }
-.repo svg {
+.link svg {
   width: 26px;
   height: 26px;
   fill: currentColor;
 }
-.repo .count {
+.link .count {
   display: inline-flex;
   align-items: center;
   gap: 4px;
 }
-.repo .count svg {
+.link .count svg {
   width: 14px;
   height: 14px;
 }
