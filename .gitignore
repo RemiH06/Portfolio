@@ -1,7 +1,9 @@
 # Personal (bóveda de Obsidian, contexto de vida, handoffs): nunca se publica
 vault/
-RemiH06/
 CLAUDE.local.md
+
+# README del perfil (repo público RemiH06/RemiH06, con su propio git)
+RemiH06/
 
 # Originales pesados de títulos (se regeneran a docs/img/titles con tools/resize.py)
 assets-src/img/titles_original/
