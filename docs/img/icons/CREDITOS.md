@@ -17,3 +17,4 @@ Las marcas son de sus dueños; aquí solo indican con qué está hecho cada proy
 | xgboost.png | dmlc.github.io | Marca del proyecto | 64 px de alto |
 | postgis.png | Repo de PostGIS | Marca del proyecto | 64 px de alto |
 | tidymodels, fable, pydicom, clap, requests, gymnasium, librosa, skopt (`.png`) | Logos oficiales en sus repos | Marcas de sus proyectos | 64 px de alto; clap, requests y skopt aclarados para fondo negro; librosa sin texto |
+| star, repo-forked (en línea en `js/catalog.js`) | [Octicons](https://primer.style/octicons) de GitHub, 16 px | MIT | Color del texto |

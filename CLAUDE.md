@@ -16,7 +16,7 @@ Los dos anidados están en `.gitignore` de Portfolio y tienen su propio git.
 
 - `docs/`: el sitio. GitHub Pages publica solo esta carpeta. Rutas relativas (`./css`, `./img`, `./js`, `./json`).
 - `assets-src/`: fuentes de edición (`.tif`, originales de títulos). Versionadas pero no publicadas.
-- `tools/`: scripts de mantenimiento del sitio (`resize.py` genera `docs/img/titles` desde `assets-src`; `check_icons.js` verifica íconos).
+- `tools/`: scripts de mantenimiento del sitio (`resize.py` genera `docs/img/titles` desde `assets-src`; `check_icons.js` verifica íconos; `metrics.js` mide cada proyecto desde git y escribe `metricas`, estrellas y forks en `sw.json`).
 - `vault/`: bóveda de Obsidian y contexto personal. Es su propio repo privado; este repo la ignora completa.
 
 ## Reglas

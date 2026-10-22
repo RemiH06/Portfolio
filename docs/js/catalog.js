@@ -1,10 +1,16 @@
 // Software: categorías como pestañas, un riel con todos los proyectos de la
-// categoría (ordenados por importancia) y una ficha grande a la vez, para que
+// categoría (el más reciente primero) y una ficha grande a la vez, para que
 // ningún proyecto se quede atrás. Ruta en el hash: #categoria/proyecto.
 // Fondo: nebulosa gris (shader WebGL vanilla) sobre la base negra de CSS.
 
 const GITHUB_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.25 3.44 9.68 8.19 11.29.6.11.81-.26.81-.58v-2.06c-3.33.72-4.03-1.61-4.03-1.61-.54-1.36-1.33-1.73-1.33-1.73-1.09-.74.08-.73.08-.73 1.21.09 1.85 1.24 1.85 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.77.42-1.3.76-1.6-2.67-.3-5.46-1.34-5.46-5.97 0-1.32.47-2.4 1.25-3.24-.13-.31-.54-1.56.12-3.25 0 0 1.02-.32 3.34 1.24a11.51 11.51 0 0 1 3.03-.41c1.02 0 2.05.14 3.02.41 2.32-1.56 3.34-1.24 3.34-1.24.67 1.69.25 2.94.12 3.25.78.84 1.25 1.92 1.25 3.24 0 4.64-2.8 5.66-5.48 5.96.43.37.82 1.1.82 2.22v3.28c0 .32.2.69.81.58 4.76-1.61 8.19-6.03 8.19-11.28 0-6.63-5.37-12-12-12z"></path></svg>';
+
+// Octicons (MIT): star-16 y repo-forked-16
+const STAR_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"></path></svg>';
+const FORK_SVG =
+  '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>';
 
 // solo clases verificadas en devicon v2.16.0; lo que no está aquí sale como etiqueta de texto
 const iconMap = {
@@ -76,13 +82,18 @@ const CATEGORIES = [
   { key: "diversiones", label: "Diversiones" },
 ];
 
-const CRITERIA = [
-  ["importancia", "Importancia"],
-  ["complejidad", "Complejidad"],
-  ["usabilidad", "Usabilidad"],
-  ["practicidad", "Practicidad"],
-  ["completitud", "Completitud"],
+// métricas objetivas (las mide tools/metrics.js); la barra es el percentil entre todos los proyectos
+const METRICS = [
+  { key: "tamano", label: "Tamaño", get: (p) => p.metricas?.lineas, unit: ["línea", "líneas"],
+    hint: "Líneas de código únicas: lo copiado entre archivos cuenta una vez" },
+  { key: "esfuerzo", label: "Esfuerzo", get: (p) => p.metricas?.dias, unit: ["día", "días"],
+    hint: "Días distintos con commits míos que tocan código" },
+  { key: "amplitud", label: "Amplitud", get: (p) => (p.lenguajes?.length ?? 0) + (p.herramientas?.length ?? 0),
+    unit: ["tecnología", "tecnologías"], hint: "Lenguajes y herramientas del proyecto" },
 ];
+
+const MONTHS = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+const nf = new Intl.NumberFormat("es-MX");
 
 // status -> color del punto (paleta de glow.js)
 const STATUS = [
@@ -117,7 +128,7 @@ function inCat(cat) {
     .filter((p) => p.categoria === cat)
     .sort(
       (a, b) =>
-        (b.ratings?.importancia ?? 0) - (a.ratings?.importancia ?? 0) ||
+        (b.metricas?.ultimo ?? "").localeCompare(a.metricas?.ultimo ?? "") ||
         a.nombre.localeCompare(b.nombre)
     );
 }
@@ -230,39 +241,54 @@ function techHtml(p) {
     .join("");
 }
 
-// telaraña de 5 ejes (0 a 5, medias incluidas), líneas finas, sin brillo
-function radar(r) {
-  const R = 70;
-  const n = CRITERIA.length;
-  const at = (i, v) => {
-    const a = -Math.PI / 2 + (i * 2 * Math.PI) / n;
-    return [Math.cos(a) * R * (v / 5), Math.sin(a) * R * (v / 5)];
-  };
-  const poly = (pts) => pts.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(" ");
-  const rings = [1, 2, 3, 4, 5]
-    .map((lv) => `<polygon class="grid" points="${poly(CRITERIA.map((_, i) => at(i, lv)))}"/>`)
-    .join("");
-  const axes = CRITERIA.map((_, i) => {
-    const [x, y] = at(i, 5);
-    return `<line class="grid" x1="0" y1="0" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`;
+// percentil: qué parte de los demás proyectos queda debajo (los empates cuentan la mitad)
+function percentile(m, p) {
+  const v = m.get(p);
+  const others = projects.filter((q) => q !== p).map(m.get).filter((x) => x != null);
+  if (v == null || !others.length) return null;
+  const below = others.reduce((n, x) => n + (x < v ? 1 : x === v ? 0.5 : 0), 0);
+  return Math.round((100 * below) / others.length);
+}
+
+// barras: valor real a la derecha, largo = percentil
+function metricsHtml(p) {
+  const rows = METRICS.map((m) => {
+    const v = m.get(p);
+    const pct = percentile(m, p);
+    if (v == null || pct == null) return "";
+    // si el código llegó casi completo en un commit, git solo prueba una cota inferior
+    const partial = m.key === "esfuerzo" && p.metricas?.historiaParcial;
+    const value = `${partial ? "≥ " : ""}${nf.format(v)} ${m.unit[v === 1 ? 0 : 1]}`;
+    const hint = partial
+      ? `${m.hint}. El código se subió casi completo en un solo commit, así que el historial no muestra todo el trabajo.`
+      : m.hint;
+    const sentence =
+      pct === 100 ? "el más alto de mis proyectos"
+      : pct === 0 ? "el más bajo de mis proyectos"
+      : `más que el ${pct} % de mis proyectos`;
+    return `<div class="metric" title="${escapeHtml(hint)}">
+        <dt>${m.label}</dt>
+        <dd><span class="v">${value}</span><span class="pct">${sentence}</span>
+          <span class="bar" aria-hidden="true"><span style="width:${Math.max(pct, 2)}%"></span></span></dd>
+      </div>`;
   }).join("");
-  const vals = CRITERIA.map(([k]) => Math.max(0, Math.min(5, r[k] ?? 0)));
-  const shape = `<polygon class="shape" points="${poly(vals.map((v, i) => at(i, v)))}"/>`;
-  const pts = vals
-    .map((v, i) => {
-      const [x, y] = at(i, v);
-      return `<circle class="pt" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="2"/>`;
-    })
+  return rows ? `<dl class="metrics">${rows}</dl>` : "";
+}
+
+function lastChange(p) {
+  const d = p.metricas?.ultimo;
+  if (!d) return "";
+  const [y, mo] = d.split("-");
+  return `<time class="last" datetime="${d}" title="Último cambio en el código">${MONTHS[+mo - 1]} ${y}</time>`;
+}
+
+// estrellas y forks junto al ícono; en cero no aparecen
+function repoHtml(p) {
+  const counts = [[p.estrellas, STAR_SVG, "estrella", "estrellas"], [p.forks, FORK_SVG, "fork", "forks"]]
+    .filter(([n]) => n > 0)
+    .map(([n, svg, one, many]) => `<span class="count" title="${n} ${n === 1 ? one : many}">${svg}${n}</span>`)
     .join("");
-  // etiqueta arriba, valor abajo: dos líneas angostas en vez de una ancha
-  const labels = CRITERIA.map(([, label], i) => {
-    const [x, y] = at(i, 6);
-    const anchor = Math.abs(x) < 4 ? "middle" : x > 0 ? "start" : "end";
-    const top = i === 0 ? y - 18 : y - 4;
-    return `<text x="${x.toFixed(1)}" y="${top.toFixed(1)}" text-anchor="${anchor}">${label}<tspan class="v" x="${x.toFixed(1)}" dy="16">${vals[i]}</tspan></text>`;
-  }).join("");
-  const aria = CRITERIA.map(([, label], i) => `${label} ${vals[i]} de 5`).join(", ");
-  return `<svg class="radar" viewBox="-176 -118 352 206" role="img" aria-label="${aria}">${rings}${axes}${shape}${pts}${labels}</svg>`;
+  return `<a class="repo" href="${escapeHtml(p.github)}" target="_blank" rel="noopener" aria-label="Repositorio en GitHub" title="Repositorio en GitHub">${counts}${GITHUB_SVG}</a>`;
 }
 
 function renderCard(list, idx) {
@@ -283,15 +309,18 @@ function renderCard(list, idx) {
 
   cardEl.style.setProperty("--g", statusRgb(p.status));
   cardEl.innerHTML = `
-    ${hasRepo ? `<a class="repo" href="${escapeHtml(p.github)}" target="_blank" rel="noopener" aria-label="Repositorio en GitHub" title="Repositorio en GitHub">${GITHUB_SVG}</a>` : ""}
-    <h1>${escapeHtml(p.nombre)}</h1>
+    <header class="title">
+      <h1>${escapeHtml(p.nombre)}</h1>
+      ${hasRepo ? repoHtml(p) : ""}
+    </header>
     <div class="meta">
       <span class="status"><span class="dot" aria-hidden="true"></span>${escapeHtml(STATUS_LABEL[p.status] || p.status || "")}</span>
+      ${lastChange(p)}
       <span class="techs">${techHtml(p)}</span>
     </div>
     <div class="about">
       <p class="desc">${escapeHtml(p.descripcion)}</p>
-      ${p.ratings ? radar(p.ratings) : ""}
+      ${metricsHtml(p)}
     </div>
     ${images ? `<div class="gallery">${images}</div>` : ""}
     ${

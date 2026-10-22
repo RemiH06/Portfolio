@@ -1,6 +1,6 @@
 /* Software: sobrio, a la mitxela. Negro absoluto, texto, líneas finas.
    Categorías como pestañas, un riel con todos los proyectos de la categoría
-   y un proyecto a la vez, con su telaraña de calificaciones. */
+   y un proyecto a la vez, con sus métricas. */
 
 :root {
   --text: #e8e8e8;
@@ -160,12 +160,20 @@ a {
   }
 }
 
+/* título y repo en una fila: los contadores empujan, no se encima nada */
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
 .project h1 {
   font-size: clamp(1.9rem, 4.5vw, 3rem);
   font-weight: 700;
   line-height: 1.05;
-  margin: 0 0 12px;
-  padding-right: 44px; /* espacio para el ícono del repo */
+  margin: 0;
+  min-width: 0;
   overflow-wrap: anywhere;
 }
 .meta {
@@ -207,14 +215,21 @@ a {
   font-size: 0.78rem;
   color: var(--dim);
 }
-/* repo: esquina superior derecha del proyecto */
+.last {
+  font-variant-numeric: tabular-nums;
+}
+/* repo: esquina superior derecha, con estrellas y forks antes del ícono */
 .repo {
-  position: absolute;
-  top: 6px;
-  right: 0;
+  flex: none;
   display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
   padding: 4px;
   color: var(--dim);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
   transition: color 0.2s ease;
 }
 .repo:hover {
@@ -225,8 +240,17 @@ a {
   height: 26px;
   fill: currentColor;
 }
+.repo .count {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.repo .count svg {
+  width: 14px;
+  height: 14px;
+}
 
-/* descripción y telaraña lado a lado */
+/* descripción y métricas lado a lado */
 .about {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
@@ -240,33 +264,45 @@ a {
   margin: 0;
   max-width: 64ch;
 }
-.radar {
-  width: 100%;
-  height: auto;
-  overflow: visible;
+/* métricas: etiqueta y valor en una línea, barra fina con el percentil debajo */
+.metrics {
+  margin: 0;
+  display: grid;
+  gap: 18px;
 }
-.radar .grid {
-  fill: none;
-  stroke: #262626;
-  stroke-width: 1;
+.metric {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+  font-size: 0.88rem;
 }
-.radar .shape {
-  fill: rgba(232, 232, 232, 0.07);
-  stroke: var(--text);
-  stroke-width: 1.25;
-  stroke-linejoin: round;
+.metric dt {
+  color: var(--dim);
 }
-.radar .pt {
-  fill: var(--text);
+.metric dd {
+  display: contents;
 }
-/* 15 unidades del viewBox ≈ 12.8px reales a 300px de ancho */
-.radar text {
-  font-family: inherit;
-  font-size: 15px;
-  fill: var(--dim);
+.metric .v {
+  justify-self: end;
+  font-variant-numeric: tabular-nums;
 }
-.radar .v {
-  fill: var(--text);
+.metric .bar {
+  grid-column: 1 / -1;
+  height: 2px;
+  margin-top: 8px;
+  background: #262626;
+}
+.metric .bar span {
+  display: block;
+  height: 100%;
+  background: var(--text);
+}
+.metric .pct {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin-top: 6px;
+  font-size: 0.76rem;
+  color: var(--faint);
 }
 
 .gallery {
@@ -365,8 +401,7 @@ a {
   .about {
     grid-template-columns: minmax(0, 1fr);
   }
-  .radar {
-    max-width: 300px;
-    justify-self: center;
+  .metrics {
+    max-width: 420px;
   }
 }
