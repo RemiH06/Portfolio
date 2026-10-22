@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Projects</title>
-    <meta name="Description" content="Catálogo de proyectos de software de Hex (Lambda Heredia).">
+    <meta name="Description" content="Constelación de proyectos de software de Hex (Lambda Heredia).">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="./css/catalog.css">
     <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body data-src="./json/sw.json">
-    <header class="catalog-header">
+    <header class="c-header">
         <h1>Software</h1>
-        <a href="https://github.com/RemiH06/Portfolio" class="repo-link" target="_blank" rel="noopener">Portfolio en GitHub ↗</a>
-        <a href="./projects.html" class="back-link" title="Volver">
+        <span class="spacer"></span>
+        <a href="./projects.html" class="back" title="Volver a proyectos">
             <img id="sw-image" onload="this.classList.add('loaded');" src="./img/titles/xue.png" alt="Volver a proyectos">
         </a>
     </header>
 
-    <div class="filters">
-        <input type="search" id="search" placeholder="Buscar proyecto, lenguaje, herramienta…" aria-label="Buscar">
-        <select id="statusFilter" aria-label="Filtrar por status">
-            <option value="">Todos los status</option>
-        </select>
-        <select id="langFilter" aria-label="Filtrar por lenguaje">
-            <option value="">Todos los lenguajes</option>
-        </select>
-        <span class="count" id="count"></span>
+    <div class="c-bar">
+        <input type="search" id="search" class="c-search" placeholder="buscar…" aria-label="Buscar proyecto">
+        <div class="c-techs" id="techs" role="group" aria-label="Filtrar por tecnología"></div>
+        <div class="c-status" id="statuses" role="group" aria-label="Filtrar por estado"></div>
+        <div class="c-view" role="group" aria-label="Cambiar vista">
+            <button type="button" data-view="constellation" aria-pressed="true" aria-label="Vista constelación" title="Constelación">✦</button>
+            <button type="button" data-view="index" aria-pressed="false" aria-label="Vista índice" title="Índice">≡</button>
+        </div>
+        <span class="c-count" id="count"></span>
     </div>
 
-    <main class="catalog-grid" id="grid"></main>
+    <main id="grid"></main>
 
-    <div class="detail-overlay" id="detailOverlay">
+    <div class="overlay" id="overlay">
         <div class="detail"></div>
     </div>
 

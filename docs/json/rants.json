@@ -146,16 +146,37 @@
     ]
   },
   {
+    "date": "2026-02-22",
+    "location": "AyP",
+    "description": "Di por terminado AyP, o mejor dicho terminado dentro de lo que cabe, que es como se terminan los diarios y los libros de poesía: no se acaban, nada más decides dejar de perseguirlos. Me faltan los dibujos y me falta vida, porque un diario pide material y el material no se apura por una. Es raro cerrar algo sabiendo que lo voy a volver a abrir, pero creo que así son todas las cosas que una quiere de verdad.",
+    "images": [
+    ]
+  },
+  {
+    "date": "2026-07-24",
+    "location": "AduSI",
+    "description": "Llevo semanas atorada en el sexto axioma de AduSI, el del futuro, porque para hablar del futuro en serio necesito bases de leyes y de economía que todavía no tengo, y me niego a escribir un manifiesto con puras ganas y cero estructura. Los otros cinco salieron casi solos (el poder, el capital, la sociedad, la devoción y la realidad se encadenan uno con otro como si siempre hubieran querido estar juntos), pero el futuro no se deja, tal vez porque es el único que todavía no pasa. Me puse a armar un temario mínimo de derecho y economía para no seguir dando vueltas. A final de cuentas escribir sobre el futuro es la forma más honesta de admitir que no lo controlas.",
+    "images": [
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "location": "100%",
+    "description": "Volví a 100% después de meses sin tocarlo y me cayó el veinte de que ni yo tengo claro si es un libro o un juego, porque empezó como fantasía para contar el Génesis del mundo y en algún punto se me volvió también un MOBA, y las dos cosas comparten mundo pero no sé si deberían compartir nombre. El Génesis va como en 30%, que suena poquísimo pero es justo la parte más difícil, la de inventar las reglas antes de poder romperlas. Tengo chats enteros en claude.ai que algún día voy a migrar acá (algún día, dice la que lleva un año diciéndolo).",
+    "images": [
+    ]
+  },
+  {
     "date": "2026-10-20",
     "location": "Perso",
-    "description": "Odio WhatsApp Web con una intensidad que no le tengo a casi ningún software. Es una pestaña que se come 600 MB de RAM para hacer lo que un cliente de IRC de los noventa hacía con un suspiro. Cada que cambio de red se desconecta, cada que cierro el cel me reclama como si lo hubiera abandonado, y necesita que el teléfono esté vivo y conectado para funcionar, o sea que no es un cliente, es un espejo glorificado. Mandar un archivo es una lotería y buscar un mensaje viejo es arqueología. Lo peor es que no hay alternativa real porque todos mis contactos están ahí secuestrados. Es el ejemplo perfecto de monopolio que te deja usar algo malísimo porque sabe que no te vas a ir.",
+    "description": "Hay pocas cosas de software que odie tanto como WhatsApp Web, y eso que le tengo paciencia a casi todo. Es una pestaña que se come media compu de RAM para hacer lo que un cliente de IRC resolvía en los noventa sin despeinarse, y encima necesita que el teléfono esté VIVO y conectado para funcionar, o sea que no es un cliente de verdad, es un espejo glorificado que se cae cada que cambio de red (y luego me reclama como si yo lo hubiera abandonado). Buscar un mensaje viejo ahí es arqueología, mandar un archivo es una lotería, y lo peor es que ni me puedo ir porque todos mis contactos están secuestrados ahí. Es el ejemplo perfecto de que un monopolio te deja usar algo malísimo precisamente porque sabe que no tienes a dónde correr. Dicen que si algo es gratis el producto eres tú, pero acá ni siquiera eres el producto, eres el rehén.",
     "images": [
     ]
   },
   {
     "date": "2026-10-21",
     "location": "Perso",
-    "description": "Me cae que nos vendieron la mentira de que el almacenamiento es caro. No lo es. Un disco de un terabyte cuesta una fracción de lo que costaba hace diez años y cada año baja. Lo caro es el teatro: te dan 5 GB gratis para engancharte y luego te rentan de por vida unos cuantos gigas a precio de oro, pagando cada mes por bytes que ya pagaste. Y en físico el cuento es al revés, te meten miedo de perder todo para que no salgas de su nube. La verdad es que un NAS en casa se paga solo en un par de años y los datos son tuyos. Por eso quiero montar mi propio respaldo en la Bakery: dejar de alquilar lo que puedo poseer.",
+    "description": "Me choca que nos hayan vendido la idea de que el almacenamiento es caro, porque no lo es, es de las poquísimas cosas en tecnología que de verdad baja de precio cada año. Un disco de un terabyte cuesta una fracción de lo que costaba hace diez años, lo caro es el teatro: te regalan 5 GB para engancharte y luego te rentan de por vida unos cuantos gigas a precio de oro, cobrándote cada mes por bytes que ya pagaste (y que si dejas de pagar se esfuman con todo y tus fotos). En lo físico el cuento es al revés, te meten miedo de perderlo todo para que no se te ocurra salirte de su nube, cuando la verdad es que un NAS en casa se paga solo en un par de años y ahí sí los datos son tuyos, tuyos de verdad, no tuyos-mientras-sigas-suscrita. Por eso quiero montar mi propio respaldo en la Bakery, porque a final de cuentas la nube no es más que la computadora de alguien más, y prefiero que esa computadora sea mía.",
     "images": [
     ]
   }

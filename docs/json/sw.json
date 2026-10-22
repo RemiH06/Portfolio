@@ -16,7 +16,7 @@
         "nombre": "SaveTrack",
         "autor": "Hex",
         "descripcion": "Financial Organization App with an account system, calendar, event scheduler, incomes and outcomes with custom labels and more!",
-        "status": "Concluded",
+        "status": "Stand by",
         "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
         "herramientas": ["Android Studio", "Gradle", "XML"],
         "imagenes": [
@@ -42,7 +42,7 @@
         "nombre": "Hyperchess",
         "autor": "Hex",
         "descripcion": "Chess, except the board is 12x12 and has like 67 switchable pieces with unique abilities.",
-        "status": "In progress",
+        "status": "Stand by",
         "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
         "herramientas": ["Android Studio", "Gradle", "XML"],
         "imagenes": [
@@ -66,7 +66,7 @@
         "nombre": "Ryoko",
         "autor": "Hex",
         "descripcion": "Flight data scraper. Uses several prediction and selection models, including genethic algorithms to get the best prices on custom dates and time periods",
-        "status": "Updating",
+        "status": "Stand by",
         "lenguajes": ["Python", "R"],
         "herramientas": ["Jupyter", "Quarto", "playwright", "selectolax", "tidyverse"],
         "imagenes": [
@@ -79,7 +79,7 @@
         "nombre": "Anime Scraper",
         "autor": "Hex",
         "descripcion": "Downloads massively (or not) anime episodes from anitaku",
-        "status": "Concluded",
+        "status": "Stand by",
         "lenguajes": ["Python"],
         "herramientas": ["Jupyter", "beautifulsoup", "requests", "IDM"],
         "imagenes": [
@@ -105,7 +105,7 @@
         "nombre": "QScheduler",
         "autor": "Hex",
         "descripcion": "Automatic cubicle scheduler so I always have a place to be at campus",
-        "status": "Concluded",
+        "status": "Discontinued",
         "lenguajes": ["Python"],
         "herramientas": ["playwright"],
         "imagenes": [
@@ -157,7 +157,7 @@
         "nombre": "Mapo",
         "autor": "Hex",
         "descripcion": "Geodata bank. Clusterizes zones through different params according to user needs. ",
-        "status": "In progress (waiting for something, just do not know what)",
+        "status": "In progress",
         "lenguajes": ["Python", "R"],
         "herramientas": ["", "", "", ""],
         "imagenes": [
@@ -170,7 +170,7 @@
         "nombre": "Lithomancer",
         "autor": "Hex",
         "descripcion": "My approach for earthquake prediction using ML models (Random Forest, SVM, CNN 1D) trained on Mexico's historical seismic data from the SSN/UNAM catalog. Includes geospatial clustering, feature engineering, and forward projections.",
-        "status": "Concluded",
+        "status": "Stand by",
         "lenguajes": ["Python"],
         "herramientas": ["Jupyter", "Scikit"],
         "imagenes": [
@@ -247,7 +247,7 @@
         "nombre": "FLOPs Information Criterion",
         "autor": "Hex",
         "descripcion": "FIC (FLOPs Information Criterion) is a novel model selection criterion that extends traditional information criteria (AIC, BIC) by incorporating computational efficiency into the decision process.",
-        "status": "Concluded",
+        "status": "In progress",
         "lenguajes": ["Python", "C++"],
         "herramientas": ["Jupyter", "PyTorch", "TensorFlow", "NumPy", "Scikit", "LaTeX"],
         "imagenes": [
@@ -260,7 +260,7 @@
         "nombre": "Metropoly",
         "autor": "Hex",
         "descripcion": "Monopoly-like board generator. It also generates cards for fortune, properties and even an instructive.",
-        "status": "Concluded",
+        "status": "Stand by",
         "lenguajes": ["Python"],
         "herramientas": ["HTML/CSS"],
         "imagenes": [
@@ -286,7 +286,7 @@
         "nombre": "LinNeo",
         "autor": "Hex",
         "descripcion": "LinNeo is a biodiversity knowledge graph with ~2.5 million species from the GBIF taxonomic backbone, each with its full hierarchy (Biota → Domain → Kingdom → Phylum → Class → Order → Family → Genus → Species), geographic distribution, conservation status, and, when available, description, common names, images, and sound.",
-        "status": "Concluded",
+        "status": "Stand by",
         "lenguajes": ["Python", "JS", "CQL"],
         "herramientas": ["React", "Neo4j", "FastAPI", "Jupyter", "Docker"],
         "imagenes": [
@@ -316,7 +316,7 @@
         "nombre": "iroFactory",
         "autor": "Hex",
         "descripcion": "A personal collection of 12 self-contained HTML design themes for project documentation. Each theme ships as a single file with its own animated background, color system, typography, and semantic tokens. Intended as documentation skins for personal projects spanning algorithms, data science, creative writing, travel, music, embedded systems, and more.",
-        "status": "Concluded",
+        "status": "In progress",
         "lenguajes": ["JS"],
         "herramientas": ["HTML/CSS"],
         "imagenes": [
