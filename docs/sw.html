@@ -4,36 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software Projects</title>
-    <meta name="Description" content="Constelación de proyectos de software de Hex (Lambda Heredia).">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <meta name="Description" content="Proyectos de software de Hex (Lambda Heredia), por categoría.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="https://fonts.bunny.net/css?family=hubot-sans:300,400,700">
     <link rel="stylesheet" type="text/css" href="./css/catalog.css">
-    <link href="https://fonts.googleapis.com/css2?family=Hubot+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body data-src="./json/sw.json">
-    <header class="c-header">
-        <h1>Software</h1>
-        <span class="spacer"></span>
+    <canvas id="nebula" aria-hidden="true"></canvas>
+
+    <header class="head">
         <a href="./projects.html" class="back" title="Volver a proyectos">
-            <img id="sw-image" onload="this.classList.add('loaded');" src="./img/titles/xue.png" alt="Volver a proyectos">
+            <img src="./img/titles/xue.png" alt="Volver a proyectos">
         </a>
+        <img class="emblem" src="./img/titles/sw.png" alt="Software">
+        <span></span>
     </header>
 
-    <div class="c-bar">
-        <input type="search" id="search" class="c-search" placeholder="buscar…" aria-label="Buscar proyecto">
-        <div class="c-techs" id="techs" role="group" aria-label="Filtrar por tecnología"></div>
-        <div class="c-status" id="statuses" role="group" aria-label="Filtrar por estado"></div>
-        <div class="c-view" role="group" aria-label="Cambiar vista">
-            <button type="button" data-view="constellation" aria-pressed="true" aria-label="Vista constelación" title="Constelación">✦</button>
-            <button type="button" data-view="index" aria-pressed="false" aria-label="Vista índice" title="Índice">≡</button>
-        </div>
-        <span class="c-count" id="count"></span>
+    <nav class="tabs" id="tabs" role="tablist" aria-label="Categorías"></nav>
+
+    <div class="stage">
+        <nav class="rail" id="rail" aria-label="Proyectos de la categoría"></nav>
+        <article class="project" id="project" role="tabpanel"></article>
     </div>
 
-    <main id="grid"></main>
-
-    <div class="overlay" id="overlay">
-        <div class="detail"></div>
-    </div>
+    <footer class="credits">Íconos: <a href="https://devicon.dev">devicon</a>, <a href="https://simpleicons.org">Simple Icons</a>, <a href="https://iconify.design">Iconify</a> y logos oficiales (<a href="./img/icons/CREDITOS.md">procedencia</a>). Las marcas son de sus dueños.</footer>
 
     <script src="./js/catalog.js"></script>
 </body>

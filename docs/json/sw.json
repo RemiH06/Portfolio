@@ -2,10 +2,12 @@
     {
         "nombre": "Cream Based Dialect",
         "autor": "Hex",
-        "descripcion": "My own programming language. Runs over C# and it's my approach for a modern version of ASM.",
+        "descripcion": "Mi propio lenguaje de programación: un intérprete en C# inspirado en la sencillez de ASM, BASIC y ALGOL. Es muy simple y no sirve para cosas complejas (tampoco era la idea), y solo lo he probado dentro de Visual Studio.",
         "status": "Concluded",
-        "lenguajes": ["C#", "CBD"],
-        "herramientas": ["VS"],
+        "categoria": "investigacion",
+        "ratings": { "importancia": 4, "complejidad": 4.5, "usabilidad": 2, "practicidad": 1.5, "completitud": 4.5 },
+        "lenguajes": ["C#"],
+        "herramientas": ["Visual Studio"],
         "imagenes": [
             { "src": "./img/sw/cbd_ss1.png", "caption": "Interpreter in blank, VS with the code on the background" },
             { "src": "./img/sw/cbd_ss2.png", "caption": "Fibonacci example" }
@@ -15,10 +17,12 @@
     {
         "nombre": "SaveTrack",
         "autor": "Hex",
-        "descripcion": "Financial Organization App with an account system, calendar, event scheduler, incomes and outcomes with custom labels and more!",
+        "descripcion": "App de finanzas personales para Android con cuentas, calendario de eventos, ingresos y egresos con etiquetas propias y gráficas para ver a dónde se va el dinero. El backend es PHP con MySQL y en el teléfono todo vive en Room.",
         "status": "Stand by",
-        "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
-        "herramientas": ["Android Studio", "Gradle", "XML"],
+        "categoria": "apps",
+        "ratings": { "importancia": 3, "complejidad": 3.5, "usabilidad": 3.5, "practicidad": 3.5, "completitud": 3 },
+        "lenguajes": ["Kotlin", "PHP", "MySQL"],
+        "herramientas": ["Jetpack Compose", "Room", "Volley", "MPAndroidChart"],
         "imagenes": [
             { "src": "./img/sw/savetrack_ss1.png", "caption": "Login" },
             { "src": "./img/sw/savetrack_ss2.png", "caption": "Expenses list example" },
@@ -30,10 +34,12 @@
     {
         "nombre": "Persos",
         "autor": "Hex",
-        "descripcion": "Approach for a matchmaking system, intended for custom games in LoL, couldn't take pics because it seems Riot has discontinued the summoner/by-name search.",
+        "descripcion": "Matchmaking para partidas personalizadas de League of Legends entre amigos, para que los equipos salgan parejos y nadie sufra en su línea. La primera versión en C# dependía de un Excel con mi evaluación de cada quien; la de Python usa la API de Riot, que dejó de buscar por nombre de invocador y me dejó a medias.",
         "status": "Stand by",
-        "lenguajes": ["Python"],
-        "herramientas": ["Riot Games API"],
+        "categoria": "diversiones",
+        "ratings": { "importancia": 1.5, "complejidad": 2, "usabilidad": 1, "practicidad": 1, "completitud": 2 },
+        "lenguajes": ["Python", "C#"],
+        "herramientas": ["Riot Games API", ".NET"],
         "imagenes": [
         ],
         "github": "https://github.com/RemiH06/Persos"
@@ -41,10 +47,12 @@
     {
         "nombre": "Hyperchess",
         "autor": "Hex",
-        "descripcion": "Chess, except the board is 12x12 and has like 67 switchable pieces with unique abilities.",
+        "descripcion": "Ajedrez en un tablero de 12x12 con unas 67 piezas intercambiables, cada una con habilidades propias. Lo monté sobre Chesso, una app de ajedrez de código abierto en Jetpack Compose.",
         "status": "Stand by",
-        "lenguajes": ["Kotlin", "PHP", "MySQL", "SQLite"],
-        "herramientas": ["Android Studio", "Gradle", "XML"],
+        "categoria": "diversiones",
+        "ratings": { "importancia": 3, "complejidad": 3.5, "usabilidad": 2.5, "practicidad": 1, "completitud": 2.5 },
+        "lenguajes": ["Kotlin"],
+        "herramientas": ["Jetpack Compose", "Android Studio"],
         "imagenes": [
             { "src": "./img/sw/hyperchess_ss1.png", "caption": "The spider is a piece that acts like a queen but with less range" },
             { "src": "./img/sw/hyperchess_ss2.png", "caption": "Creating a new piece was a challenge but with one done the rest is just a matter of time" }
@@ -54,10 +62,12 @@
     {
         "nombre": "Sulfur",
         "autor": "Hex",
-        "descripcion": "A program that turns character strings into colors.",
+        "descripcion": "Convierte texto en color de forma determinista: el mismo texto siempre da el mismo color (un OKLCH sacado del SHA-256). Encima de esa idea armé un gestor de contraseñas de terminal en Haskell, con la bóveda cifrada con una llave derivada por Argon2id; la versión vieja en Kotlin era un experimento sin ningún valor de seguridad.",
         "status": "Concluded",
-        "lenguajes": ["Kotlin"],
-        "herramientas": ["PyCharm", "Hexadecimal"],
+        "categoria": "herramientas",
+        "ratings": { "importancia": 2.5, "complejidad": 1.5, "usabilidad": 4, "practicidad": 3.5, "completitud": 5 },
+        "lenguajes": ["Haskell"],
+        "herramientas": ["Cabal"],
         "imagenes": [
         ],
         "github": "https://github.com/RemiH06/Sulfur"
@@ -65,10 +75,12 @@
     {
         "nombre": "Ryoko",
         "autor": "Hex",
-        "descripcion": "Flight data scraper. Uses several prediction and selection models, including genethic algorithms to get the best prices on custom dates and time periods",
+        "descripcion": "Scraper de Google Flights con Playwright que arma sus propios datasets, y encima un modelo que predice precios de vuelos (lo entrené con la ruta Guadalajara-Tokio). La parte de series de tiempo la hice en R con fable.",
         "status": "Stand by",
+        "categoria": "data",
+        "ratings": { "importancia": 3, "complejidad": 4, "usabilidad": 1.5, "practicidad": 3, "completitud": 2.5 },
         "lenguajes": ["Python", "R"],
-        "herramientas": ["Jupyter", "Quarto", "playwright", "selectolax", "tidyverse"],
+        "herramientas": ["Playwright", "selectolax", "scikit-learn", "pandas", "fable", "Quarto"],
         "imagenes": [
             { "src": "./img/sw/ryoko_ss1.png", "caption": "Best flight for Tokyo and its info (this was last year, did not travel)" },
             { "src": "./img/sw/ryoko_ss2.png", "caption": "Example of how you can scrape so much info (you can save it as csv, xlsx or sql)" }
@@ -78,10 +90,12 @@
     {
         "nombre": "Anime Scraper",
         "autor": "Hex",
-        "descripcion": "Downloads massively (or not) anime episodes from anitaku",
+        "descripcion": "Busca en el HTML de anitaku el link de mejor calidad de cada episodio y descarga series completas (o nada más los capítulos que le pidas), con una interfaz en CustomTkinter. Con fines educativos, eso sí.",
         "status": "Stand by",
+        "categoria": "data",
+        "ratings": { "importancia": 2, "complejidad": 2, "usabilidad": 2.5, "practicidad": 3.5, "completitud": 3.5 },
         "lenguajes": ["Python"],
-        "herramientas": ["Jupyter", "beautifulsoup", "requests", "IDM"],
+        "herramientas": ["BeautifulSoup", "requests", "CustomTkinter", "pandas"],
         "imagenes": [
             { "src": "./img/sw/animescraper_ss1.png", "caption": "Info input for the unitary download (for multi is necessary to use the python script and a df with links and anime name (csv or xlsx)" },
             { "src": "./img/sw/animescraper_ss2.png", "caption": "Output example" }
@@ -91,10 +105,12 @@
     {
         "nombre": "Wallpapers",
         "autor": "Hex",
-        "descripcion": "Background animations, quite simple ones but hypnotizing",
+        "descripcion": "Fondos animados con cubos e icosaedros volando que, en el fondo, eran una prueba de cuánto 3D aguanta el navegador antes de rendirse. Sencillos, pero hipnóticos.",
         "status": "Concluded",
-        "lenguajes": ["JS"],
-        "herramientas": ["HTML/CSS"],
+        "categoria": "diseno",
+        "ratings": { "importancia": 1.5, "complejidad": 1, "usabilidad": 4, "practicidad": 1.5, "completitud": 5 },
+        "lenguajes": ["HTML/CSS", "JS"],
+        "herramientas": [],
         "imagenes": [
             { "src": "./img/sw/wpps_ss1.png", "caption": "Exploding cubes" },
             { "src": "./img/sw/wpps_ss2.png", "caption": "Exploding icosahedrons" }
@@ -104,10 +120,12 @@
     {
         "nombre": "QScheduler",
         "autor": "Hex",
-        "descripcion": "Automatic cubicle scheduler so I always have a place to be at campus",
+        "descripcion": "Me apartaba cubículo en el campus con dos semanas de anticipación raspando el sistema de reservas con Playwright (también hubo una versión que agendaba por Outlook, que no recomiendo). Murió en agosto de 2025, cuando todo lo del ITESO empezó a pedir doble factor; hoy sirve más bien para aprender a armar scrapers.",
         "status": "Discontinued",
+        "categoria": "herramientas",
+        "ratings": { "importancia": 2, "complejidad": 2.5, "usabilidad": 3, "practicidad": 4, "completitud": 4 },
         "lenguajes": ["Python"],
-        "herramientas": ["playwright"],
+        "herramientas": ["Playwright", "Outlook (pywin32)"],
         "imagenes": [
             { "src": "./img/sw/qsch_ss1.png", "caption": "Code structure for reservations" },
             { "src": "./img/sw/qsch_ss2.png", "caption": "It works, trust me" }
@@ -117,10 +135,12 @@
     {
         "nombre": "Image Dataset Factory",
         "autor": "Hex",
-        "descripcion": "Downloads images massively from google images about customizable topics, can classify them with AlexNet",
+        "descripcion": "Descarga en masa imágenes de Google Images sobre los temas que le pidas, las separa en entrenamiento y prueba y genera los diccionarios para aprendizaje supervisado; incluso puede clasificarlas con AlexNet. Partí del scraper de ohyicong y lo arreglé hasta que volvió a pasar las restricciones nuevas.",
         "status": "Concluded",
+        "categoria": "data",
+        "ratings": { "importancia": 2, "complejidad": 2.5, "usabilidad": 3, "practicidad": 3, "completitud": 4.5 },
         "lenguajes": ["Python"],
-        "herramientas": ["Jupyter", "selenium"],
+        "herramientas": ["Selenium", "TensorFlow", "scikit-learn", "Pillow", "Jupyter"],
         "imagenes": [
             { "src": "./img/sw/idf_ss1.png", "caption": "Gathering" },
             { "src": "./img/sw/idf_ss2.png", "caption": "How is the dataset built and structured" }
@@ -130,10 +150,12 @@
     {
         "nombre": "GitHub Wrapped",
         "autor": "Hex & Ethan04Munoz",
-        "descripcion": "Raw css and js experiments hodgepodge, uses octokit to summarize profile info and shows it unwrapped",
+        "descripcion": "Un resumen anual de tu GitHub (repos creados, commits y demás) que saca los datos con Octokit. Su gracia nunca fue el dato sino la presentación: es un revoltijo de experimentos de CSS y JS crudos.",
         "status": "Discontinued",
-        "lenguajes": ["JS"],
-        "herramientas": ["HTML/CSS", "Octokit"],
+        "categoria": "diversiones",
+        "ratings": { "importancia": 1, "complejidad": 2, "usabilidad": 2, "practicidad": 1, "completitud": 2 },
+        "lenguajes": ["JS", "HTML/CSS"],
+        "herramientas": ["Octokit"],
         "imagenes": [
             { "src": "./img/sw/ghw_ss1.png", "caption": "First you introduce your username and scroll to find your stats wrapped up in cool slides" },
             { "src": "./img/sw/ghw_ss2.png", "caption": "At the end a summary of all the previous info (not finished yet)" }
@@ -143,10 +165,12 @@
     {
         "nombre": "Store Sales Forecasting",
         "autor": "Hex",
-        "descripcion": "Store Sales Forecasting for a Kaggle competition: https://www.kaggle.com/competitions/store-sales-time-series-forecasting/overview",
+        "descripcion": "Mi entrada a la competencia de pronóstico de ventas de Kaggle. Probé desde un SNAIVE hasta XGBoost, LightGBM y Prophet en varios documentos de Quarto, y el modelo final fue CatBoost con un RMSLE de 0.398.",
         "status": "Concluded",
+        "categoria": "kaggle",
+        "ratings": { "importancia": 2.5, "complejidad": 3.5, "usabilidad": 1, "practicidad": 2, "completitud": 5 },
         "lenguajes": ["R", "Python"],
-        "herramientas": ["Quarto", "Jupyter", "tidyverse", "catboost"],
+        "herramientas": ["CatBoost", "XGBoost", "LightGBM", "Prophet", "tidymodels", "Quarto"],
         "imagenes": [
             { "src": "./img/sw/ssf_ss1.png", "caption": "Best score: 0.39817" },
             { "src": "./img/sw/ssf_ss2.png", "caption": "13 submissions" }
@@ -156,10 +180,12 @@
     {
         "nombre": "Mapo",
         "autor": "Hex",
-        "descripcion": "Geodata bank. Clusterizes zones through different params according to user needs. ",
+        "descripcion": "Gaiarda contesta qué hay; Mapo contesta qué deberías hacer con eso. Cruza datos geográficos (del INEGI, sobre todo) para decidir dónde conviene poner un negocio, dónde buscar cierto perfil para contratar o qué zonas se quedaron sin servicios, y ahora también planea rutas de logística de carga.",
         "status": "In progress",
-        "lenguajes": ["Python", "R"],
-        "herramientas": ["", "", "", ""],
+        "categoria": "obras",
+        "ratings": { "importancia": 5, "complejidad": 5, "usabilidad": 3, "practicidad": 4.5, "completitud": 3 },
+        "lenguajes": ["Elixir", "Python"],
+        "herramientas": ["Phoenix LiveView", "PostgreSQL", "PostGIS", "FastAPI", "Tailwind", "Docker"],
         "imagenes": [
             { "src": "./img/sw/mapo_ss1.png", "caption": "" },
             { "src": "./img/sw/mapo_ss2.png", "caption": "" }
@@ -169,10 +195,12 @@
     {
         "nombre": "Lithomancer",
         "autor": "Hex",
-        "descripcion": "My approach for earthquake prediction using ML models (Random Forest, SVM, CNN 1D) trained on Mexico's historical seismic data from the SSN/UNAM catalog. Includes geospatial clustering, feature engineering, and forward projections.",
+        "descripcion": "Mi intento de predecir sismos con Random Forest, SVM y una CNN 1D entrenados con el catálogo histórico del SSN de la UNAM, con clusterización geoespacial y proyecciones a futuro. Es una demostración y no un sistema de alerta (predecir terremotos es de los problemas más difíciles de la geofísica, así que lo más probable es que se equivoque).",
         "status": "Stand by",
+        "categoria": "investigacion",
+        "ratings": { "importancia": 3, "complejidad": 3.5, "usabilidad": 1.5, "practicidad": 2, "completitud": 2.5 },
         "lenguajes": ["Python"],
-        "herramientas": ["Jupyter", "Scikit"],
+        "herramientas": ["TensorFlow", "scikit-learn", "statsmodels", "Plotly", "Jupyter"],
         "imagenes": [
             { "src": "./img/sw/litho_ss1.png", "caption": "Earthquakes by intensity" },
             { "src": "./img/sw/litho_ss2.png", "caption": "Clusterized everything" }
@@ -182,10 +210,12 @@
     {
         "nombre": "Yutubify",
         "autor": "Hex",
-        "descripcion": "Turns Spotify playlists into YouTube playlists.",
+        "descripcion": "Convierte playlists de Spotify en playlists de YouTube. Lo hice en una sola noche.",
         "status": "Concluded",
+        "categoria": "herramientas",
+        "ratings": { "importancia": 2, "complejidad": 1.5, "usabilidad": 4, "practicidad": 3.5, "completitud": 5 },
         "lenguajes": ["Python"],
-        "herramientas": ["YouTube API", "Spotify API"],
+        "herramientas": ["Spotify API", "YouTube API"],
         "imagenes": [
         ],
         "github": "https://github.com/RemiH06/Yutubify"
@@ -193,10 +223,12 @@
     {
         "nombre": "Senku",
         "autor": "Hex",
-        "descripcion": "Discord AI chatbot.",
-        "status": "Concluded",
+        "descripcion": "Bot de Discord que contesta cualquier pregunta con la API de OpenAI, basta con escribir !senku y la pregunta. La V2 la quiero correr con un modelo local en mi propio servidor en vez de depender de un servicio externo.",
+        "status": "Stand by",
+        "categoria": "apps",
+        "ratings": { "importancia": 2.5, "complejidad": 2, "usabilidad": 3.5, "practicidad": 2.5, "completitud": 4 },
         "lenguajes": ["Python"],
-        "herramientas": ["Discord API", "OpenAI API"],
+        "herramientas": ["discord.py", "OpenAI API"],
         "imagenes": [
             { "src": "./img/sw/senku_ss1.png", "caption": "Crap" }
         ],
@@ -205,10 +237,12 @@
     {
         "nombre": "Tamauijetto",
         "autor": "Hex",
-        "descripcion": "Tamauijetto is a small digital 'Tamagotchi' that evolves based on a GitHub user's activity. It uses ASCII art contained in a json file, and then uses it to generate a PNG image that can be embedded in a README, webpage, or widget.",
+        "descripcion": "Un tamagotchi que vive de tu actividad en GitHub: cada push, commit y pull request es comida, y con suficiente evoluciona (algunas ramas de su evolución se deciden al azar). Un workflow de GitHub Actions lo revisa cada hora y publica una tarjeta SVG lista para pegarse en cualquier README.",
         "status": "Concluded",
+        "categoria": "diversiones",
+        "ratings": { "importancia": 2, "complejidad": 2, "usabilidad": 4, "practicidad": 1.5, "completitud": 5 },
         "lenguajes": ["JS"],
-        "herramientas": ["Node.js", "ASCII"],
+        "herramientas": ["Node.js", "GitHub Actions"],
         "imagenes": [
             { "src": "./img/sw/tmui_ss1.png", "caption": "Dark mode" },
             { "src": "./img/sw/tmui_ss2.png", "caption": "Light mode" }
@@ -218,10 +252,12 @@
     {
         "nombre": "Meteoroglyph",
         "autor": "Hex",
-        "descripcion": "Meteoroglyph is a personal weather + outfit assistant for the Nothing Phone 3a. It reads your calendar and current weather to recommend what to wear each day, when to take an umbrella, and whether to use public transit or call an Uber.",
+        "descripcion": "Asistente de clima y outfit para los Nothing Phone: lee tu calendario y el clima para decirte qué ponerte, cuándo llevar paraguas y si conviene el transporte público o un Uber. Además dibuja simulaciones de fluidos y del clima en las luces Glyph del teléfono.",
         "status": "Concluded",
-        "lenguajes": ["Kotlin", "Python"],
-        "herramientas": ["Android Studio", "Jetpack Compose", "Nothing SDK", "Open-Meteo API"],
+        "categoria": "apps",
+        "ratings": { "importancia": 3.5, "complejidad": 3.5, "usabilidad": 4.5, "practicidad": 4.5, "completitud": 5 },
+        "lenguajes": ["Kotlin"],
+        "herramientas": ["Jetpack Compose", "Glance", "Retrofit", "Glyph SDK", "Android Studio"],
         "imagenes": [
             { "src": "./img/sw/mg_ss1.png", "caption": "Fluid simulation main page" },
             { "src": "./img/sw/mg_ss2.png", "caption": "Config vid" },
@@ -233,10 +269,12 @@
     {
         "nombre": "GlyphFactory",
         "autor": "Hex",
-        "descripcion": "GlyphFactory is a standalone browser-based dot matrix editor for designing pixel-art style glyphs (numbers, letters, outfit icons, weather symbols, and UI elements) following the Nothing Phone Glyph Matrix aesthetic. Built as a support tool for my Meteoroglyph Android app project.",
+        "descripcion": "Editor de matriz de puntos en el navegador para diseñar glifos al estilo de la Glyph Matrix de Nothing (números, letras, íconos de ropa y de clima) en cuadrículas de 5×5 a 25×25. Lo hice como herramienta para Meteoroglyph: guarda tu biblioteca y exporta JSON directo a la app.",
         "status": "Concluded",
-        "lenguajes": ["JS"],
-        "herramientas": ["HTML/CSS"],
+        "categoria": "diseno",
+        "ratings": { "importancia": 3, "complejidad": 2.5, "usabilidad": 4.5, "practicidad": 3.5, "completitud": 5 },
+        "lenguajes": ["JS", "HTML/CSS"],
+        "herramientas": [],
         "imagenes": [
             { "src": "./img/sw/gf_ss1.png", "caption": "Glyph example with previews" },
             { "src": "./img/sw/gf_ss2.png", "caption": "Glyph example with library" }
@@ -246,10 +284,12 @@
     {
         "nombre": "FLOPs Information Criterion",
         "autor": "Hex",
-        "descripcion": "FIC (FLOPs Information Criterion) is a novel model selection criterion that extends traditional information criteria (AIC, BIC) by incorporating computational efficiency into the decision process.",
+        "descripcion": "Criterio de selección de modelos en la tradición de AIC y BIC que, además del desajuste, penaliza lo que cuesta correr el modelo en FLOPs. Hoy evolucionó a JIC (Joule Information Criterion) y mide el costo energético real en joules, porque creo que dos modelos con el mismo error no valen lo mismo si uno se come diez veces la energía.",
         "status": "In progress",
-        "lenguajes": ["Python", "C++"],
-        "herramientas": ["Jupyter", "PyTorch", "TensorFlow", "NumPy", "Scikit", "LaTeX"],
+        "categoria": "investigacion",
+        "ratings": { "importancia": 5, "complejidad": 5, "usabilidad": 2, "practicidad": 3, "completitud": 3.5 },
+        "lenguajes": ["Python"],
+        "herramientas": ["PyTorch", "TensorFlow", "scikit-optimize", "pynvml", "pytest"],
         "imagenes": [
             { "src": "./img/sw/fic_ss1.png", "caption": "My very own formula" },
             { "src": "./img/sw/fic_ss2.png", "caption": "MNIST optimization example table" }
@@ -259,10 +299,12 @@
     {
         "nombre": "Metropoly",
         "autor": "Hex",
-        "descripcion": "Monopoly-like board generator. It also generates cards for fortune, properties and even an instructive.",
+        "descripcion": "Generador de tableros estilo Monopoly ambientado en la Zona Metropolitana de Guadalajara: arma el tablero de tres anillos, las propiedades, las cartas de fortuna y el instructivo, todo en HTML listo para imprimir. Si quieres tu propio tablero, basta con cambiar el CSV.",
         "status": "Stand by",
-        "lenguajes": ["Python"],
-        "herramientas": ["HTML/CSS"],
+        "categoria": "diversiones",
+        "ratings": { "importancia": 3, "complejidad": 2.5, "usabilidad": 3, "practicidad": 2, "completitud": 3.5 },
+        "lenguajes": ["Python", "HTML/CSS"],
+        "herramientas": ["pandas", "Selenium", "BeautifulSoup", "Pillow"],
         "imagenes": [
             { "src": "./img/sw/metropoly_ss1.png", "caption": "Half a board (it's for printing so it's too big for the screen even zoomed out)" },
             { "src": "./img/sw/metropoly_ss2.png", "caption": "El Colli property card" },
@@ -274,10 +316,12 @@
     {
         "nombre": "CommonStatsMaxxing",
         "autor": "Hex",
-        "descripcion": "Not actually a project yet",
+        "descripcion": "App de fitness en Flutter para personas en terapia hormonal: qué ejercicio hacer cada día, plan de dieta y listas de compras con presupuesto, ajustados a tu cuerpo y a tu terapia. Por ahora es un esqueleto (empecé sin saber nada de Flutter).",
         "status": "Stand by",
+        "categoria": "apps",
+        "ratings": { "importancia": 3.5, "complejidad": 1, "usabilidad": 0.5, "practicidad": 3, "completitud": 0.5 },
         "lenguajes": ["Dart"],
-        "herramientas": ["Flutter"],
+        "herramientas": ["Flutter", "SQLite"],
         "imagenes": [
         ],
         "github": "https://github.com/RemiH06/CommonStatsMaxxing"
@@ -285,10 +329,12 @@
     {
         "nombre": "LinNeo",
         "autor": "Hex",
-        "descripcion": "LinNeo is a biodiversity knowledge graph with ~2.5 million species from the GBIF taxonomic backbone, each with its full hierarchy (Biota → Domain → Kingdom → Phylum → Class → Order → Family → Genus → Species), geographic distribution, conservation status, and, when available, description, common names, images, and sound.",
+        "descripcion": "Grafo de conocimiento de biodiversidad con unos 2.5 millones de especies del backbone taxonómico de GBIF, cada una con su jerarquía completa (de Biota hasta especie) y su distribución geográfica. Corre sobre Neo4j con una API en FastAPI y un frontend en React con D3 y Leaflet.",
         "status": "Stand by",
-        "lenguajes": ["Python", "JS", "CQL"],
-        "herramientas": ["React", "Neo4j", "FastAPI", "Jupyter", "Docker"],
+        "categoria": "obras",
+        "ratings": { "importancia": 4.5, "complejidad": 4.5, "usabilidad": 3.5, "practicidad": 3.5, "completitud": 4 },
+        "lenguajes": ["Python", "JS"],
+        "herramientas": ["Neo4j", "FastAPI", "React", "Vite", "D3", "Leaflet"],
         "imagenes": [
             { "src": "./img/sw/ln_ss1.png", "caption": "Living graph, navigable to find any species" },
             { "src": "./img/sw/ln_ss5.png", "caption": "Taxonomy and distribution for Lactarius Indigo" },
@@ -300,10 +346,12 @@
     {
         "nombre": "tanGo",
         "autor": "Hex",
-        "descripcion": "tanGo is an intelligent traffic light coordination system that combines an algorithm inspired by SCOOT (Split Cycle Offset Optimisation Technique) with Reinforcement Learning (PPO) to minimize stopping time at intersections in downtown Guadalajara.",
-        "status": "Concluded",
+        "descripcion": "Coordina semáforos combinando un algoritmo inspirado en SCOOT con aprendizaje por refuerzo (PPO), para que se pierda menos tiempo en los cruces del centro de Guadalajara. Opera sobre 354 intersecciones reales de OpenStreetMap, cada hora un DAG de Airflow le mete clima y tráfico reales, y el agente entrenado detiene 15 veces menos vehículos que el baseline.",
+        "status": "Stand by",
+        "categoria": "obras",
+        "ratings": { "importancia": 4.5, "complejidad": 5, "usabilidad": 3, "practicidad": 4, "completitud": 4.5 },
         "lenguajes": ["Python"],
-        "herramientas": ["FastAPI", "Airflow", "Leaflet.js", "NetworkX", "Ray RLib", "Gymnasium", "PyTorch", "YOLO", "Kafka", "Overpass", "Open-Meteo API", "TomTom", "Streamlit", "Docker", "Jira"],
+        "herramientas": ["Ray RLlib", "Gymnasium", "Airflow", "Kafka", "FastAPI", "Neo4j", "NetworkX", "YOLO", "Docker"],
         "imagenes": [
             { "src": "./img/sw/tango_ss1.png", "caption": "sim0 simulation for actual traffic and work over it" },
             { "src": "./img/sw/tango_ss2.png", "caption": "sim3 (optimized as much as possible traffic in GDL downtown (93%))" },
@@ -315,10 +363,12 @@
     {
         "nombre": "iroFactory",
         "autor": "Hex",
-        "descripcion": "A personal collection of 12 self-contained HTML design themes for project documentation. Each theme ships as a single file with its own animated background, color system, typography, and semantic tokens. Intended as documentation skins for personal projects spanning algorithms, data science, creative writing, travel, music, embedded systems, and more.",
+        "descripcion": "Mi colección de temas para documentar proyectos: doce pieles completas, cada una con su propio concepto, fondo animado, paleta y tipografía, sin build de por medio. Varios de mis proyectos ya se documentan con ellos.",
         "status": "In progress",
-        "lenguajes": ["JS"],
-        "herramientas": ["HTML/CSS"],
+        "categoria": "diseno",
+        "ratings": { "importancia": 5, "complejidad": 4, "usabilidad": 4.5, "practicidad": 4.5, "completitud": 4 },
+        "lenguajes": ["JS", "HTML/CSS"],
+        "herramientas": ["Three.js", "anime.js", "WebGL"],
         "imagenes": [
             { "src": "./img/sw/irofactory_ss1.png", "caption": "Disco theme" },
             { "src": "./img/sw/irofactory_ss2.png", "caption": "Lambda theme" },
@@ -326,5 +376,122 @@
             { "src": "./img/sw/irofactory_ss4.png", "caption": "Apolo theme" }
         ],
         "github": "https://github.com/RemiH06/iroFactory"
+    },
+    {
+        "nombre": "Skystones",
+        "autor": "Hex",
+        "descripcion": "Juego de cartas inspirado en el minijuego Skystones de Skylanders, con partidas locales 1v1 en el mismo dispositivo. En el Workshop creas tus propias piedras (imagen, nombre, lados y ataque) y luego juegas con ellas; está en Kotlin Multiplatform para que corra en Android, iOS, web y escritorio.",
+        "status": "In progress",
+        "categoria": "diversiones",
+        "ratings": { "importancia": 3.5, "complejidad": 3.5, "usabilidad": 3, "practicidad": 1.5, "completitud": 2.5 },
+        "lenguajes": ["Kotlin"],
+        "herramientas": ["Compose Multiplatform", "Gradle"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Skystones"
+    },
+    {
+        "nombre": "Proun",
+        "autor": "Hex",
+        "descripcion": "Generador de fotomontajes constructivistas, nombrado por los Proun de El Lissitzky: toma fotos de tus carpetas, las aplana a una sola tinta y las obliga a compartir una superficie con capas, repeticiones y caleidoscopios. Lo uso seguido.",
+        "status": "Concluded",
+        "categoria": "diseno",
+        "ratings": { "importancia": 4, "complejidad": 4, "usabilidad": 4, "practicidad": 4, "completitud": 5 },
+        "lenguajes": ["Python", "TypeScript"],
+        "herramientas": ["FastAPI", "Pillow", "React", "Vite"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Proun"
+    },
+    {
+        "nombre": "Ariadne",
+        "autor": "Hex",
+        "descripcion": "Analiza un codebase y genera un diagrama HTML interactivo (árbol de archivos, dependencias, clases, métodos e historial de git) más documentación en PDF, LaTeX, RTF y XML. El nombre viene del hilo de Ariadna: el camino de regreso en un laberinto de código que no es tuyo, o que ya no recuerdas.",
+        "status": "Concluded",
+        "categoria": "herramientas",
+        "ratings": { "importancia": 4, "complejidad": 4, "usabilidad": 4, "practicidad": 4.5, "completitud": 5 },
+        "lenguajes": ["Rust", "TypeScript"],
+        "herramientas": ["clap", "rayon", "serde", "D3", "esbuild"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Ariadne"
+    },
+    {
+        "nombre": "Rem's Glyph Toys",
+        "autor": "Hex",
+        "descripcion": "Glyph Toys propios para la matriz de LEDs del Nothing Phone (3): fluid (agua simulada con FLIP que responde al acelerómetro, como el colgante de mitxela), gallery (tus fotos y glifos dibujados a mano sobre los 489 LEDs reales) y pulse (formas que respiran con el audio que suene). Está publicado en Nothing Playground, y pulse es el que traigo por defecto en mi teléfono.",
+        "status": "Concluded",
+        "categoria": "apps",
+        "ratings": { "importancia": 3.5, "complejidad": 4, "usabilidad": 4.5, "practicidad": 3, "completitud": 5 },
+        "lenguajes": ["Kotlin"],
+        "herramientas": ["Jetpack Compose", "Glyph SDK", "Android Studio"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/RemsGlyphToys"
+    },
+    {
+        "nombre": "Fontificar",
+        "autor": "Hex",
+        "descripcion": "Amplía la cobertura de una fuente TTF u OTF: genera una copia con ñ, acentos, ¡ ¿ y los símbolos de Windows-1252. No dibuja nada nuevo, arma cada carácter faltante con los glifos que la fuente ya trae, midiendo sus letras en vez de suponer su forma.",
+        "status": "Concluded",
+        "categoria": "diseno",
+        "ratings": { "importancia": 2.5, "complejidad": 3, "usabilidad": 3.5, "practicidad": 3, "completitud": 5 },
+        "lenguajes": ["Python"],
+        "herramientas": ["fontTools"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Fontificar"
+    },
+    {
+        "nombre": "Knee Abnormality Detection",
+        "autor": "Hex",
+        "descripcion": "Nuestra solución para RSNA Knee Abnormality Detection en Kaggle, que predice 12 hallazgos por resonancia de rodilla. Solo 58 de 4,407 estudios traían todas las etiquetas, así que un LLM leyó los reportes de radiología para fabricar etiquetas suaves y un CoAtNet 2.5D aprendió a reproducirlas (puntuación final: 0.958).",
+        "status": "Concluded",
+        "categoria": "kaggle",
+        "ratings": { "importancia": 4, "complejidad": 5, "usabilidad": 1, "practicidad": 2.5, "completitud": 5 },
+        "lenguajes": ["Python"],
+        "herramientas": ["PyTorch", "timm", "MONAI", "pydicom", "OpenCV", "Kaggle"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/RSNA-Knee-Abnormality-Detection"
+    },
+    {
+        "nombre": "Grapheme",
+        "autor": "Hex",
+        "descripcion": "Une los 243 radicales kanji/hanzi con los 2136 kanji jōyō y los 3000 hanzi del HSK 3.0 en un solo grafo, para estudiar japonés y chino viendo qué componentes comparten los caracteres. Nació de una clasificación de radicales que hice a mano en Excel hace años y que luego amplié con cinco datasets abiertos.",
+        "status": "In progress",
+        "categoria": "data",
+        "ratings": { "importancia": 3.5, "complejidad": 3.5, "usabilidad": 3, "practicidad": 3.5, "completitud": 3 },
+        "lenguajes": ["Python", "JS"],
+        "herramientas": ["FastAPI", "React", "Vite", "D3"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Grapheme"
+    },
+    {
+        "nombre": "Crisantemo",
+        "autor": "Hex",
+        "descripcion": "Herramienta de análisis de voz para acompañar a personas trans (sobre todo mujeres) en la práctica de su voz: da una puntuación de 0 a 100 con features acústicas interpretables como tono, formantes, jitter y shimmer. Creo que el enfoque importa porque la percepción de género depende más de la resonancia del tracto vocal que del tono, y la puntuación es para practicar, no un diagnóstico.",
+        "status": "In progress",
+        "categoria": "obras",
+        "ratings": { "importancia": 4.5, "complejidad": 4.5, "usabilidad": 2, "practicidad": 4, "completitud": 1.5 },
+        "lenguajes": ["Python", "JS"],
+        "herramientas": ["librosa", "Praat (parselmouth)", "LightGBM", "scikit-learn", "FastAPI", "Vite", "Docker"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Crisantemo"
+    },
+    {
+        "nombre": "Gaiarda",
+        "autor": "Hex",
+        "descripcion": "Descarga y organiza los datos abiertos oficiales de México (INEGI, CRE, SESNSP y otras cinco fuentes) en una base de datos propia y los pone en un mapa interactivo, sin depender de portales de consulta que se caen. También arma rutas de turismo entre municipios con ruteo real por carretera, presupuesto de gasolina y casetas, y es la plomería sobre la que se construye Mapo (el nombre mezcla Gaia, el API geoestadístico del INEGI, con gallarda, porque un proyecto de catálogos gubernamentales necesitaba algo de garbo).",
+        "status": "Stand by",
+        "categoria": "data",
+        "ratings": { "importancia": 4, "complejidad": 4, "usabilidad": 4, "practicidad": 4, "completitud": 4 },
+        "lenguajes": ["Python", "TypeScript"],
+        "herramientas": ["SQLite", "Shapely", "React", "Vite", "Leaflet", "OSRM"],
+        "imagenes": [
+        ],
+        "github": "https://github.com/RemiH06/Gaiarda"
     }
 ]
