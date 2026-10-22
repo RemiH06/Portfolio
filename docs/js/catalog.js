@@ -87,7 +87,7 @@ const CATEGORIES = [
 const METRICS = [
   { key: "tamano", label: "Tamaño", get: (p) => p.metricas?.lineas, unit: ["línea", "líneas"],
     hint: "Líneas de código únicas: lo copiado entre archivos cuenta una vez" },
-  { key: "esfuerzo", label: "Esfuerzo", get: (p) => p.metricas?.dias, unit: ["día", "días"],
+  { key: "esfuerzo", label: "Tiempo aproximado dedicado", get: (p) => p.metricas?.dias, unit: ["día", "días"],
     hint: "Días distintos con commits míos que tocan código" },
   { key: "amplitud", label: "Amplitud", get: (p) => (p.lenguajes?.length ?? 0) + (p.herramientas?.length ?? 0),
     unit: ["tecnología", "tecnologías"], hint: "Lenguajes y herramientas del proyecto" },
