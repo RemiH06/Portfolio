@@ -1,0 +1,351 @@
+:root {
+  --dark-bg: #000000;
+  --card-bg: #0e0e10;
+  --card-border: #242428;
+  --text-color: #ececec;
+  --subtext: #9a9a9a;
+  --accent: #00ffff; /* cian: identidad de software en glow.js */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: "Hubot Sans", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+}
+
+/* ---- Encabezado + volver ---- */
+.catalog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px clamp(16px, 4vw, 48px) 8px;
+  flex-wrap: wrap;
+}
+
+.catalog-header h1 {
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.catalog-header .back-link img {
+  width: 72px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.6s ease, filter 0.3s ease;
+}
+
+.catalog-header .back-link img.loaded {
+  opacity: 1;
+}
+
+.catalog-header .back-link img:hover {
+  filter: drop-shadow(0 0 10px rgba(0, 255, 255, 0.8));
+}
+
+.catalog-header .repo-link {
+  color: var(--subtext);
+  text-decoration: none;
+  font-size: 0.85rem;
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.catalog-header .repo-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ---- Barra de filtros ---- */
+.filters {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  padding: 12px clamp(16px, 4vw, 48px);
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--card-border);
+}
+
+.filters input,
+.filters select {
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(0, 255, 255, 0.15);
+}
+
+.filters input[type="search"] {
+  flex: 1;
+  min-width: 180px;
+}
+
+.filters .count {
+  margin-left: auto;
+  color: var(--subtext);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+/* ---- Rejilla de tarjetas ---- */
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  padding: 20px clamp(16px, 4vw, 48px) 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.card:hover,
+.card:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.25);
+  outline: none;
+}
+
+.card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #050505;
+  display: block;
+}
+
+.card-thumb.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 2.4rem;
+}
+
+.card-body {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.card-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 1.1rem;
+  min-height: 1.1rem;
+}
+
+.card-meta {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* ---- Pastilla de status ---- */
+.status-pill {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid currentColor;
+  white-space: nowrap;
+}
+
+.status-active {
+  color: #5de654;
+}
+.status-progress {
+  color: #64d1fd;
+}
+.status-standby {
+  color: #fdc517;
+}
+.status-dead {
+  color: #8c0012;
+}
+.status-default {
+  color: var(--subtext);
+}
+
+/* ---- Estrellas ---- */
+.stars {
+  color: var(--accent);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.stars .empty {
+  color: #333;
+}
+
+/* ---- Overlay de detalle ---- */
+.detail-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: clamp(16px, 5vh, 60px) 16px;
+  background: rgba(0, 0, 0, 0.78);
+  backdrop-filter: blur(4px);
+  overflow-y: auto;
+}
+
+.detail-overlay.open {
+  display: flex;
+}
+
+.detail {
+  position: relative;
+  width: min(820px, 100%);
+  background: var(--card-bg);
+  border: 1px solid var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  padding: 28px clamp(18px, 4vw, 36px) 32px;
+}
+
+.detail-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: var(--subtext);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.detail-close:hover {
+  color: var(--accent);
+}
+
+.detail h2 {
+  margin: 0 0 4px;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  padding-right: 32px;
+}
+
+.detail-sub {
+  color: var(--subtext);
+  font-size: 0.85rem;
+  margin: 0 0 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  align-items: center;
+}
+
+.detail-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 1.6rem;
+  margin: 10px 0 16px;
+}
+
+.detail p.desc {
+  line-height: 1.5;
+  margin: 0 0 18px;
+}
+
+.detail-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-images figure {
+  margin: 0;
+}
+
+.detail-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--card-border);
+}
+
+.detail-images figcaption {
+  font-size: 0.75rem;
+  color: var(--subtext);
+  margin-top: 4px;
+  text-align: center;
+}
+
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #24292f;
+  color: white;
+  font-size: 0.95rem;
+  padding: 9px 16px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.github-button:hover {
+  background-color: #444d56;
+}
+.github-button svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--subtext);
+  padding: 40px 0;
+}

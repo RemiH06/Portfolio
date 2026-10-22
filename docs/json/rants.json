@@ -144,5 +144,19 @@
     "description": "Ya prácticamente está concluida la página, las cosas que faltan realmente todavía no las tengo así que seguiré subiendo cosas conforme pase el tiempo.",
     "images": [
     ]
+  },
+  {
+    "date": "2026-10-20",
+    "location": "Perso",
+    "description": "Odio WhatsApp Web con una intensidad que no le tengo a casi ningún software. Es una pestaña que se come 600 MB de RAM para hacer lo que un cliente de IRC de los noventa hacía con un suspiro. Cada que cambio de red se desconecta, cada que cierro el cel me reclama como si lo hubiera abandonado, y necesita que el teléfono esté vivo y conectado para funcionar, o sea que no es un cliente, es un espejo glorificado. Mandar un archivo es una lotería y buscar un mensaje viejo es arqueología. Lo peor es que no hay alternativa real porque todos mis contactos están ahí secuestrados. Es el ejemplo perfecto de monopolio que te deja usar algo malísimo porque sabe que no te vas a ir.",
+    "images": [
+    ]
+  },
+  {
+    "date": "2026-10-21",
+    "location": "Perso",
+    "description": "Me cae que nos vendieron la mentira de que el almacenamiento es caro. No lo es. Un disco de un terabyte cuesta una fracción de lo que costaba hace diez años y cada año baja. Lo caro es el teatro: te dan 5 GB gratis para engancharte y luego te rentan de por vida unos cuantos gigas a precio de oro, pagando cada mes por bytes que ya pagaste. Y en físico el cuento es al revés, te meten miedo de perder todo para que no salgas de su nube. La verdad es que un NAS en casa se paga solo en un par de años y los datos son tuyos. Por eso quiero montar mi propio respaldo en la Bakery: dejar de alquilar lo que puedo poseer.",
+    "images": [
+    ]
   }
 ]
