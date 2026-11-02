@@ -1,7 +1,7 @@
 [
     {
         "nombre": "Cream Based Dialect",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Mi propio lenguaje de programación: un intérprete en C# inspirado en la sencillez de ASM, BASIC y ALGOL. Es muy simple y no sirve para cosas complejas (tampoco era la idea), y solo lo he probado dentro de Visual Studio.",
         "status": "Concluded",
         "categoria": "investigacion",
@@ -17,7 +17,7 @@
     },
     {
         "nombre": "SaveTrack",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "App de finanzas personales para Android con cuentas, calendario de eventos, ingresos y egresos con etiquetas propias y gráficas para ver a dónde se va el dinero. El backend es PHP con MySQL y en el teléfono todo vive en Room.",
         "status": "Stand by",
         "categoria": "apps",
@@ -34,7 +34,7 @@
     },
     {
         "nombre": "Persos",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Matchmaking para partidas personalizadas de League of Legends entre amigos, para que los equipos salgan parejos y nadie sufra en su línea. La primera versión en C# dependía de un Excel con mi evaluación de cada quien; la de Python usa la API de Riot, que dejó de buscar por nombre de invocador y me dejó a medias.",
         "status": "Stand by",
         "categoria": "diversiones",
@@ -46,7 +46,7 @@
     },
     {
         "nombre": "Hyperchess",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Ajedrez en un tablero de 12x12 con unas 67 piezas intercambiables, cada una con habilidades propias. Lo monté sobre Chesso, una app de ajedrez de código abierto en Jetpack Compose.",
         "status": "Stand by",
         "categoria": "diversiones",
@@ -61,7 +61,7 @@
     },
     {
         "nombre": "Sulfur",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Convierte texto en color de forma determinista: el mismo texto siempre da el mismo color (un OKLCH sacado del SHA-256). Encima de esa idea armé un gestor de contraseñas de terminal en Haskell, con la bóveda cifrada con una llave derivada por Argon2id; la versión vieja en Kotlin era un experimento sin ningún valor de seguridad.",
         "status": "Concluded",
         "categoria": "herramientas",
@@ -76,7 +76,7 @@
     },
     {
         "nombre": "Ryoko",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Scraper de Google Flights con Playwright que arma sus propios datasets, y encima un modelo que predice precios de vuelos (lo entrené con la ruta Guadalajara-Tokio). La parte de series de tiempo la hice en R con fable.",
         "status": "Stand by",
         "categoria": "data",
@@ -92,7 +92,7 @@
     },
     {
         "nombre": "Anime Scraper",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Busca en el HTML de anitaku el link de mejor calidad de cada episodio y descarga series completas (o nada más los capítulos que le pidas), con una interfaz en CustomTkinter. Con fines educativos, eso sí.",
         "status": "Stand by",
         "categoria": "data",
@@ -108,7 +108,7 @@
     },
     {
         "nombre": "Wallpapers",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Fondos animados con cubos e icosaedros volando que, en el fondo, eran una prueba de cuánto 3D aguanta el navegador antes de rendirse. Sencillos, pero hipnóticos.",
         "status": "Concluded",
         "categoria": "diseno",
@@ -123,7 +123,7 @@
     },
     {
         "nombre": "QScheduler",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Me apartaba cubículo en el campus con dos semanas de anticipación raspando el sistema de reservas con Playwright (también hubo una versión que agendaba por Outlook, que no recomiendo). Murió en agosto de 2025, cuando todo lo del ITESO empezó a pedir doble factor; hoy sirve más bien para aprender a armar scrapers.",
         "status": "Discontinued",
         "categoria": "herramientas",
@@ -139,7 +139,7 @@
     },
     {
         "nombre": "Image Dataset Factory",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Descarga en masa imágenes de Google Images sobre los temas que le pidas, las separa en entrenamiento y prueba y genera los diccionarios para aprendizaje supervisado; incluso puede clasificarlas con AlexNet. Partí del scraper de ohyicong y lo arreglé hasta que volvió a pasar las restricciones nuevas.",
         "status": "Concluded",
         "categoria": "data",
@@ -154,7 +154,7 @@
     },
     {
         "nombre": "GitHub Wrapped",
-        "autor": "Hex & Ethan04Munoz",
+        "autor": "RemLam & Ethan04Munoz",
         "descripcion": "Un resumen anual de tu GitHub (repos creados, commits y demás) que saca los datos con Octokit. Su gracia nunca fue el dato sino la presentación: es un revoltijo de experimentos de CSS y JS crudos.",
         "status": "Discontinued",
         "categoria": "diversiones",
@@ -171,7 +171,7 @@
     },
     {
         "nombre": "Store Sales Forecasting",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Mi entrada a la competencia de pronóstico de ventas de Kaggle. Probé desde un SNAIVE hasta XGBoost, LightGBM y Prophet en varios documentos de Quarto, y el modelo final fue CatBoost con un RMSLE de 0.398.",
         "status": "Concluded",
         "categoria": "kaggle",
@@ -187,7 +187,7 @@
     },
     {
         "nombre": "Mapo",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Gaiarda contesta qué hay; Mapo contesta qué deberías hacer con eso. Cruza datos geográficos (del INEGI, sobre todo) para decidir dónde conviene poner un negocio, dónde buscar cierto perfil para contratar o qué zonas se quedaron sin servicios, y ahora también planea rutas de logística de carga.",
         "status": "In progress",
         "categoria": "obras",
@@ -203,7 +203,7 @@
     },
     {
         "nombre": "Lithomancer",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Mi intento de predecir sismos con Random Forest, SVM y una CNN 1D entrenados con el catálogo histórico del SSN de la UNAM, con clusterización geoespacial y proyecciones a futuro. Es una demostración y no un sistema de alerta (predecir terremotos es de los problemas más difíciles de la geofísica, así que lo más probable es que se equivoque).",
         "status": "Stand by",
         "categoria": "investigacion",
@@ -218,7 +218,7 @@
     },
     {
         "nombre": "Yutubify",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Convierte playlists de Spotify en playlists de YouTube. Lo hice en una sola noche.",
         "status": "Concluded",
         "categoria": "herramientas",
@@ -230,7 +230,7 @@
     },
     {
         "nombre": "Senku",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Bot de Discord que contesta cualquier pregunta con la API de OpenAI, basta con escribir !senku y la pregunta. La V2 la quiero correr con un modelo local en mi propio servidor en vez de depender de un servicio externo.",
         "status": "Stand by",
         "categoria": "apps",
@@ -244,7 +244,7 @@
     },
     {
         "nombre": "Tamauijetto",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Un tamagotchi que vive de tu actividad en GitHub: cada push, commit y pull request es comida, y con suficiente evoluciona (algunas ramas de su evolución se deciden al azar). Un workflow de GitHub Actions lo revisa cada hora y publica una tarjeta SVG lista para pegarse en cualquier README.",
         "status": "Concluded",
         "categoria": "diversiones",
@@ -259,7 +259,7 @@
     },
     {
         "nombre": "Meteoroglyph",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Asistente de clima y outfit para los Nothing Phone: lee tu calendario y el clima para decirte qué ponerte, cuándo llevar paraguas y si conviene el transporte público o un Uber. Además dibuja simulaciones de fluidos y del clima en las luces Glyph del teléfono.",
         "status": "Concluded",
         "categoria": "apps",
@@ -277,7 +277,7 @@
     },
     {
         "nombre": "GlyphFactory",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Editor de matriz de puntos en el navegador para diseñar glifos al estilo de la Glyph Matrix de Nothing (números, letras, íconos de ropa y de clima) en cuadrículas de 5×5 a 25×25. Lo hice como herramienta para Meteoroglyph: guarda tu biblioteca y exporta JSON directo a la app.",
         "status": "Concluded",
         "categoria": "diseno",
@@ -293,7 +293,7 @@
     },
     {
         "nombre": "FLOPs Information Criterion",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Criterio de selección de modelos en la tradición de AIC y BIC que, además del desajuste, penaliza lo que cuesta correr el modelo en FLOPs. Hoy evolucionó a JIC (Joule Information Criterion) y mide el costo energético real en joules, porque creo que dos modelos con el mismo error no valen lo mismo si uno se come diez veces la energía.",
         "status": "In progress",
         "categoria": "investigacion",
@@ -309,7 +309,7 @@
     },
     {
         "nombre": "Metropoly",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Generador de tableros estilo Monopoly ambientado en la Zona Metropolitana de Guadalajara: arma el tablero de tres anillos, las propiedades, las cartas de fortuna y el instructivo, todo en HTML listo para imprimir. Si quieres tu propio tablero, basta con cambiar el CSV.",
         "status": "Stand by",
         "categoria": "diversiones",
@@ -327,7 +327,7 @@
     },
     {
         "nombre": "CommonStatsMaxxing",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "App de fitness en Flutter para personas en terapia hormonal: qué ejercicio hacer cada día, plan de dieta y listas de compras con presupuesto, ajustados a tu cuerpo y a tu terapia. Por ahora es un esqueleto (empecé sin saber nada de Flutter).",
         "status": "Stand by",
         "categoria": "apps",
@@ -339,7 +339,7 @@
     },
     {
         "nombre": "LinNeo",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Grafo de conocimiento de biodiversidad con unos 2.5 millones de especies del backbone taxonómico de GBIF, cada una con su jerarquía completa (de Biota hasta especie) y su distribución geográfica. Corre sobre Neo4j con una API en FastAPI y un frontend en React con D3 y Leaflet.",
         "status": "Stand by",
         "categoria": "obras",
@@ -358,7 +358,7 @@
     },
     {
         "nombre": "tanGo",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Coordina semáforos combinando un algoritmo inspirado en SCOOT con aprendizaje por refuerzo (PPO), para que se pierda menos tiempo en los cruces del centro de Guadalajara. Opera sobre 354 intersecciones reales de OpenStreetMap, cada hora un DAG de Airflow le mete clima y tráfico reales, y el agente entrenado detiene 15 veces menos vehículos que el baseline.",
         "status": "Stand by",
         "categoria": "obras",
@@ -378,7 +378,7 @@
     },
     {
         "nombre": "iroFactory",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Mi colección de temas para documentar proyectos: doce pieles completas, cada una con su propio concepto, fondo animado, paleta y tipografía, sin build de por medio. Varios de mis proyectos ya se documentan con ellos.",
         "status": "In progress",
         "categoria": "diseno",
@@ -398,7 +398,7 @@
     },
     {
         "nombre": "Skystones",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Juego de cartas inspirado en el minijuego Skystones de Skylanders, con partidas locales 1v1 en el mismo dispositivo. En el Workshop creas tus propias piedras (imagen, nombre, lados y ataque) y luego juegas con ellas; está en Kotlin Multiplatform para que corra en Android, iOS, web y escritorio.",
         "status": "In progress",
         "categoria": "diversiones",
@@ -410,7 +410,7 @@
     },
     {
         "nombre": "Proun",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Generador de fotomontajes constructivistas, nombrado por los Proun de El Lissitzky: toma fotos de tus carpetas, las aplana a una sola tinta y las obliga a compartir una superficie con capas, repeticiones y caleidoscopios. Lo uso seguido.",
         "status": "Concluded",
         "categoria": "diseno",
@@ -425,7 +425,7 @@
     },
     {
         "nombre": "Ariadne",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Analiza un codebase y genera un diagrama HTML interactivo (árbol de archivos, dependencias, clases, métodos e historial de git) más documentación en PDF, LaTeX, RTF y XML. El nombre viene del hilo de Ariadna: el camino de regreso en un laberinto de código que no es tuyo, o que ya no recuerdas.",
         "status": "Concluded",
         "categoria": "herramientas",
@@ -440,7 +440,7 @@
     },
     {
         "nombre": "Rem's Glyph Toys",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Glyph Toys propios para la matriz de LEDs del Nothing Phone (3): fluid (agua simulada con FLIP que responde al acelerómetro, como el colgante de mitxela), gallery (tus fotos y glifos dibujados a mano sobre los 489 LEDs reales) y pulse (formas que respiran con el audio que suene). Está publicado en Nothing Playground, y pulse es el que traigo por defecto en mi teléfono.",
         "status": "Concluded",
         "categoria": "apps",
@@ -455,7 +455,7 @@
     },
     {
         "nombre": "Fontificar",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Amplía la cobertura de una fuente TTF u OTF: genera una copia con ñ, acentos, ¡ ¿ y los símbolos de Windows-1252. No dibuja nada nuevo, arma cada carácter faltante con los glifos que la fuente ya trae, midiendo sus letras en vez de suponer su forma.",
         "status": "Concluded",
         "categoria": "diseno",
@@ -469,7 +469,7 @@
     },
     {
         "nombre": "Knee Abnormality Detection",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Nuestra solución para RSNA Knee Abnormality Detection en Kaggle, que predice 12 hallazgos por resonancia de rodilla. Solo 58 de 4,407 estudios traían todas las etiquetas, así que un LLM leyó los reportes de radiología para fabricar etiquetas suaves y un CoAtNet 2.5D aprendió a reproducirlas (puntuación final: 0.958).",
         "status": "Concluded",
         "categoria": "kaggle",
@@ -481,7 +481,7 @@
     },
     {
         "nombre": "Grapheme",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Une los 243 radicales kanji/hanzi con los 2136 kanji jōyō y los 3000 hanzi del HSK 3.0 en un solo grafo, para estudiar japonés y chino viendo qué componentes comparten los caracteres. Nació de una clasificación de radicales que hice a mano en Excel hace años y que luego amplié con cinco datasets abiertos.",
         "status": "In progress",
         "categoria": "data",
@@ -494,7 +494,7 @@
     },
     {
         "nombre": "Crisantemo",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Herramienta de análisis de voz para acompañar a personas trans (sobre todo mujeres) en la práctica de su voz: da una puntuación de 0 a 100 con features acústicas interpretables como tono, formantes, jitter y shimmer. Creo que el enfoque importa porque la percepción de género depende más de la resonancia del tracto vocal que del tono, y la puntuación es para practicar, no un diagnóstico.",
         "status": "In progress",
         "categoria": "obras",
@@ -508,7 +508,7 @@
     },
     {
         "nombre": "Gaiarda",
-        "autor": "Hex",
+        "autor": "RemLam",
         "descripcion": "Descarga y organiza los datos abiertos oficiales de México (INEGI, CRE, SESNSP y otras cinco fuentes) en una base de datos propia y los pone en un mapa interactivo, sin depender de portales de consulta que se caen. También arma rutas de turismo entre municipios con ruteo real por carretera, presupuesto de gasolina y casetas, y es la plomería sobre la que se construye Mapo (el nombre mezcla Gaia, el API geoestadístico del INEGI, con gallarda, porque un proyecto de catálogos gubernamentales necesitaba algo de garbo).",
         "status": "Stand by",
         "categoria": "data",

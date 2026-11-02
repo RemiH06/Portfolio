@@ -22,7 +22,7 @@ body {
   font-family: "Hubot Sans", sans-serif;
 }
 
-/* negro absoluto: identidad del sitio (decisión de Hex sobre la regla genérica de no-#000) */
+/* negro absoluto: identidad del sitio (decisión de RemLam sobre la regla genérica de no-#000) */
 body {
   background: #000;
   overflow-x: hidden;
