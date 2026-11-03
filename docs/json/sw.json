@@ -397,18 +397,6 @@
         "docs": "https://remih06.github.io/iroFactory/"
     },
     {
-        "nombre": "Skystones",
-        "autor": "RemLam",
-        "descripcion": "Juego de cartas inspirado en el minijuego Skystones de Skylanders, con partidas locales 1v1 en el mismo dispositivo. En el Workshop creas tus propias piedras (imagen, nombre, lados y ataque) y luego juegas con ellas; está en Kotlin Multiplatform para que corra en Android, iOS, web y escritorio.",
-        "status": "In progress",
-        "categoria": "diversiones",
-        "lenguajes": ["Kotlin"],
-        "herramientas": ["Compose Multiplatform", "Gradle"],
-        "imagenes": [],
-        "github": "https://github.com/RemiH06/Skystones",
-        "metricas": { "lineas": 387, "dias": 1, "ultimo": "2026-07-24", "historiaParcial": true }
-    },
-    {
         "nombre": "Proun",
         "autor": "RemLam",
         "descripcion": "Generador de fotomontajes constructivistas, nombrado por los Proun de El Lissitzky: toma fotos de tus carpetas, las aplana a una sola tinta y las obliga a compartir una superficie con capas, repeticiones y caleidoscopios. Lo uso seguido.",
